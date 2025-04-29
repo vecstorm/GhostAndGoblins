@@ -1,0 +1,4038 @@
+fileFormatVersion: 2
+guid: cf6387a51523a054e999c8a46e9e0023
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 60
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_0
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 575
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 395467a4c597eb349856325bfcff0cd9
+      internalID: 796115873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_1
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 575
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e819d6473c0d54a4b8a373a1a4af6008
+      internalID: 1209263480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_2
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 541
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7e1dd0a6eb3702419f1f0cb5d46962c
+      internalID: 368663151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_3
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 541
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dc676e0d4330da419b1f0eacb3a23bd
+      internalID: 288920862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_4
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 541
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 344028230a1dd434b99dd2eb7e0d6e22
+      internalID: 1885457255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_5
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 541
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6acf32bdfe19f1a48a646337247ff4ae
+      internalID: 1013939875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_6
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 541
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f12e1a7efebb544cb45f266fff9f2ef
+      internalID: -628954218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_7
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 541
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 368afd604c8416d4fad0acf8c04a60d6
+      internalID: 77645988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_8
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 541
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5d4fd4e1b5bb3a4791c174e81314ead
+      internalID: 1227000465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_9
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 541
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4acfdd7bf34d963488f72329baa30112
+      internalID: 101767440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_10
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 506
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e666b620b5ab91b408ce860a89496eca
+      internalID: -1423714995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_11
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 506
+        width: 25
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b82f6b3109b080840ac4a520bb1c4ea0
+      internalID: 497834540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_12
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 506
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37f65883613ac3c488e3bb5090fee925
+      internalID: -1590888440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_13
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 506
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aef7ddee07cbb943b5be33f48aeac1d
+      internalID: -2142754208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_14
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 506
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac8324ab6893df04ea7d5addeb087e13
+      internalID: 1978755884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_15
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 506
+        width: 21
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ea83c8884412ea4abf88adfd39d367e
+      internalID: 732805720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_16
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 506
+        width: 21
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09427f5bbed895e4581e004dc58560cc
+      internalID: 1688171374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_17
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 506
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0e5ce8ef9af2e140b422c8d99de3504
+      internalID: -246755924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_18
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 506
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cd84d65bc3fe21479ed4e977fd130cb
+      internalID: -1601996311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_19
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 506
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd17cd54deac6504fb9d56bc29ec1b9c
+      internalID: -417402665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_20
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 506
+        width: 25
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bdcbe8e609468f49a0c51a31d7ce589
+      internalID: -212797141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_21
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 506
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 017491d136e4ef64f928eabeb851b7ea
+      internalID: -854352413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_22
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 487
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5da47ffe7390adf40945a01cf6dc6718
+      internalID: -1804601143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_23
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 487
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b0251d492e3085419144008aed26ac3
+      internalID: -1712770885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_24
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 487
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 422155c885c467044abc9464c59fe1a2
+      internalID: -720155900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_25
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 487
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d3d829d133f5374fbe282ba08ea653f
+      internalID: 1502182112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_26
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 487
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72ec815a254f73742a37612071649eac
+      internalID: 74562908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_27
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 490
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b78259857e9d85b46ae214450c156209
+      internalID: -691382138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_28
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 491
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e743aa106727e045a835e737ad7d59d
+      internalID: 1758249275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_29
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 487
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca6e670be6020d64581b0737d8a4af85
+      internalID: -1799917970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_30
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 487
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df4b2cc105d177e488a4967e79fa2053
+      internalID: 555626062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_31
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 491
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c99f70bfa2049445b26edd4156012c7
+      internalID: 657435855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_32
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 490
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 707a76cad3b9fc744b0a25fd2621ce99
+      internalID: 1045067824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_33
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 487
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4ab358fe2edbde48afb597497932c44
+      internalID: 1136188419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_34
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 487
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3aba1cd350035e4c9c59a9b2941b462
+      internalID: -241264751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_35
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 487
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2934126e824cdc845838cb208de3efac
+      internalID: 394119947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_36
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 487
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02b701c285fe70843bb94cccb19aeed7
+      internalID: 1491600308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_37
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 487
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4012c2ac09a78bd4a9aa6e0157f8740d
+      internalID: 673843971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_38
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 467
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf06d120f340ee14dacadc5d6c653082
+      internalID: -2077534732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_39
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 467
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 538728fa9017cb7448d6a9bd76aaecda
+      internalID: 639610059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_40
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 467
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d0cf98a627996e45af95e86c64c20fd
+      internalID: -1998408204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_41
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 467
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1711ead4d93ef84f8510239733294d1
+      internalID: -138789581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_42
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 467
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 358d6c3d872d1d14fab4bb857d7db71f
+      internalID: -1159510677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_43
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 470
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4761feb80933fc4396ba220fc9b3288
+      internalID: -651445975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_44
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 471
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b4035ca2781d494e97fbc0357955910
+      internalID: 124545606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_45
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 467
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e48372a26cdd4234c8b7bd93ae58c6d8
+      internalID: 1285024550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_46
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 467
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28c6b3fb04a986a4297c2c69c05dfc55
+      internalID: -620456564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_47
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 471
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 302bcd4744680ed4ca196ea830c55d9e
+      internalID: -68234708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_48
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 470
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe77cba9c385d2d4a955920eb38c8cf7
+      internalID: 469659598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_49
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 467
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62b7878aba6221649a833a5c7d5e6810
+      internalID: -1911179425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_50
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 467
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63a3b3043a23c5a4cb3904ebff5a77f8
+      internalID: 2137692926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_51
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 467
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 320a8543dee583c47b2d9843a8186f51
+      internalID: 868726811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_52
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 467
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d512e313e55bc345b4c5e69d2fd77d5
+      internalID: 2036075863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_53
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 467
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff42fff3533cf9846998fcdf2d211525
+      internalID: -1727835926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_54
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 432
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 244b5d2605a01ab47923e55be09f424a
+      internalID: -39665505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_55
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 433
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b09fe9816ab8f44cbeff28f2272c2fa
+      internalID: -1469307400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_56
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 432
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f3b5d9cd1753704391a21022cf4c176
+      internalID: 1361949325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_57
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 432
+        width: 33
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b38ec883f53ad4646a7698ccb6458673
+      internalID: -1073892571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_58
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 432
+        width: 33
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9119b7a4cafe0c645963fb68b285e9ba
+      internalID: -362826901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_59
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 432
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 240134c54d52ea64bae349f9cabc926b
+      internalID: -1415563307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_60
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 433
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa767b829bc08fe47b24e49b8b709a9f
+      internalID: 1489395184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_61
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 432
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 821ddbe8a5573be46a566d7e4d698c6c
+      internalID: -1570218040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_62
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 398
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8420bf081b591b42816cfc40057e908
+      internalID: -1717730416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_63
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 398
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d89a5b87d99e8fe49a7fd4e38fce001e
+      internalID: 65996241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_64
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 398
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38a7a118953f2674e9488910cf5e71e1
+      internalID: 334707812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_65
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 398
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a110c2a58e5484e42908717fec1e0c94
+      internalID: -171963730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_66
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 398
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3fb4325e796a3349aebb97e347729e7
+      internalID: -1602187426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_67
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 398
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20113da6b632ff54fbc929e650c8b2e1
+      internalID: 15189919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_68
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 364
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b1de9ff40941ee4cbdf1817738219e8
+      internalID: 795522997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_69
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 364
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50ca91cb16ed5b7439142dd05739152d
+      internalID: -974481694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_70
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 364
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c2680ad4e0180b468c426ce2f7c6b2e
+      internalID: -124776403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_71
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 364
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d29edd23e87f96844879aa73f57480cf
+      internalID: 1368265164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_72
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 364
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e87b76339595c6846a35b895275c867e
+      internalID: -533799373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_73
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 364
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 688fa7d96ec205242b5f5d3442d283dd
+      internalID: -1515645610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_74
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 364
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c077c1a407a75674fab8e2f67c0fae39
+      internalID: -1084082320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_75
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 364
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 073ed1d95c39a5643873ecf6c03ef761
+      internalID: 1364308294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_76
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 364
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2f03597929c85f4ea2a249445c030e8
+      internalID: 157699362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_77
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 364
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15d6339f626edc945b9f8114c5cc781f
+      internalID: -235157858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_78
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 335
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d81ddf5747999e14ba65dfd848dc997c
+      internalID: 275988590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_79
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 335
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e2240b38a759ec47870f96efa5e937d
+      internalID: -509955611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_80
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 335
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85eda1ebea28cdd43b4b8289898aedfa
+      internalID: -373094255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_81
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 335
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f1ad2393a5ced941920c4c1188602ec
+      internalID: 345175703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_82
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 335
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53eea88d2d8bdaa4c9a43906916311cd
+      internalID: 123884614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_83
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 335
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 170428581e0a7ff46a4feb95b7c8e058
+      internalID: 404921977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_84
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 335
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 193f955c40cfda348999b4f85a478fbd
+      internalID: -1128526244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_85
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 335
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5695dd09caa0f1428cf5555f897face
+      internalID: 1416338211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_86
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 301
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3a2b9e692893f143b4058005740c329
+      internalID: -170768494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_87
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 301
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47deaefc75890044fbfee3070fab8e43
+      internalID: 1133754104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_88
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 301
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90dca507e2c2d9f43bcc2acf656fd7dd
+      internalID: -727404694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_89
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 301
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ef774bb6462e7843896a37f740e1ccc
+      internalID: -314858337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_90
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 301
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4058671bd8a3db04aa13b288827e3bd3
+      internalID: 356806571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_91
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 301
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51d46e2bc00e6884ab558597f7dba659
+      internalID: 1309940248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_92
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 268
+        width: 41
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 190072cf7090a8d4783eebb2fcb12100
+      internalID: -1531100962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_93
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 268
+        width: 33
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29994e8afcdfd184eba82b9d97e8f046
+      internalID: 792427562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_94
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 269
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b48d2f081b33394a8582af7a9d01f3f
+      internalID: -540301649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_95
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 269
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59ac84c216640e44ead8740ce8eaeb92
+      internalID: -31209208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_96
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 268
+        width: 33
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48a51ef309f4f1944ab8d6f9ec57b7d0
+      internalID: 1223341438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_97
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 268
+        width: 41
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d2f6957832d7eb4c9c4922ca305aebb
+      internalID: 1926509545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_98
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 237
+        width: 33
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0d571a35c91cf74ca66ab81cabfd434
+      internalID: 1819492243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_99
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 237
+        width: 44
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 331514ee29fdb3d49a8da1714c0322f0
+      internalID: 366751756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_100
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 237
+        width: 44
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd3cd0d7584ed754f85adf2d66b46eae
+      internalID: 2082064052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_101
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 237
+        width: 33
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9960e787fd640264d9009695a320c1da
+      internalID: 1915230137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_102
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 219
+        width: 32
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24ba5f7132cc56242a4fda60d1bf6b46
+      internalID: 1945523654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_103
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 218
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9675efa7606de204ca8103e36755e353
+      internalID: -654638295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_104
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 219
+        width: 27
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57e8de390b1019745ac4bfe4097617a6
+      internalID: 2120504152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_105
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 220
+        width: 21
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3abee10734c7fd54487e0ee87bf4f1fd
+      internalID: -1606363705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_106
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 220
+        width: 21
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c10db788a4cc6e42b005ea98816a888
+      internalID: 1402842729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_107
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 219
+        width: 27
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85446d2546de979419e227e52a0cddff
+      internalID: 1213282043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_108
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 218
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed04a7a429b89044a99a5d47272cfff2
+      internalID: 130641332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_109
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 219
+        width: 32
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16e5ff4adb15a114492034abb390348a
+      internalID: -908930545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_110
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 199
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4921ed515ad3274408365bd18b304f39
+      internalID: 1317900785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_111
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 199
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 332ca4499c86c574b90ccdd57c125eb8
+      internalID: 661935742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_112
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 199
+        width: 31
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0a777d7b1374ce4799540bd8f93933b
+      internalID: 1820325903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_113
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 199
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e347c22b1eef714aacb8a330729af2d
+      internalID: 1524498441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_114
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 199
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe337a94631ac8f4fb73e8dbdcad1ac3
+      internalID: -1634017509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_115
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 199
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6406dbb9b936da44392d7f315898d46f
+      internalID: -2125289057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_116
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 199
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edfc8c9a74232074896b6d8f7eae1faf
+      internalID: -11474314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_117
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 199
+        width: 31
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 120d3da25dd4a7844bc936de399d9efc
+      internalID: 1603649455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_118
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 199
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68fb393e93514f3448027997f6a61c8b
+      internalID: -709413460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_119
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 199
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6efd02f9aba0f54782e204ae5bb7f17
+      internalID: -1671632865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_120
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 153
+        width: 16
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f7d2a1e0b52be246962093e5c9aadee
+      internalID: 1121064208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_121
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 153
+        width: 16
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88e1df0aaa362f04aa8f622afe1a5c73
+      internalID: -1281831713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_122
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 153
+        width: 16
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b78261d7ee0a63047ba5276a655b50a0
+      internalID: -969258124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_123
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 153
+        width: 16
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45f0c3f46ba96d14c943e670aeb22f60
+      internalID: -989324748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_124
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 153
+        width: 16
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b401c3d57cf285647aea33c7cd0da086
+      internalID: -1534964385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_125
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 153
+        width: 16
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ec89ea6995629b40828099c7aa1d4f5
+      internalID: 682278249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_126
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 135
+        width: 31
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a93629f216a6c0b45a10d336c1fad792
+      internalID: -168931946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_127
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 135
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 118907765ac63eb47b955b88bf210d96
+      internalID: -1134155496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_128
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 135
+        width: 29
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 162ac7fa3ac5ba74b97796df05e035d3
+      internalID: -1389648423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_129
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 135
+        width: 29
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e1529435998a1c4cad58ae530321676
+      internalID: 678233983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_130
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 135
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26ad10e8fe9b1ba40827e0cfbe7ae52a
+      internalID: 1119294390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_131
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 135
+        width: 31
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 350e6b19dfb386344b06822c974c3421
+      internalID: 1867986823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_132
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 128
+        width: 23
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1a3e77558b81104589d4bdc2702a0ab
+      internalID: 449013860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_133
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 128
+        width: 23
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e05cedeb90486e64e8a39edc38e3a62e
+      internalID: 1742476186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_134
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 89
+        width: 5
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c42940f552239fa42a68bf70b7a99b94
+      internalID: 331866144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_135
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 108
+        width: 25
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a10972071141a444f8c7c91124c9c717
+      internalID: 1360701450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_136
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 108
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25fea98cf4f6c334e978a42174bcfcf7
+      internalID: 1132146932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_137
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 108
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b01f6d4e870038428999d416f558354
+      internalID: -185843640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_138
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 108
+        width: 25
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a21ecaf931ff6d4a86bc37d6896f348
+      internalID: 102506381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_139
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 89
+        width: 5
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85c731016b2cd1f439dc031f9c5eb54a
+      internalID: 1829394152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_140
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 89
+        width: 23
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 037d7170fb950cd4a9f446d1168a8bc3
+      internalID: 356523812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_141
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 89
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34218e6ad9635b345879c45a3581e129
+      internalID: 128886424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_142
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 89
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c40b03750b84d204fafcc003c42a36bb
+      internalID: -1061365637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_143
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 93
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30f2b629e9d950c4e8d9a2f7cc062d30
+      internalID: -369330269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_144
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 93
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d377c51653d9e0b45a957e5fb912d98c
+      internalID: 2135281758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_145
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 89
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8c11e70af3492d478753f83a26fedb7
+      internalID: -2056282534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_146
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 89
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b37ea9c80064eb745bf70b5aeead3a23
+      internalID: 139706720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_147
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 89
+        width: 23
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cfe4473f128cc84d91aa1efe407b330
+      internalID: 986266587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_148
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 57
+        width: 16
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77b5a1d4bdc2f6b4888ebc75aab30027
+      internalID: 203921682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_149
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 57
+        width: 15
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f98b672e6cf3024e912cb4357b03677
+      internalID: -1310232224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_150
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 57
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 791b2aa891ccd904d8e2ae6bc3b93bcb
+      internalID: -1184518169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_151
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 57
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7c2cde273d11b244af61433a479ad6d
+      internalID: -1375010726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_152
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 57
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4685e963f1edf65419c690805f592499
+      internalID: 154076915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_153
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 57
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd447267b6539f64d87ea7c93725b361
+      internalID: 1754277410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_154
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 57
+        width: 15
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f75e9ba9e307c4e4c8020b3bc4c9a55f
+      internalID: 1581100781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_155
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 57
+        width: 16
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e134c57f93be1c469cd4ba030f3bae1
+      internalID: -1538212945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_156
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 39
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8a1746165c6a7e46b483fe365993964
+      internalID: -1229771305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_157
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 39
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0378bda95c30794ebe47eff15daec75
+      internalID: 992617896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_158
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 39
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76352668ce5c71947ac9603ed53821b5
+      internalID: -1130765951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_159
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 39
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e9f81591f4dbc04896f19a192b475d7
+      internalID: 805715312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_160
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 39
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60ad855ef0340434bb9b636fd211116a
+      internalID: 2067285715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_161
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 39
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a115dfcb878a94499ed134db121d2c0
+      internalID: 2021736336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_162
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 39
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 210b4d7b32543434db5eb5a8f78c8256
+      internalID: 1245051927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_163
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 39
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5c9ac17753ff2d4a88d2417b506567b
+      internalID: 836154090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_164
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 39
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b57600f477815914bbb7232570ef40d7
+      internalID: 550061264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_165
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 39
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 928e2f2fa5115bf47b39c7b6442c080c
+      internalID: 39301472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_166
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 21
+        width: 22
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a579c39356dcb147a35167d78ed1e13
+      internalID: 354718625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_167
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 21
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8d3fef604264aa4295ea8a338feb660
+      internalID: -1334389454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_168
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 21
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e307b3640f91da04482744be8c52d4e5
+      internalID: 1011888218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_169
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 21
+        width: 22
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c914a7f83d5b4d469d73b6c4bb2449a
+      internalID: 1246567989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_170
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 2
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78197575ccfa62f4da850aa95e5da737
+      internalID: -574134485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_171
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 2
+        width: 21
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0abadbd862ef05c42a8e144c781886df
+      internalID: 371530363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_172
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 2
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea52583312bae6146b19665304118d17
+      internalID: 1304695641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_173
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 2
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d08d6875f1989184eb1ad1c5fd7b977f
+      internalID: -1944287521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_174
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 2
+        width: 21
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 903dfa22c5b54d34c9a08ba4c1619494
+      internalID: 1514691945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Ghosts n Goblins - Enemies_175
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 2
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f6555f44344aa64f9209a1b4cd8aa35
+      internalID: -1776016098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Arcade - Ghosts n Goblins - Enemies_0: 796115873
+      Arcade - Ghosts n Goblins - Enemies_1: 1209263480
+      Arcade - Ghosts n Goblins - Enemies_10: -1423714995
+      Arcade - Ghosts n Goblins - Enemies_100: 2082064052
+      Arcade - Ghosts n Goblins - Enemies_101: 1915230137
+      Arcade - Ghosts n Goblins - Enemies_102: 1945523654
+      Arcade - Ghosts n Goblins - Enemies_103: -654638295
+      Arcade - Ghosts n Goblins - Enemies_104: 2120504152
+      Arcade - Ghosts n Goblins - Enemies_105: -1606363705
+      Arcade - Ghosts n Goblins - Enemies_106: 1402842729
+      Arcade - Ghosts n Goblins - Enemies_107: 1213282043
+      Arcade - Ghosts n Goblins - Enemies_108: 130641332
+      Arcade - Ghosts n Goblins - Enemies_109: -908930545
+      Arcade - Ghosts n Goblins - Enemies_11: 497834540
+      Arcade - Ghosts n Goblins - Enemies_110: 1317900785
+      Arcade - Ghosts n Goblins - Enemies_111: 661935742
+      Arcade - Ghosts n Goblins - Enemies_112: 1820325903
+      Arcade - Ghosts n Goblins - Enemies_113: 1524498441
+      Arcade - Ghosts n Goblins - Enemies_114: -1634017509
+      Arcade - Ghosts n Goblins - Enemies_115: -2125289057
+      Arcade - Ghosts n Goblins - Enemies_116: -11474314
+      Arcade - Ghosts n Goblins - Enemies_117: 1603649455
+      Arcade - Ghosts n Goblins - Enemies_118: -709413460
+      Arcade - Ghosts n Goblins - Enemies_119: -1671632865
+      Arcade - Ghosts n Goblins - Enemies_12: -1590888440
+      Arcade - Ghosts n Goblins - Enemies_120: 1121064208
+      Arcade - Ghosts n Goblins - Enemies_121: -1281831713
+      Arcade - Ghosts n Goblins - Enemies_122: -969258124
+      Arcade - Ghosts n Goblins - Enemies_123: -989324748
+      Arcade - Ghosts n Goblins - Enemies_124: -1534964385
+      Arcade - Ghosts n Goblins - Enemies_125: 682278249
+      Arcade - Ghosts n Goblins - Enemies_126: -168931946
+      Arcade - Ghosts n Goblins - Enemies_127: -1134155496
+      Arcade - Ghosts n Goblins - Enemies_128: -1389648423
+      Arcade - Ghosts n Goblins - Enemies_129: 678233983
+      Arcade - Ghosts n Goblins - Enemies_13: -2142754208
+      Arcade - Ghosts n Goblins - Enemies_130: 1119294390
+      Arcade - Ghosts n Goblins - Enemies_131: 1867986823
+      Arcade - Ghosts n Goblins - Enemies_132: 449013860
+      Arcade - Ghosts n Goblins - Enemies_133: 1742476186
+      Arcade - Ghosts n Goblins - Enemies_134: 331866144
+      Arcade - Ghosts n Goblins - Enemies_135: 1360701450
+      Arcade - Ghosts n Goblins - Enemies_136: 1132146932
+      Arcade - Ghosts n Goblins - Enemies_137: -185843640
+      Arcade - Ghosts n Goblins - Enemies_138: 102506381
+      Arcade - Ghosts n Goblins - Enemies_139: 1829394152
+      Arcade - Ghosts n Goblins - Enemies_14: 1978755884
+      Arcade - Ghosts n Goblins - Enemies_140: 356523812
+      Arcade - Ghosts n Goblins - Enemies_141: 128886424
+      Arcade - Ghosts n Goblins - Enemies_142: -1061365637
+      Arcade - Ghosts n Goblins - Enemies_143: -369330269
+      Arcade - Ghosts n Goblins - Enemies_144: 2135281758
+      Arcade - Ghosts n Goblins - Enemies_145: -2056282534
+      Arcade - Ghosts n Goblins - Enemies_146: 139706720
+      Arcade - Ghosts n Goblins - Enemies_147: 986266587
+      Arcade - Ghosts n Goblins - Enemies_148: 203921682
+      Arcade - Ghosts n Goblins - Enemies_149: -1310232224
+      Arcade - Ghosts n Goblins - Enemies_15: 732805720
+      Arcade - Ghosts n Goblins - Enemies_150: -1184518169
+      Arcade - Ghosts n Goblins - Enemies_151: -1375010726
+      Arcade - Ghosts n Goblins - Enemies_152: 154076915
+      Arcade - Ghosts n Goblins - Enemies_153: 1754277410
+      Arcade - Ghosts n Goblins - Enemies_154: 1581100781
+      Arcade - Ghosts n Goblins - Enemies_155: -1538212945
+      Arcade - Ghosts n Goblins - Enemies_156: -1229771305
+      Arcade - Ghosts n Goblins - Enemies_157: 992617896
+      Arcade - Ghosts n Goblins - Enemies_158: -1130765951
+      Arcade - Ghosts n Goblins - Enemies_159: 805715312
+      Arcade - Ghosts n Goblins - Enemies_16: 1688171374
+      Arcade - Ghosts n Goblins - Enemies_160: 2067285715
+      Arcade - Ghosts n Goblins - Enemies_161: 2021736336
+      Arcade - Ghosts n Goblins - Enemies_162: 1245051927
+      Arcade - Ghosts n Goblins - Enemies_163: 836154090
+      Arcade - Ghosts n Goblins - Enemies_164: 550061264
+      Arcade - Ghosts n Goblins - Enemies_165: 39301472
+      Arcade - Ghosts n Goblins - Enemies_166: 354718625
+      Arcade - Ghosts n Goblins - Enemies_167: -1334389454
+      Arcade - Ghosts n Goblins - Enemies_168: 1011888218
+      Arcade - Ghosts n Goblins - Enemies_169: 1246567989
+      Arcade - Ghosts n Goblins - Enemies_17: -246755924
+      Arcade - Ghosts n Goblins - Enemies_170: -574134485
+      Arcade - Ghosts n Goblins - Enemies_171: 371530363
+      Arcade - Ghosts n Goblins - Enemies_172: 1304695641
+      Arcade - Ghosts n Goblins - Enemies_173: -1944287521
+      Arcade - Ghosts n Goblins - Enemies_174: 1514691945
+      Arcade - Ghosts n Goblins - Enemies_175: -1776016098
+      Arcade - Ghosts n Goblins - Enemies_18: -1601996311
+      Arcade - Ghosts n Goblins - Enemies_19: -417402665
+      Arcade - Ghosts n Goblins - Enemies_2: 368663151
+      Arcade - Ghosts n Goblins - Enemies_20: -212797141
+      Arcade - Ghosts n Goblins - Enemies_21: -854352413
+      Arcade - Ghosts n Goblins - Enemies_22: -1804601143
+      Arcade - Ghosts n Goblins - Enemies_23: -1712770885
+      Arcade - Ghosts n Goblins - Enemies_24: -720155900
+      Arcade - Ghosts n Goblins - Enemies_25: 1502182112
+      Arcade - Ghosts n Goblins - Enemies_26: 74562908
+      Arcade - Ghosts n Goblins - Enemies_27: -691382138
+      Arcade - Ghosts n Goblins - Enemies_28: 1758249275
+      Arcade - Ghosts n Goblins - Enemies_29: -1799917970
+      Arcade - Ghosts n Goblins - Enemies_3: 288920862
+      Arcade - Ghosts n Goblins - Enemies_30: 555626062
+      Arcade - Ghosts n Goblins - Enemies_31: 657435855
+      Arcade - Ghosts n Goblins - Enemies_32: 1045067824
+      Arcade - Ghosts n Goblins - Enemies_33: 1136188419
+      Arcade - Ghosts n Goblins - Enemies_34: -241264751
+      Arcade - Ghosts n Goblins - Enemies_35: 394119947
+      Arcade - Ghosts n Goblins - Enemies_36: 1491600308
+      Arcade - Ghosts n Goblins - Enemies_37: 673843971
+      Arcade - Ghosts n Goblins - Enemies_38: -2077534732
+      Arcade - Ghosts n Goblins - Enemies_39: 639610059
+      Arcade - Ghosts n Goblins - Enemies_4: 1885457255
+      Arcade - Ghosts n Goblins - Enemies_40: -1998408204
+      Arcade - Ghosts n Goblins - Enemies_41: -138789581
+      Arcade - Ghosts n Goblins - Enemies_42: -1159510677
+      Arcade - Ghosts n Goblins - Enemies_43: -651445975
+      Arcade - Ghosts n Goblins - Enemies_44: 124545606
+      Arcade - Ghosts n Goblins - Enemies_45: 1285024550
+      Arcade - Ghosts n Goblins - Enemies_46: -620456564
+      Arcade - Ghosts n Goblins - Enemies_47: -68234708
+      Arcade - Ghosts n Goblins - Enemies_48: 469659598
+      Arcade - Ghosts n Goblins - Enemies_49: -1911179425
+      Arcade - Ghosts n Goblins - Enemies_5: 1013939875
+      Arcade - Ghosts n Goblins - Enemies_50: 2137692926
+      Arcade - Ghosts n Goblins - Enemies_51: 868726811
+      Arcade - Ghosts n Goblins - Enemies_52: 2036075863
+      Arcade - Ghosts n Goblins - Enemies_53: -1727835926
+      Arcade - Ghosts n Goblins - Enemies_54: -39665505
+      Arcade - Ghosts n Goblins - Enemies_55: -1469307400
+      Arcade - Ghosts n Goblins - Enemies_56: 1361949325
+      Arcade - Ghosts n Goblins - Enemies_57: -1073892571
+      Arcade - Ghosts n Goblins - Enemies_58: -362826901
+      Arcade - Ghosts n Goblins - Enemies_59: -1415563307
+      Arcade - Ghosts n Goblins - Enemies_6: -628954218
+      Arcade - Ghosts n Goblins - Enemies_60: 1489395184
+      Arcade - Ghosts n Goblins - Enemies_61: -1570218040
+      Arcade - Ghosts n Goblins - Enemies_62: -1717730416
+      Arcade - Ghosts n Goblins - Enemies_63: 65996241
+      Arcade - Ghosts n Goblins - Enemies_64: 334707812
+      Arcade - Ghosts n Goblins - Enemies_65: -171963730
+      Arcade - Ghosts n Goblins - Enemies_66: -1602187426
+      Arcade - Ghosts n Goblins - Enemies_67: 15189919
+      Arcade - Ghosts n Goblins - Enemies_68: 795522997
+      Arcade - Ghosts n Goblins - Enemies_69: -974481694
+      Arcade - Ghosts n Goblins - Enemies_7: 77645988
+      Arcade - Ghosts n Goblins - Enemies_70: -124776403
+      Arcade - Ghosts n Goblins - Enemies_71: 1368265164
+      Arcade - Ghosts n Goblins - Enemies_72: -533799373
+      Arcade - Ghosts n Goblins - Enemies_73: -1515645610
+      Arcade - Ghosts n Goblins - Enemies_74: -1084082320
+      Arcade - Ghosts n Goblins - Enemies_75: 1364308294
+      Arcade - Ghosts n Goblins - Enemies_76: 157699362
+      Arcade - Ghosts n Goblins - Enemies_77: -235157858
+      Arcade - Ghosts n Goblins - Enemies_78: 275988590
+      Arcade - Ghosts n Goblins - Enemies_79: -509955611
+      Arcade - Ghosts n Goblins - Enemies_8: 1227000465
+      Arcade - Ghosts n Goblins - Enemies_80: -373094255
+      Arcade - Ghosts n Goblins - Enemies_81: 345175703
+      Arcade - Ghosts n Goblins - Enemies_82: 123884614
+      Arcade - Ghosts n Goblins - Enemies_83: 404921977
+      Arcade - Ghosts n Goblins - Enemies_84: -1128526244
+      Arcade - Ghosts n Goblins - Enemies_85: 1416338211
+      Arcade - Ghosts n Goblins - Enemies_86: -170768494
+      Arcade - Ghosts n Goblins - Enemies_87: 1133754104
+      Arcade - Ghosts n Goblins - Enemies_88: -727404694
+      Arcade - Ghosts n Goblins - Enemies_89: -314858337
+      Arcade - Ghosts n Goblins - Enemies_9: 101767440
+      Arcade - Ghosts n Goblins - Enemies_90: 356806571
+      Arcade - Ghosts n Goblins - Enemies_91: 1309940248
+      Arcade - Ghosts n Goblins - Enemies_92: -1531100962
+      Arcade - Ghosts n Goblins - Enemies_93: 792427562
+      Arcade - Ghosts n Goblins - Enemies_94: -540301649
+      Arcade - Ghosts n Goblins - Enemies_95: -31209208
+      Arcade - Ghosts n Goblins - Enemies_96: 1223341438
+      Arcade - Ghosts n Goblins - Enemies_97: 1926509545
+      Arcade - Ghosts n Goblins - Enemies_98: 1819492243
+      Arcade - Ghosts n Goblins - Enemies_99: 366751756
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
