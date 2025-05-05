@@ -383,7 +383,7 @@ TextureImporter:
       name: Arcade - Ghosts n Goblins - Enemies_11
       rect:
         serializedVersion: 2
-        x: 139
+        x: 141
         y: 506
         width: 21
         height: 32
@@ -572,8 +572,8 @@ TextureImporter:
       name: Arcade - Ghosts n Goblins - Enemies_20
       rect:
         serializedVersion: 2
-        x: 354
-        y: 506
+        x: 355
+        y: 507
         width: 21
         height: 32
       alignment: 0
@@ -594,7 +594,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 381
-        y: 506
+        y: 507
         width: 21
         height: 32
       alignment: 0
