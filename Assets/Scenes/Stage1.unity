@@ -179,6 +179,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 613b3045884fba441ab7225913e02dda, type: 3}
+--- !u!70 &90686802 stripped
+CapsuleCollider2D:
+  m_CorrespondingSourceObject: {fileID: 5650353217089207840, guid: ac0fd9081c3602540833b1f052ea6ba6, type: 3}
+  m_PrefabInstance: {fileID: 1154760967}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &195644955
 GameObject:
   m_ObjectHideFlags: 0
@@ -366,10 +371,12 @@ GameObject:
   - component: {fileID: 603005012}
   - component: {fileID: 603005014}
   - component: {fileID: 603005013}
-  - component: {fileID: 603005015}
-  m_Layer: 0
+  - component: {fileID: 603005016}
+  - component: {fileID: 603005018}
+  - component: {fileID: 603005017}
+  m_Layer: 7
   m_Name: Tumbas
-  m_TagString: Untagged
+  m_TagString: Tumbas
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -580,8 +587,21 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!19719996 &603005015
-TilemapCollider2D:
+--- !u!114 &603005016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603005011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84328eee0b281a143a2f304caf484835, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zombiCollider: {fileID: 90686802}
+--- !u!66 &603005017
+CompositeCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -613,9 +633,43 @@ TilemapCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_MaximumTileChangeCount: 1000
-  m_ExtrusionFactor: 0
+  m_GeometryType: 0
+  m_GenerationType: 0
+  m_EdgeRadius: 0
+  m_ColliderPaths: []
+  m_CompositePaths:
+    m_Paths: []
+  m_VertexDistance: 0.0005
+  m_OffsetDistance: 0.00005
   m_UseDelaunayMesh: 0
+  m_CompositeGameObject: {fileID: 603005011}
+--- !u!50 &603005018
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603005011}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1001 &963736995
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -695,7 +749,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2340036035089610397, guid: ac0fd9081c3602540833b1f052ea6ba6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -33.68782
+      value: -29.5
       objectReference: {fileID: 0}
     - target: {fileID: 2340036035089610397, guid: ac0fd9081c3602540833b1f052ea6ba6, type: 3}
       propertyPath: m_LocalPosition.y
@@ -737,6 +791,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: zombi
       objectReference: {fileID: 0}
+    - target: {fileID: 3298875960034906453, guid: ac0fd9081c3602540833b1f052ea6ba6, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3298875960034906453, guid: ac0fd9081c3602540833b1f052ea6ba6, type: 3}
+      propertyPath: m_TagString
+      value: Zombi
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650353217089207840, guid: ac0fd9081c3602540833b1f052ea6ba6, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650353217089207840, guid: ac0fd9081c3602540833b1f052ea6ba6, type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650353217089207840, guid: ac0fd9081c3602540833b1f052ea6ba6, type: 3}
+      propertyPath: m_IncludeLayers.m_Bits
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650353217089207840, guid: ac0fd9081c3602540833b1f052ea6ba6, type: 3}
+      propertyPath: m_LayerOverridePriority
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7838559311083388142, guid: ac0fd9081c3602540833b1f052ea6ba6, type: 3}
       propertyPath: timeAnim1
       value: 7
@@ -744,6 +822,10 @@ PrefabInstance:
     - target: {fileID: 7838559311083388142, guid: ac0fd9081c3602540833b1f052ea6ba6, type: 3}
       propertyPath: timeAnim2
       value: 7.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9027422970701843895, guid: ac0fd9081c3602540833b1f052ea6ba6, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

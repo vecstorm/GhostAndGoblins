@@ -52,4 +52,5 @@ public class ZombiController : MonoBehaviour
     {
         speed = 0f;
     }
+
 }

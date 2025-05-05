@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5650353217089207840}
   - component: {fileID: 3123465451251591342}
   - component: {fileID: 7838559311083388142}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: zombi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -184,7 +184,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0
-  timeAnim1: 3
-  timeAnim2: 3.1
-  timeCaminar: 0.7
+  timeAnim1: 7
+  timeAnim2: 7.1
   animator: {fileID: 3123465451251591342}
