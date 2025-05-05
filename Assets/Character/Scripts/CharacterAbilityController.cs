@@ -10,6 +10,8 @@ public class CharacterAbilityController : MonoBehaviour
     [SerializeField]
     Transform shootSpawnPoint;
     InputAction shoot;
+    [SerializeField]
+    float coolDownShoot;
 
 
     void Start()
@@ -23,6 +25,7 @@ public class CharacterAbilityController : MonoBehaviour
     {
         if(shoot.triggered){
             Disparar();
+
         }
     }
 
@@ -31,6 +34,8 @@ public class CharacterAbilityController : MonoBehaviour
         Instantiate(bullet, shootSpawnPoint.position, shootSpawnPoint.rotation);  
 
     }
+
+    
 
 
 }

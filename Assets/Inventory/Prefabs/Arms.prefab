@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5240307127624033194}
   - component: {fileID: 2246777076887815639}
   - component: {fileID: 8621184006654219072}
+  - component: {fileID: 5833991555587074559}
   m_Layer: 0
   m_Name: Arms
   m_TagString: Untagged
@@ -29,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.70270574, y: 1.8880157, z: 0.08015878}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -109,16 +110,16 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 0}
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 1601417305, guid: 62e90d0773b339d49afb3c64db093c99, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.96666664, y: 0.2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &8621184006654219072
@@ -133,4 +134,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f61a6ebdae3d4e438def72d05c28ced, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 0}
+  item: {fileID: 11400000, guid: 65ede58e153b6324dacfb5ce1729da45, type: 2}
+--- !u!114 &5833991555587074559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6163902674521809381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77099380d047c1048a05f7dbaed0bd98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 7
+  damage: 1
