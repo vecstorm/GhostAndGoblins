@@ -33,7 +33,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.89, y: -0.026, z: 0.027152617}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7714865204345658796}
@@ -200,7 +200,7 @@ MonoBehaviour:
   velocidadEscalar: 4
   floorLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 192
 --- !u!114 &8442303414932496102
 MonoBehaviour:
   m_ObjectHideFlags: 0
