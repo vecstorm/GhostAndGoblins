@@ -1,7 +1,8 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.EnhancedTouch;
 
 public class MovimientoJugador : MonoBehaviour
 {
@@ -16,12 +17,12 @@ public class MovimientoJugador : MonoBehaviour
     private Vector3 velocidad = Vector3.zero;
     private bool mirandoDerecha = true;
     public InputActionAsset inputActionsMapping;
-    InputAction horizontal_ia, jump_ia, vertical_ia;
+    InputAction horizontal_ia, jump_ia, vertical_ia, crouch_ia;
 
     [Header("Salto")]
     [SerializeField] private float fuerzaDeSalto;
     [SerializeField] private LayerMask queEsSuelo;
-    [SerializeField] private Transform controladorSuelo;
+    [SerializeField] private Transform rayCastOrigin;
     [SerializeField] private Vector3 dimensionesCaja;
     [SerializeField] private bool enSuelo;
     private bool salto = false;
@@ -40,6 +41,8 @@ public class MovimientoJugador : MonoBehaviour
     private bool canDescend = false;
     private bool ignoringFloor = false;
 
+    private bool puedeMoverseEnHorizontal;
+
 
 
     void Awake()
@@ -47,6 +50,7 @@ public class MovimientoJugador : MonoBehaviour
         inputActionsMapping.Enable();
         horizontal_ia = inputActionsMapping.FindActionMap("Movement").FindAction("Horizontal");
         jump_ia = inputActionsMapping.FindActionMap("Movement").FindAction("Jump");
+        crouch_ia = inputActionsMapping.FindActionMap("Movement").FindAction("Crouch");
         vertical_ia = inputActionsMapping.FindActionMap("Stairs").FindAction("Vertical");
 
         rb2D = GetComponent<Rigidbody2D>();
@@ -61,49 +65,68 @@ public class MovimientoJugador : MonoBehaviour
 
     void Update()
     {
-
-        
         input.x = horizontal_ia.ReadValue<float>();
         input.y = vertical_ia.ReadValue<float>();
 
+        Crouch(); 
 
-        movimientoHorizontal = input.x * velocidadDeMovimiento;
-
-        animator.SetFloat("MovementX", Mathf.Abs(rb2D.velocity.x));
-        animator.SetBool("OnStairs", false);
-
-        
-
-        if(jump_ia.triggered){
+        if (jump_ia.triggered && enSuelo)
+        {
             salto = true;
             animator.SetBool("IsJumping", true);
         }
+        if(escalando && !puedeMoverseEnHorizontal)
+        {
+            movimientoHorizontal = 0f;
+        }
+        else
+        {
+            movimientoHorizontal = input.x * velocidadDeMovimiento;
+        }
     }
+
 
     void FixedUpdate()
     {
-        enSuelo = Physics2D.OverlapBox(controladorSuelo.position, dimensionesCaja, 0f, queEsSuelo);
-        //Movimiento
+        DetectarSuelo(); // ✅ actualiza correctamente 'enSuelo'
+
         Mover(movimientoHorizontal * Time.fixedDeltaTime, salto);
+        animator.SetFloat("MovementX", Mathf.Abs(rb2D.velocity.x));
 
         Escalar();
 
         salto = false;
-
+        animator.SetBool("IsJumping", !enSuelo);
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    void DetectarSuelo()
     {
-        if (other.CompareTag("TopStairs"))
+        RaycastHit2D hit = Physics2D.BoxCast(rayCastOrigin.position, dimensionesCaja, 0f, Vector2.down, 0.1f, queEsSuelo);
+        enSuelo = hit.collider != null;
+    }
+
+
+
+
+
+    private void OnTriggerEnter2D(Collider2D colision)
+    {
+        if (colision.CompareTag("TopStairs"))
         {
             canDescend = true;
-            animator.SetBool("OnTopStairs", true);
+            animator.SetBool("OnTopStairs", true); // <- esto activa transición a GetUpStairs
+        }
+        if (colision.CompareTag("UpperStairs"))
+        {
+            puedeMoverseEnHorizontal = true;
+
         }
     }
 
-    private void OnTriggerExit2D(Collider2D other)
+
+    private void OnTriggerExit2D(Collider2D colision)
     {
-        if (other.CompareTag("TopStairs"))
+        if (colision.CompareTag("TopStairs"))
         {
             canDescend = false;
             animator.SetBool("OnTopStairs", false);
@@ -125,19 +148,22 @@ public class MovimientoJugador : MonoBehaviour
                 ignoringFloor = true;
             }
 
-            Vector2 velocidadDeSubida = new Vector2(rb2D.velocity.x, input.y * velocidadEscalar);
+            Vector2 velocidadDeSubida = new Vector2(0f, input.y * velocidadEscalar);// movimiento de subir y bajar escaleras, el movimiento horizontal se desactiva
             rb2D.velocity = velocidadDeSubida;
             rb2D.gravityScale = 0;
             escalando = true;
+            animator.SetBool("OnStairs", true);
+            
+
         }
         else
         {
             ResetFloorCollision();
             rb2D.gravityScale = gravedadInicial;
             escalando = false;
+            animator.SetBool("OnStairs", false);
         }
 
-        animator.SetBool("OnStairs", escalando);
     }
 
     void ResetFloorCollision()
@@ -150,30 +176,38 @@ public class MovimientoJugador : MonoBehaviour
     }
 
 
-    void Mover(float mover, bool saltar){
+    void Mover(float mover, bool saltar)
+    {
         Vector3 velocidadObjetivo = new Vector2(mover, rb2D.velocity.y);
         rb2D.velocity = Vector3.SmoothDamp(rb2D.velocity, velocidadObjetivo, ref velocidad, suavizadoDeMovimiento);
 
-        if(mover > 0 && !mirandoDerecha)
-        {
-            Girar();
+        if (mover > 0 && !mirandoDerecha) Girar();
+        else if (mover < 0 && mirandoDerecha) Girar();
 
-        }
-        else if(mover < 0 && mirandoDerecha)
+        if (saltar && enSuelo)
         {
-            Girar();
-
-        }
-        if(enSuelo && saltar){
             enSuelo = false;
-            animator.SetBool("IsJumping", false);
+            animator.SetBool("IsJumping", true);
             rb2D.AddForce(new Vector2(0f, fuerzaDeSalto));
         }
     }
 
+
     void Girar(){
         mirandoDerecha = !mirandoDerecha;
         transform.eulerAngles = new Vector3(0, transform.eulerAngles.y + 180, 0);
+    }
+
+    void Crouch()
+    {
+        if (crouch_ia.triggered)
+        {
+            animator.SetBool("IsCrouching", true);
+        }
+        else
+        {
+            animator.SetBool("IsCrouching", false);
+        }
     }
 
 

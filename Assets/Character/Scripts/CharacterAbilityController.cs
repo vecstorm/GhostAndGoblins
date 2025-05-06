@@ -10,12 +10,18 @@ public class CharacterAbilityController : MonoBehaviour
     [SerializeField]
     Transform shootSpawnPoint;
     InputAction shoot;
+    [SerializeField]
+    float coolDownShoot;
+
+    public InputActionAsset inputActionMapping;
+    private Animator animator;
 
 
     void Start()
     {
         MovimientoJugador c = GetComponent<MovimientoJugador>();
         shoot = c.inputActionsMapping.FindActionMap("Attack").FindAction("Shoot");
+        animator = GetComponent<Animator>();
 
     }
 
@@ -23,6 +29,11 @@ public class CharacterAbilityController : MonoBehaviour
     {
         if(shoot.triggered){
             Disparar();
+            animator.SetBool("IsShooting", true);
+        }
+        else
+        {
+            animator.SetBool("IsShooting", false);
         }
     }
 
@@ -31,6 +42,8 @@ public class CharacterAbilityController : MonoBehaviour
         Instantiate(bullet, shootSpawnPoint.position, shootSpawnPoint.rotation);  
 
     }
+
+    
 
 
 }

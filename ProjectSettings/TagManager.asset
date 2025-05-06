@@ -3,13 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Floor
-  - Stairs
-  - TopStairs
-  - TerrenoAtravesable
-  - Tumbas
-  - Zombi
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -17,10 +11,8 @@ TagManager:
   - 
   - Water
   - UI
-  - Floor
-  - Stairs
-  - Enemigos
-  - Tumbas
+  - 
+  - 
   - 
   - 
   - 
@@ -46,9 +38,6 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Background
-    uniqueID: 1594310571
-    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
