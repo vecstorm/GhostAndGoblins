@@ -9,14 +9,12 @@ public class tumbaController : MonoBehaviour
 
     void Start()
     {
-        // Asegurarse de obtener el CompositeCollider2D
-        CompositeCollider2D tumbasCollider = GetComponent<CompositeCollider2D>();
+        
+        int tumbasLayer = LayerMask.NameToLayer("Tumbas");
+        int enemigosLayer = LayerMask.NameToLayer("Enemigos");
 
-        // Ignorar colisión si ambos colliders existen
-        if (tumbasCollider != null && zombiCollider != null)
-        {
-            Physics2D.IgnoreCollision(tumbasCollider, zombiCollider);
-        }
+        
+        Physics2D.IgnoreLayerCollision(tumbasLayer, enemigosLayer, true);
     }
 
     // Update is called once per frame
