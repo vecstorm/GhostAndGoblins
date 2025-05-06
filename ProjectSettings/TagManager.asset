@@ -9,6 +9,7 @@ TagManager:
   - TopStairs
   - TerrenoAtravesable
   - Enemy
+  - UpperStairs
   layers:
   - Default
   - TransparentFX
