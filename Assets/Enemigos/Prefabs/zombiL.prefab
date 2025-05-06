@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 9027422970701843895}
   - component: {fileID: 5650353217089207840}
   - component: {fileID: 3123465451251591342}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: zombiL
   m_TagString: Untagged
   m_Icon: {fileID: 0}

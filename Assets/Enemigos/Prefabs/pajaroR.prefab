@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 5513689937659742349}
   - component: {fileID: 9189532372475888858}
   - component: {fileID: 4716109901895424763}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: pajaroR
-  m_TagString: Untagged
+  m_TagString: Zombi
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

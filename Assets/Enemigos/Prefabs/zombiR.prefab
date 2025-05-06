@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 5650353217089207840}
   - component: {fileID: 3123465451251591342}
   - component: {fileID: 7838559311083388142}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: zombiR
-  m_TagString: Untagged
+  m_TagString: Zombi
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
