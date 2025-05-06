@@ -4,10 +4,15 @@
 TagManager:
   serializedVersion: 2
   tags:
+<<<<<<< HEAD
   - Floor
   - Stairs
   - TopStairs
   - TerrenoAtravesable
+=======
+  - Tumbas
+  - Zombi
+>>>>>>> Zombi
   layers:
   - Default
   - TransparentFX
@@ -15,8 +20,13 @@ TagManager:
   - 
   - Water
   - UI
+<<<<<<< HEAD
   - Floor
   - Stairs
+=======
+  - Enemigos
+  - Tumbas
+>>>>>>> Zombi
   - 
   - 
   - 

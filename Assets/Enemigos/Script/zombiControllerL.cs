@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ZombiController : MonoBehaviour
+public class ZombiControllerL : MonoBehaviour
 {
 
     [SerializeField]
@@ -29,7 +29,7 @@ public class ZombiController : MonoBehaviour
 
     void Update()
     {
-        rb2D.velocity = new Vector2((speed * 2) * dir, 0f);
+        rb2D.velocity = new Vector2((speed * 2) * (-1 * dir), 0f);
     }
 
     public void Desaparecer()
