@@ -194,7 +194,7 @@ MonoBehaviour:
   queEsSuelo:
     serializedVersion: 2
     m_Bits: 64
-  controladorSuelo: {fileID: 7714865204345658796}
+  rayCastOrigin: {fileID: 7714865204345658796}
   dimensionesCaja: {x: 1, y: 1, z: 0}
   enSuelo: 0
   velocidadEscalar: 4
@@ -234,6 +234,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 5426893460653751244, guid: 1461ede1910757145bab281e5c288766, type: 3}
   shootSpawnPoint: {fileID: 6220991120358418221}
+  coolDownShoot: 0
+  inputActionMapping: {fileID: 0}
 --- !u!1 &3016807039860168887
 GameObject:
   m_ObjectHideFlags: 0
