@@ -10,6 +10,7 @@ public class Enemy : MonoBehaviour
     GameObject enemyDied;
 
     public void Damage(float damage){
+
         life -= damage;
         if(life <= 0){
             Muerte();

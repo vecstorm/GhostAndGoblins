@@ -11,13 +11,11 @@ public class PlayerWeaponController : MonoBehaviour
     public Sprite defaultSprite;
     public Sprite lanzaSprite;
     public Sprite dagaSprite;
-    public Sprite antorchaSprite;
-    public Sprite hachaSprite;
-    public Sprite escudoSprite;
+
 
     private string currentWeapon = "";
 
-    enum ARMAS { LANZA, HACHA, DAGA, ANTORCHA}
+    enum ARMAS { LANZA, DAGA}
 
     void Awake()
     {
@@ -47,15 +45,6 @@ public class PlayerWeaponController : MonoBehaviour
                 break;
             case "Daga":
                 heldItemImage.sprite = dagaSprite;
-                break;
-            case "Antorcha":
-                heldItemImage.sprite = antorchaSprite;
-                break;
-            case "Hacha":
-                heldItemImage.sprite = hachaSprite;
-                break;
-            case "Escudo":
-                heldItemImage.sprite = escudoSprite;
                 break;
             default:
                 heldItemImage.sprite = defaultSprite;

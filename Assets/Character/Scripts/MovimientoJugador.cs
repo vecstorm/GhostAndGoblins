@@ -75,7 +75,7 @@ public class MovimientoJugador : MonoBehaviour
             salto = true;
             animator.SetBool("IsJumping", true);
         }
-        if(escalando && !puedeMoverseEnHorizontal)
+        if (escalando && !puedeMoverseEnHorizontal)
         {
             movimientoHorizontal = 0f;
         }
@@ -83,12 +83,13 @@ public class MovimientoJugador : MonoBehaviour
         {
             movimientoHorizontal = input.x * velocidadDeMovimiento;
         }
+
     }
 
 
     void FixedUpdate()
     {
-        DetectarSuelo(); // ✅ actualiza correctamente 'enSuelo'
+        DetectarSuelo(); 
 
         Mover(movimientoHorizontal * Time.fixedDeltaTime, salto);
         animator.SetFloat("MovementX", Mathf.Abs(rb2D.velocity.x));
@@ -132,6 +133,11 @@ public class MovimientoJugador : MonoBehaviour
             animator.SetBool("OnTopStairs", false);
             ResetFloorCollision();
         }
+        if (colision.CompareTag("UpperStairs"))
+        {
+            puedeMoverseEnHorizontal = false;
+
+        }
     }
 
     void Escalar()
@@ -148,11 +154,26 @@ public class MovimientoJugador : MonoBehaviour
                 ignoringFloor = true;
             }
 
-            Vector2 velocidadDeSubida = new Vector2(0f, input.y * velocidadEscalar);// movimiento de subir y bajar escaleras, el movimiento horizontal se desactiva
-            rb2D.velocity = velocidadDeSubida;
-            rb2D.gravityScale = 0;
-            escalando = true;
-            animator.SetBool("OnStairs", true);
+            if(!enSuelo && !puedeMoverseEnHorizontal)
+            {
+                Vector2 velocidadDeSubida = new Vector2(0f, input.y * velocidadEscalar);// movimiento de subir y bajar escaleras, el movimiento horizontal se desactiva
+                rb2D.velocity = velocidadDeSubida;
+                rb2D.gravityScale = 0;
+                escalando = true;
+                animator.SetBool("OnStairs", true);
+            }
+            else
+            {
+                Vector2 velocidadDeSubida = new Vector2(input.x * velocidadEscalar, input.y * velocidadEscalar);// movimiento de subir y bajar escaleras, el movimiento horizontal se desactiva
+                rb2D.velocity = velocidadDeSubida;
+                rb2D.gravityScale = 0;
+                escalando = false;
+                animator.SetBool("OnStairs", false);
+            }
+
+            
+
+            
             
 
         }
@@ -163,6 +184,8 @@ public class MovimientoJugador : MonoBehaviour
             escalando = false;
             animator.SetBool("OnStairs", false);
         }
+
+        
 
     }
 

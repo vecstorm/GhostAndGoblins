@@ -12,9 +12,8 @@ GameObject:
   - component: {fileID: 5240307127624033194}
   - component: {fileID: 2246777076887815639}
   - component: {fileID: 8621184006654219072}
-  - component: {fileID: 5833991555587074559}
   m_Layer: 0
-  m_Name: Arms
+  m_Name: WeaponPickeable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -135,17 +134,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: 65ede58e153b6324dacfb5ce1729da45, type: 2}
---- !u!114 &5833991555587074559
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6163902674521809381}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77099380d047c1048a05f7dbaed0bd98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 7
-  damage: 1
