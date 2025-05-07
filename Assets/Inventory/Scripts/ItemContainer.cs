@@ -10,6 +10,7 @@ public class ItemContainer : MonoBehaviour
     [SerializeField]
     Item item;
 
+
     private void OnEnable()
     {
         if(item != null){
@@ -20,7 +21,10 @@ public class ItemContainer : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.CompareTag("Player")){
-            Destroy(gameObject);
+
+            collision.GetComponent<CharacterAbilityController>().ChangeWeapon(gameObject);
+            //Destroy(gameObject);
+            
         }
     }
 }

@@ -12,6 +12,7 @@ TagManager:
   - Floor
   - Enemigos
   - Bullet
+  - Weapon
   layers:
   - Default
   - TransparentFX

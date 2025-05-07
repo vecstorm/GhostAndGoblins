@@ -6,7 +6,8 @@ using UnityEngine.InputSystem;
 public class CharacterAbilityController : MonoBehaviour
 {
     [SerializeField]
-    GameObject bullet;
+    GameObject weapon;
+    [SerializeField] GameObject secondWeapon;
     [SerializeField]
     Transform shootSpawnPoint;
     InputAction shoot;
@@ -39,11 +40,14 @@ public class CharacterAbilityController : MonoBehaviour
 
     void Disparar(){
 
-        Instantiate(bullet, shootSpawnPoint.position, shootSpawnPoint.rotation);  
+        Instantiate(weapon, shootSpawnPoint.position, shootSpawnPoint.rotation);  
 
     }
 
-    
+    public void ChangeWeapon(GameObject newWeapon)
+    {
+        weapon = newWeapon;
+    }
 
 
 }

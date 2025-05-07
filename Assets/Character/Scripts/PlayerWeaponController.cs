@@ -17,6 +17,8 @@ public class PlayerWeaponController : MonoBehaviour
 
     enum ARMAS { LANZA, DAGA}
 
+    ArrayList weapons = new ArrayList();
+
     void Awake()
     {
         if (Instance == null)
@@ -27,7 +29,12 @@ public class PlayerWeaponController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        if (collision.CompareTag("Weapon"))
+        {
+
+            weapons.Add(weapons[1]);
+            weapons.Remove(weapons[0]);
+        }
     }
 
     public void EquipWeapon(string weaponName)

@@ -43,6 +43,10 @@ public class MovimientoJugador : MonoBehaviour
 
     private bool puedeMoverseEnHorizontal;
 
+    enum STATES {ONSTAIRS, ONFLOOR, ONAIR, ONTOPSTAIRS, ONUPPERSTAIRS, CROUCHING, SHOOT }
+
+    STATES actual_state;
+
 
 
     void Awake()
@@ -65,6 +69,25 @@ public class MovimientoJugador : MonoBehaviour
 
     void Update()
     {
+        switch (actual_state)
+        {
+            case STATES.ONSTAIRS:
+                break; 
+            case STATES.ONFLOOR:
+                break;
+            case STATES.ONAIR: 
+                break;
+            case STATES.ONTOPSTAIRS: 
+                break;
+            case STATES.ONUPPERSTAIRS: 
+                break;
+            case STATES.CROUCHING: 
+                break;
+            case STATES.SHOOT:
+                break;
+            default:
+                break;
+        }
         input.x = horizontal_ia.ReadValue<float>();
         input.y = vertical_ia.ReadValue<float>();
 
