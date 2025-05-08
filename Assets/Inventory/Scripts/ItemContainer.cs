@@ -15,22 +15,22 @@ public class ItemContainer : MonoBehaviour
     {
         if (item != null)
         {
-            GetComponent<SpriteRenderer>().sprite = item.image;
+            GetComponent<SpriteRenderer>().sprite = item.image; //Saca el sprite Renderer del componente, o sea la imagen
         }
     }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player")) //Compara si el game object collisiona con algo que tenga el tag player
         {
 
-            collision.GetComponent<CharacterAbilityController>().ChangeWeapon(this);
-            Destroy(gameObject);
+            collision.GetComponent<CharacterAbilityController>().ChangeWeapon(this); //cambia la arma que esta en el script CharacterAbilityController
+            Destroy(gameObject); //Destruye el gameObject
 
         }
     }
 
-    public Item GetItem()
+    public Item GetItem() // hace una fucnion de tipo item que devuelve el item
     {
         return item;
     }

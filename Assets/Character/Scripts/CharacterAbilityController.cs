@@ -6,17 +6,12 @@ using UnityEngine.InputSystem;
 
 public class CharacterAbilityController : MonoBehaviour
 {
-    //[SerializeField] GameObject weapon;
 
     [SerializeField] Weapon weapon;
 
-    //Asset weapon1;
-
-    [SerializeField]
-    Transform shootSpawnPoint;
+    [SerializeField]Transform shootSpawnPoint;
+    
     InputAction shoot;
-    [SerializeField]
-    float coolDownShoot;
 
     public InputActionAsset inputActionMapping;
     private Animator animator;
@@ -32,12 +27,12 @@ public class CharacterAbilityController : MonoBehaviour
 
     void Update()
     {
-        if (shoot.triggered)
+        if (shoot.triggered)// si la action shoot es triggered, entonces dispara i pone la variable IsShooting a true
         {
             Disparar();
             animator.SetBool("IsShooting", true);
         }
-        else
+        else // sino la pone a false
         {
             animator.SetBool("IsShooting", false);
         }
@@ -46,19 +41,19 @@ public class CharacterAbilityController : MonoBehaviour
     void Disparar()
     {
 
-        Instantiate(weapon.GetProjectilePrefab(), shootSpawnPoint.position, shootSpawnPoint.rotation);
+        Instantiate(weapon.GetProjectilePrefab(), shootSpawnPoint.position, shootSpawnPoint.rotation); //instancia el prefab del proyectil
+        
 
     }
 
-    public void ChangeWeapon(ItemContainer newWeaponItemContainer)
+    public void ChangeWeapon(ItemContainer newWeaponItemContainer) //crea una variable de tipo ItemContainer 
     {
-        Weapon newWeapon = (Weapon)newWeaponItemContainer.GetItem();
+        Weapon newWeapon = (Weapon)newWeaponItemContainer.GetItem(); // esta la iguala a una variable newWeapon de tipo weapon i coge la funcion de getItem para recoger el valor del item
 
         if (newWeapon != null)
         {
             weapon = newWeapon;
         }
-        // weapon1 = newWeapon;
     }
 
 

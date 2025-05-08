@@ -12,14 +12,14 @@ public class Enemy : MonoBehaviour
     public void Damage(float damage){
 
         life -= damage;
-        if(life <= 0){
-            Muerte();
+        if(life <= 0) // si la vida es menor o igual a 0, el enemigo muere
+        {
+            Death();
         }
     }
 
-    void Muerte(){
-        Instantiate(enemyDied, transform.position, Quaternion.identity);
-        Destroy(gameObject);
+    void Death(){
+        Destroy(gameObject); // destruye el game object
     }
 
     

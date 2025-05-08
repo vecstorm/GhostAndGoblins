@@ -42,7 +42,7 @@ public class plantaController : MonoBehaviour
             }
         }
 
-        Debug.Log(distance);
+        
     }
 
     void dispara()
