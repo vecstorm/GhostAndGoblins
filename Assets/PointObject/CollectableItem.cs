@@ -2,11 +2,14 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.Mathematics;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class CollectableItem : MonoBehaviour
 {
     [SerializeField] private Item[] item;
+    int randomIndex;
+    int points;
 
     private void OnEnable()
     {
@@ -17,22 +20,24 @@ public class CollectableItem : MonoBehaviour
 
     void InvokepointsItem()
     {
-        int randomIndex = UnityEngine.Random.Range(0, item.Length);
+        randomIndex = UnityEngine.Random.Range(0, item.Length);
         if (item != null)
         {
             GetComponent<SpriteRenderer>().sprite = item[randomIndex].image;
+            
         }
     }
-
-
 
     void OnTriggerEnter2D(Collider2D collision)
     {
+
         if (collision.gameObject.CompareTag("Player"))
         {
-
-            Destroy(gameObject);
+            PointControler.Instance.sumarPuntos(points);
+            Destroy(this);
 
         }
     }
+
+
 }
