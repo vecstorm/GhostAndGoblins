@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 7648842669867087957}
   - component: {fileID: 4678440048172519912}
   - component: {fileID: 7897901932074689408}
-  - component: {fileID: 8442303414932496102}
   - component: {fileID: 4603049322730788455}
   m_Layer: 0
   m_Name: Character
@@ -201,25 +200,6 @@ MonoBehaviour:
   floorLayer:
     serializedVersion: 2
     m_Bits: 192
---- !u!114 &8442303414932496102
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2501169785147188056}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa8fb5d74a044e545943b706fae6d7e5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  heldItemImage: {fileID: 0}
-  defaultSprite: {fileID: 1601417305, guid: 62e90d0773b339d49afb3c64db093c99, type: 3}
-  lanzaSprite: {fileID: 1601417305, guid: 62e90d0773b339d49afb3c64db093c99, type: 3}
-  dagaSprite: {fileID: 1644348351, guid: a2e6e903b4893fa46802860b67ffd10d, type: 3}
-  antorchaSprite: {fileID: -2060209081, guid: a2e6e903b4893fa46802860b67ffd10d, type: 3}
-  hachaSprite: {fileID: -1831200213, guid: 62e90d0773b339d49afb3c64db093c99, type: 3}
-  escudoSprite: {fileID: 1567043493, guid: a2e6e903b4893fa46802860b67ffd10d, type: 3}
 --- !u!114 &4603049322730788455
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -232,7 +212,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9334d8b0976bf941bbc2f9db52bb24d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 5426893460653751244, guid: 1461ede1910757145bab281e5c288766, type: 3}
+  weapon: {fileID: 0}
   shootSpawnPoint: {fileID: 6220991120358418221}
   coolDownShoot: 0
   inputActionMapping: {fileID: 0}

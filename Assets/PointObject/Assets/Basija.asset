@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a14fbe05cba50346b812f54c7568d19, type: 3}
+  m_Name: Basija
+  m_EditorClassIdentifier: 
+  image: {fileID: -14171581, guid: 62e90d0773b339d49afb3c64db093c99, type: 3}
+  itemName: Basija
+  points: 300
