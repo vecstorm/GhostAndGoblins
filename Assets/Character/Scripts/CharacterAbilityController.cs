@@ -1,13 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.VersionControl;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class CharacterAbilityController : MonoBehaviour
 {
-    [SerializeField]
-    GameObject weapon;
-    [SerializeField] GameObject secondWeapon;
+    //[SerializeField] GameObject weapon;
+
+    [SerializeField] Weapon weapon;
+
+    //Asset weapon1;
+
     [SerializeField]
     Transform shootSpawnPoint;
     InputAction shoot;
@@ -28,7 +32,8 @@ public class CharacterAbilityController : MonoBehaviour
 
     void Update()
     {
-        if(shoot.triggered){
+        if (shoot.triggered)
+        {
             Disparar();
             animator.SetBool("IsShooting", true);
         }
@@ -38,15 +43,22 @@ public class CharacterAbilityController : MonoBehaviour
         }
     }
 
-    void Disparar(){
+    void Disparar()
+    {
 
-        Instantiate(weapon, shootSpawnPoint.position, shootSpawnPoint.rotation);  
+        Instantiate(weapon.GetProjectilePrefab(), shootSpawnPoint.position, shootSpawnPoint.rotation);
 
     }
 
-    public void ChangeWeapon(GameObject newWeapon)
+    public void ChangeWeapon(ItemContainer newWeaponItemContainer)
     {
-        weapon = newWeapon;
+        Weapon newWeapon = (Weapon)newWeaponItemContainer.GetItem();
+
+        if (newWeapon != null)
+        {
+            weapon = newWeapon;
+        }
+        // weapon1 = newWeapon;
     }
 
 
