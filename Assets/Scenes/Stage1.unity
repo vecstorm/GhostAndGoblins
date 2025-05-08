@@ -4081,7 +4081,7 @@ PrefabInstance:
     - target: {fileID: 4603049322730788455, guid: 2f3c28e827b136248b2ea0acd56f82c7, type: 3}
       propertyPath: weapon
       value: 
-      objectReference: {fileID: 6163902674521809381, guid: 94b873cf032a19c459c870aa9a84092e, type: 3}
+      objectReference: {fileID: 11400000, guid: 65ede58e153b6324dacfb5ce1729da45, type: 2}
     - target: {fileID: 4603049322730788455, guid: 2f3c28e827b136248b2ea0acd56f82c7, type: 3}
       propertyPath: secondWeapon
       value: 
@@ -4229,7 +4229,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6163902674521809381, guid: eace5e22a9ec5164091c6a3bbcf81a49, type: 3}
       propertyPath: m_Name
-      value: Arms
+      value: WeaponPickeable
       objectReference: {fileID: 0}
     - target: {fileID: 6163902674521809381, guid: eace5e22a9ec5164091c6a3bbcf81a49, type: 3}
       propertyPath: m_TagString

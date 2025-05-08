@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8621184006654219072}
   - component: {fileID: 5833991555587074559}
   m_Layer: 0
-  m_Name: WeaponPicked
+  m_Name: LanceProjectile
   m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -147,5 +147,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77099380d047c1048a05f7dbaed0bd98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 7
+  speed: 5
   damage: 1

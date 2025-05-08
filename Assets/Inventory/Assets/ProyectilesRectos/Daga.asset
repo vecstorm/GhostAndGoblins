@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 1644348351, guid: 62e90d0773b339d49afb3c64db093c99, type: 3}
   itemName: Daga
+  projectilePrefab: {fileID: 6163902674521809381, guid: 5d1ee941fd8f39148bc00e444a5491b7, type: 3}
