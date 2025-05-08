@@ -24,7 +24,12 @@ public class CollectableItem : MonoBehaviour
         if (item != null)
         {
             GetComponent<SpriteRenderer>().sprite = item[randomIndex].image;
-            
+            PointObjects pointObject = item[randomIndex] as PointObjects;
+            if (pointObject != null)
+            {
+                points = pointObject.getPoints();
+            }
+
         }
     }
 
@@ -34,7 +39,7 @@ public class CollectableItem : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             PointControler.Instance.sumarPuntos(points);
-            Destroy(this);
+            Destroy(gameObject);
 
         }
     }
