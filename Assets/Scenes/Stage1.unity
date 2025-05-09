@@ -256,46 +256,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 24692128}
   m_CullTransparentMesh: 1
---- !u!1 &66226200 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3298875960034906453, guid: 6ae7febec40e05a478c5f7cc8bcf2735, type: 3}
-  m_PrefabInstance: {fileID: 669987276}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &66226202 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 3123465451251591342, guid: 6ae7febec40e05a478c5f7cc8bcf2735, type: 3}
-  m_PrefabInstance: {fileID: 669987276}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &66226207
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 66226200}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1b1be01f9f9caf4db5abfe572bbe94e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  timeAnim1: 7
-  timeAnim2: 7.1
-  animator: {fileID: 66226202}
---- !u!114 &66226212
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 66226200}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9eefa39540041b945a44c072423521d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  life: 2
-  enemyDied: {fileID: 6163902674521809381, guid: 94b873cf032a19c459c870aa9a84092e, type: 3}
 --- !u!1001 &78619087
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -472,7 +432,7 @@ GameObject:
   - component: {fileID: 137305443}
   - component: {fileID: 137305442}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Tiempo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1061,25 +1021,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   character: {fileID: 1599711871}
---- !u!1 &571079618 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 240045781654496398, guid: 8305455b907120d44b6ccc5a91338f07, type: 3}
-  m_PrefabInstance: {fileID: 2008565812}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &571079625
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 571079618}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9eefa39540041b945a44c072423521d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  life: 2
-  enemyDied: {fileID: 6163902674521809381, guid: 94b873cf032a19c459c870aa9a84092e, type: 3}
 --- !u!1 &603005011
 GameObject:
   m_ObjectHideFlags: 0
@@ -1164,36 +1105,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3123465451251591342, guid: 6ae7febec40e05a478c5f7cc8bcf2735, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 7b2e6bed4f902534583b3373dcbcc14b, type: 2}
     - target: {fileID: 3298875960034906453, guid: 6ae7febec40e05a478c5f7cc8bcf2735, type: 3}
       propertyPath: m_Name
       value: zombiL
       objectReference: {fileID: 0}
-    - target: {fileID: 3298875960034906453, guid: 6ae7febec40e05a478c5f7cc8bcf2735, type: 3}
-      propertyPath: m_Layer
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 3298875960034906453, guid: 6ae7febec40e05a478c5f7cc8bcf2735, type: 3}
-      propertyPath: m_TagString
-      value: Enemigos
-      objectReference: {fileID: 0}
-    - target: {fileID: 5650353217089207840, guid: 6ae7febec40e05a478c5f7cc8bcf2735, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3298875960034906453, guid: 6ae7febec40e05a478c5f7cc8bcf2735, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 66226207}
-    - targetCorrespondingSourceObject: {fileID: 3298875960034906453, guid: 6ae7febec40e05a478c5f7cc8bcf2735, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 66226212}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ae7febec40e05a478c5f7cc8bcf2735, type: 3}
 --- !u!1 &714280625
 GameObject:
@@ -4977,7 +4896,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2837774742158673958, guid: 2f3c28e827b136248b2ea0acd56f82c7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.76
+      value: -16.9
       objectReference: {fileID: 0}
     - target: {fileID: 2837774742158673958, guid: 2f3c28e827b136248b2ea0acd56f82c7, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5206,7 +5125,7 @@ PrefabInstance:
       objectReference: {fileID: 1644348351, guid: 62e90d0773b339d49afb3c64db093c99, type: 3}
     - target: {fileID: 3840355503705454204, guid: eace5e22a9ec5164091c6a3bbcf81a49, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.53
+      value: -15.49
       objectReference: {fileID: 0}
     - target: {fileID: 3840355503705454204, guid: eace5e22a9ec5164091c6a3bbcf81a49, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5265,25 +5184,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eace5e22a9ec5164091c6a3bbcf81a49, type: 3}
---- !u!1 &1496922734 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3298875960034906453, guid: ac0fd9081c3602540833b1f052ea6ba6, type: 3}
-  m_PrefabInstance: {fileID: 1667768994}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1496922741
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1496922734}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9eefa39540041b945a44c072423521d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  life: 2
-  enemyDied: {fileID: 6163902674521809381, guid: 94b873cf032a19c459c870aa9a84092e, type: 3}
 --- !u!1 &1560095886
 GameObject:
   m_ObjectHideFlags: 0
@@ -5464,10 +5364,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1648669735}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f69537ae3ad86224798f0c3153552fb5, type: 3}
+  m_Script: {fileID: 11500000, guid: 0b7f264328de27e42a143f7612c7501a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalPoints: 0
+  cantidadPuntos: 0
 --- !u!1001 &1667768994
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5521,20 +5421,13 @@ PrefabInstance:
       value: zombiR
       objectReference: {fileID: 0}
     - target: {fileID: 3298875960034906453, guid: ac0fd9081c3602540833b1f052ea6ba6, type: 3}
-      propertyPath: m_Layer
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 3298875960034906453, guid: ac0fd9081c3602540833b1f052ea6ba6, type: 3}
       propertyPath: m_TagString
-      value: Zombi
+      value: Enemigos
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3298875960034906453, guid: ac0fd9081c3602540833b1f052ea6ba6, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1496922741}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac0fd9081c3602540833b1f052ea6ba6, type: 3}
 --- !u!1 &1689909792
 GameObject:
@@ -5547,9 +5440,9 @@ GameObject:
   - component: {fileID: 1689909793}
   - component: {fileID: 1689909795}
   - component: {fileID: 1689909794}
-  - component: {fileID: 1689909797}
+  - component: {fileID: 1689909796}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Puntuacion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5671,7 +5564,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1689909792}
   m_CullTransparentMesh: 1
---- !u!114 &1689909797
+--- !u!114 &1689909796
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5680,10 +5573,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1689909792}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f69537ae3ad86224798f0c3153552fb5, type: 3}
+  m_Script: {fileID: 11500000, guid: bde2cdcd26d6ab849a4733b51b497644, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalPoints: 0
 --- !u!4 &1750158828 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4855707680335342042, guid: 1010f7d13870420438dfdba3222a5a3b, type: 3}
@@ -5902,8 +5794,8 @@ PrefabInstance:
       value: pajaroL
       objectReference: {fileID: 0}
     - target: {fileID: 240045781654496398, guid: 8305455b907120d44b6ccc5a91338f07, type: 3}
-      propertyPath: m_Layer
-      value: 9
+      propertyPath: m_TagString
+      value: Enemigos
       objectReference: {fileID: 0}
     - target: {fileID: 8518219049376457166, guid: 8305455b907120d44b6ccc5a91338f07, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5948,10 +5840,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 240045781654496398, guid: 8305455b907120d44b6ccc5a91338f07, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 571079625}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8305455b907120d44b6ccc5a91338f07, type: 3}
 --- !u!4 &2010112232 stripped
 Transform:

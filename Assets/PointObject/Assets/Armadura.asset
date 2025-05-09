@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 1984336979, guid: 62e90d0773b339d49afb3c64db093c99, type: 3}
   itemName: Armadura
-  Points: 200
+  Puntos: 200

@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: -1774693882, guid: a2e6e903b4893fa46802860b67ffd10d, type: 3}
   itemName: Cruzifijo
-  Points: 400
+  Puntos: 400

@@ -7,10 +7,9 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Collectables/PointObject/Objects")]
 public class PointObjects : Item
 {
-    [SerializeField] int Points;
-
+    [SerializeField] int Puntos;
     public int getPoints()
     {
-        return Points;
+        return Puntos;
     }
 }

@@ -7,6 +7,8 @@ public class GamePoints : MonoBehaviour
 {
 
     private int totalPoints;
+    PointObjects pointObject;
+
     private TextMeshProUGUI textMeshPoints;
     // Start is called before the first frame update
     void Start()
@@ -18,6 +20,7 @@ public class GamePoints : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        totalPoints = PointColtroller.instance.getPoints();
         textMeshPoints.text = totalPoints.ToString("0");
 
 

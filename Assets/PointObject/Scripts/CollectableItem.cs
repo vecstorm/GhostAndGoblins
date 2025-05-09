@@ -38,7 +38,7 @@ public class CollectableItem : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Player"))
         {
-            PointControler.Instance.sumarPuntos(points);
+            PointColtroller.instance.sumarPuntos(points);
             Destroy(gameObject);
 
         }
