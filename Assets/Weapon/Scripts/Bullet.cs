@@ -9,10 +9,20 @@ public class Bullet : MonoBehaviour
     float speed;
     [SerializeField]
     float damage;
+    private float timer;
+    [SerializeField]
+    int tiempoBala;
 
     void Update()
     {
         transform.Translate(Vector2.right * speed * Time.deltaTime);
+        timer += Time.deltaTime; // Creamos el temporizador
+
+        if (timer > tiempoBala)
+        {
+            Destroy(gameObject); // Temporizador para que cuando pase el tiempo deseado se destruya el Objeto
+            timer = 0; // Seteamos el contador a 0
+        }
     }
 
     void OnTriggerEnter2D(Collider2D collision)
