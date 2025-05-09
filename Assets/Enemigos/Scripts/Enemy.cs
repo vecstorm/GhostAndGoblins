@@ -8,6 +8,7 @@ public class Enemy : MonoBehaviour
     float life;
     [SerializeField]
     GameObject enemyDied;
+    [SerializeField] int DiedPoints;
 
     public void Damage(float damage){
 
@@ -18,7 +19,7 @@ public class Enemy : MonoBehaviour
     }
 
     void Muerte(){
-        Instantiate(enemyDied, transform.position, Quaternion.identity);
+        PointColtroller.instance.sumarPuntos(DiedPoints);
         Destroy(gameObject);
     }
 

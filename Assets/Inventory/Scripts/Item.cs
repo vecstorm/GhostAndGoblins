@@ -9,5 +9,9 @@ public abstract class Item : ScriptableObject
     public Sprite image;
 
     public string itemName;
-   
+    protected int Points;
+
+
+
+
 }
