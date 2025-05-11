@@ -23,7 +23,6 @@ public class MovimientoJugador : MonoBehaviour
     [SerializeField] private float fuerzaDeSalto;
     [SerializeField] private LayerMask queEsSuelo;
     [SerializeField] private Transform rayCastOrigin;
-    [SerializeField] private Vector3 dimensionesCaja;
     [SerializeField] private bool enSuelo;
     private bool salto = false;
 
@@ -43,7 +42,7 @@ public class MovimientoJugador : MonoBehaviour
 
     private bool puedeMoverseEnHorizontal;
 
-    enum STATES {ONSTAIRS, ONFLOOR, ONAIR, ONTOPSTAIRS, ONUPPERSTAIRS, CROUCHING, SHOOT }
+    enum STATES {ONSTAIRS, ONFLOOR, ONAIR, ONTOPSTAIRS, ONUPPERSTAIRS, CROUCHING }
 
     STATES actual_state;
 
@@ -83,8 +82,7 @@ public class MovimientoJugador : MonoBehaviour
                 break;
             case STATES.CROUCHING: 
                 break;
-            case STATES.SHOOT:
-                break;
+
             default:
                 break;
         }
@@ -125,7 +123,7 @@ public class MovimientoJugador : MonoBehaviour
 
     void DetectarSuelo()
     {
-        RaycastHit2D hit = Physics2D.BoxCast(rayCastOrigin.position, dimensionesCaja, 0f, Vector2.down, 0.1f, queEsSuelo);
+        RaycastHit2D hit = Physics2D.Raycast(rayCastOrigin.position, -rayCastOrigin.up, 0.2f, queEsSuelo);
         enSuelo = hit.collider != null;
     }
 

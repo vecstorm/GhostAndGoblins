@@ -893,7 +893,7 @@ Transform:
   m_GameObject: {fileID: 731198921}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.94, y: 0.182, z: 0.024778295}
+  m_LocalPosition: {x: 3.94, y: 0.192, z: 0.024778295}
   m_LocalScale: {x: 1, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4067,7 +4067,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2837774742158673958, guid: 2f3c28e827b136248b2ea0acd56f82c7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -31.06
+      value: 1.47
       objectReference: {fileID: 0}
     - target: {fileID: 2837774742158673958, guid: 2f3c28e827b136248b2ea0acd56f82c7, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4118,6 +4118,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 256640387}
     - target: {fileID: 7897901932074689408, guid: 2f3c28e827b136248b2ea0acd56f82c7, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7897901932074689408, guid: 2f3c28e827b136248b2ea0acd56f82c7, type: 3}
       propertyPath: rayCastOrigin
       value: 
       objectReference: {fileID: 2010112232}
@@ -4131,7 +4135,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 2501169785147188056, guid: 2f3c28e827b136248b2ea0acd56f82c7, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1686074854}
+      addedObject: {fileID: 1686074855}
   m_SourcePrefab: {fileID: 100100000, guid: 2f3c28e827b136248b2ea0acd56f82c7, type: 3}
 --- !u!4 &1426593248 stripped
 Transform:
@@ -4378,7 +4382,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2501169785147188056, guid: 2f3c28e827b136248b2ea0acd56f82c7, type: 3}
   m_PrefabInstance: {fileID: 1386581020}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1686074854
+--- !u!114 &1686074855
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4387,20 +4391,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 1686074847}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fe79b372f786304ab11934395793f0b, type: 3}
+  m_Script: {fileID: 11500000, guid: 6a9558ca8d8d468469f2b115338d8b6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadDeMovimiento: 300
-  suavizadoDeMovimiento: 0.016
+  velocidadDeMovimiento: 5
+  suavizadoDeMovimiento: 0
   inputActionsMapping: {fileID: -944628639613478452, guid: 04c00d290f307ab4bbe8c0ee31694af0, type: 3}
-  fuerzaDeSalto: 400
+  fuerzaDeSalto: 10
   queEsSuelo:
     serializedVersion: 2
-    m_Bits: 320
+    m_Bits: 64
   rayCastOrigin: {fileID: 2010112232}
-  dimensionesCaja: {x: 1, y: 1, z: 0}
-  enSuelo: 1
-  velocidadEscalar: 200
+  enSuelo: 0
+  velocidadEscalar: 4
   floorLayer:
     serializedVersion: 2
     m_Bits: 192
