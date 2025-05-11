@@ -29,8 +29,4 @@ public class ItemContainer : MonoBehaviour
         }
     }
 
-    public Item GetItem()
-    {
-        return item;
-    }
 }

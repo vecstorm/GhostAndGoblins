@@ -1,28 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using static UnityEditor.Progress;
 
 public class HUDImageWeapon : MonoBehaviour
 {
-    [SerializeField] private Weapon weapon;
+    public Image weaponImage;  // La imagen en el HUD
 
 
 
-    private void OnEnable()
-    {
-        if (weapon != null)
-        {
-            GetComponent<SpriteRenderer>().sprite = weapon.image;
-        }
-    }
-    public void ChangeWeapon(ItemContainer newWeaponItemContainer)
-    {
-        Weapon newWeapon = (Weapon)newWeaponItemContainer.GetItem();
-
-        if (newWeapon != null)
-        {
-            weapon = newWeapon;
-        }
-        // weapon1 = newWeapon;
-    }
 }

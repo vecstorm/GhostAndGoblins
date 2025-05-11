@@ -43,7 +43,7 @@ public class plantaController : MonoBehaviour
             }
         }
 
-        Debug.Log(distance); // Para comprobar la distancia a la que se encuentra el jugador en referencia a la planta
+       /// Debug.Log(distance); // Para comprobar la distancia a la que se encuentra el jugador en referencia a la planta
     }
 
     void Dispara() // Instancia una bola de las que dispara

@@ -61,5 +61,9 @@ public class CharacterAbilityController : MonoBehaviour
         // weapon1 = newWeapon;
     }
 
+    public Weapon getWeapon()
+    {
+        return weapon;
+    }
 
 }
