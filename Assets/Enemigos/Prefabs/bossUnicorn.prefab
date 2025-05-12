@@ -225,6 +225,7 @@ MonoBehaviour:
   queEsSuelo:
     serializedVersion: 2
     m_Bits: 64
+  animator: {fileID: 3123465451251591342}
 --- !u!114 &6224950334966635652
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -237,6 +238,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eefa39540041b945a44c072423521d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 2
+  life: 10
   enemyDied: {fileID: 6163902674521809381, guid: 94b873cf032a19c459c870aa9a84092e, type: 3}
-  DiedPoints: 1000
+  DiedPoints: 2000
+  collectableItems: []
+  collectableWapon: []
+  dropChanceItem: 0.5
+  dropChanceWeapon: 0.2
