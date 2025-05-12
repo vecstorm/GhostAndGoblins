@@ -5,13 +5,13 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
-private Rigidbody2D rb2D;
+    private Rigidbody2D rb2D;
     private Vector2 input;
 
     [Header("Movimiento")]
     private float movimientoHorizontal = 0f;
     [SerializeField] private float velocidadDeMovimiento;
-    [Range(0, 0.3f)] [SerializeField] private float suavizadoDeMovimiento;
+    [Range(0, 0.3f)][SerializeField]private float suavizadoDeMovimiento;
     private Vector3 velocidad = Vector3.zero;
     private bool mirandoDerecha = true;
     public InputActionAsset inputActionsMapping;
@@ -37,10 +37,14 @@ private Rigidbody2D rb2D;
     [SerializeField] private LayerMask floorLayer;
     private bool canDescend = false;
     private bool ignoringFloor = false;
+
     private bool puedeMoverseEnHorizontal;
 
-    enum STATES { ONSTAIRS, ONFLOOR, ONAIR, CROUCHING }
+    enum STATES {ONSTAIRS, ONFLOOR, ONAIR, ONTOPSTAIRS, ONUPPERSTAIRS, CROUCHING }
+
     STATES actual_state;
+
+
 
     void Awake()
     {
@@ -54,105 +58,144 @@ private Rigidbody2D rb2D;
         animator = GetComponent<Animator>();
         capsuleCollider2D = GetComponent<CapsuleCollider2D>();
         gravedadInicial = rb2D.gravityScale;
+
+
     }
+
+
 
     void Update()
     {
+        switch (actual_state)
+        {
+            case STATES.ONSTAIRS:
+                Escalar();
+                break; 
+            case STATES.ONFLOOR:
+                break;
+            case STATES.ONAIR: 
+                break;
+            case STATES.ONTOPSTAIRS: 
+                break;
+            case STATES.ONUPPERSTAIRS: 
+                break;
+            case STATES.CROUCHING: 
+                Crouch();
+                break;
+
+            default:
+                break;
+        }
         input.x = horizontal_ia.ReadValue<float>();
         input.y = vertical_ia.ReadValue<float>();
 
-        salto = jump_ia.triggered && enSuelo;
+        Crouch(); 
 
-        EvaluarEstado();
-
-        switch (actual_state)
+        if (jump_ia.triggered && enSuelo)
         {
-            case STATES.ONFLOOR:
-                EstadoSuelo();
-                break;
-            case STATES.ONAIR:
-                EstadoAire();
-                break;
-            case STATES.ONSTAIRS:
-                EstadoEscaleras();
-                break;
-            case STATES.CROUCHING:
-                EstadoAgachado();
-                break;
+            actual_state = STATES.ONAIR;
+            salto = true;
+            animator.SetBool("IsJumping", true);
+        }
+        if (escalando && !puedeMoverseEnHorizontal)
+        {
+            actual_state = STATES.ONSTAIRS;
+            movimientoHorizontal = 0f;
+        }
+        else
+        {
+            actual_state = STATES.ONUPPERSTAIRS;
+            movimientoHorizontal = input.x * velocidadDeMovimiento;
         }
 
-        animator.SetFloat("MovementX", Mathf.Abs(rb2D.velocity.x));
     }
+
 
     void FixedUpdate()
     {
-        DetectarSuelo();
+        DetectarSuelo(); 
+
+        Mover(movimientoHorizontal * Time.fixedDeltaTime, salto);
+        animator.SetFloat("MovementX", Mathf.Abs(rb2D.velocity.x));
+
+        Escalar();
+
         salto = false;
         animator.SetBool("IsJumping", !enSuelo);
     }
 
-    void EvaluarEstado()
+    void DetectarSuelo()
     {
-        if (escalando || capsuleCollider2D.IsTouchingLayers(LayerMask.GetMask("Stairs")) || (canDescend && input.y < 0))
+        RaycastHit2D hit = Physics2D.Raycast(rayCastOrigin.position, -rayCastOrigin.up, 0.2f, queEsSuelo);
+        enSuelo = hit.collider != null;
+    }
+
+    private void OnTriggerEnter2D(Collider2D colision)
+    {
+        if (colision.CompareTag("TopStairs"))
         {
-            actual_state = STATES.ONSTAIRS;
+            canDescend = true;
+            animator.SetBool("OnTopStairs", true); // <- esto activa transición a GetUpStairs
         }
-        else if (!enSuelo)
+        if (colision.CompareTag("UpperStairs"))
         {
-            actual_state = STATES.ONAIR;
-        }
-        else if (crouch_ia.ReadValue<float>() > 0.5f)
-        {
-            actual_state = STATES.CROUCHING;
-        }
-        else
-        {
-            actual_state = STATES.ONFLOOR;
+            puedeMoverseEnHorizontal = true;
+
         }
     }
 
-    void EstadoSuelo()
-    {
-        animator.SetBool("IsJumping", false);
-        movimientoHorizontal = input.x * velocidadDeMovimiento;
-        Mover(movimientoHorizontal, salto);
-    }
 
-    void EstadoAire()
+    private void OnTriggerExit2D(Collider2D colision)
     {
-        animator.SetBool("IsJumping", true);
-        movimientoHorizontal = input.x * velocidadDeMovimiento;
-        Mover(movimientoHorizontal, false);
-    }
-
-    void EstadoAgachado()
-    {
-        animator.SetBool("IsCrouching", true);
-        movimientoHorizontal = 0f;
-        Mover(0f, false);
-    }
-
-    void EstadoEscaleras()
-    {
-        bool enEscalera = capsuleCollider2D.IsTouchingLayers(LayerMask.GetMask("Stairs"));
-        bool quiereEscalar = (Mathf.Abs(input.y) > 0.05f || escalando) && (enEscalera || (canDescend && input.y < 0));
-
-        if (quiereEscalar)
+        if (colision.CompareTag("TopStairs"))
         {
+            canDescend = false;
+            animator.SetBool("OnTopStairs", false);
+            ResetFloorCollision();
+        }
+        if (colision.CompareTag("UpperStairs"))
+        {
+            puedeMoverseEnHorizontal = false;
+
+        }
+    }
+
+    void Escalar()
+    {
+        bool onStairs = capsuleCollider2D.IsTouchingLayers(LayerMask.GetMask("Stairs"));
+        bool shouldClimb = (input.y != 0 || escalando) && (onStairs || (canDescend && input.y < 0));
+
+        if (shouldClimb)
+        {
+            
             if (canDescend && input.y < 0 && !ignoringFloor)
             {
                 Physics2D.IgnoreLayerCollision(gameObject.layer, LayerMask.NameToLayer("Floor"), true);
                 ignoringFloor = true;
             }
 
-            Vector2 escalada = puedeMoverseEnHorizontal ?
-                new Vector2(input.x * velocidadEscalar, input.y * velocidadEscalar) :
-                new Vector2(0f, input.y * velocidadEscalar);
+            if(!enSuelo && !puedeMoverseEnHorizontal)
+            {
+                Vector2 velocidadDeSubida = new Vector2(0f, input.y * velocidadEscalar);// movimiento de subir y bajar escaleras, el movimiento horizontal se desactiva
+                rb2D.velocity = velocidadDeSubida;
+                rb2D.gravityScale = 0;
+                escalando = true;
+                animator.SetBool("OnStairs", true);
+            }
+            else
+            {
+                Vector2 velocidadDeSubida = new Vector2(input.x * velocidadEscalar, input.y * velocidadEscalar);// movimiento de subir y bajar escaleras, el movimiento horizontal se desactiva
+                rb2D.velocity = velocidadDeSubida;
+                rb2D.gravityScale = 0;
+                escalando = false;
+                animator.SetBool("OnStairs", false);
+            }
 
-            rb2D.velocity = escalada;
-            rb2D.gravityScale = 0f;
-            escalando = true;
-            animator.SetBool("OnStairs", true);
+            
+
+            
+            
+
         }
         else
         {
@@ -161,7 +204,20 @@ private Rigidbody2D rb2D;
             escalando = false;
             animator.SetBool("OnStairs", false);
         }
+
+        
+
     }
+
+    void ResetFloorCollision()
+    {
+        if (ignoringFloor)
+        {
+            Physics2D.IgnoreLayerCollision(gameObject.layer, LayerMask.NameToLayer("Floor"), false);
+            ignoringFloor = false;
+        }
+    }
+
 
     void Mover(float mover, bool saltar)
     {
@@ -179,51 +235,21 @@ private Rigidbody2D rb2D;
         }
     }
 
-    void DetectarSuelo()
-    {
-        RaycastHit2D hit = Physics2D.Raycast(rayCastOrigin.position, -rayCastOrigin.up, 0.2f, queEsSuelo);
-        enSuelo = hit.collider != null;
-    }
 
-    void ResetFloorCollision()
-    {
-        if (ignoringFloor)
-        {
-            Physics2D.IgnoreLayerCollision(gameObject.layer, LayerMask.NameToLayer("Floor"), false);
-            ignoringFloor = false;
-        }
-    }
-
-    void Girar()
-    {
+    void Girar(){
         mirandoDerecha = !mirandoDerecha;
         transform.eulerAngles = new Vector3(0, transform.eulerAngles.y + 180, 0);
     }
 
-    private void OnTriggerEnter2D(Collider2D colision)
+    void Crouch()
     {
-        if (colision.CompareTag("TopStairs"))
+        if (crouch_ia.triggered)
         {
-            canDescend = true;
-            animator.SetBool("OnTopStairs", true);
+            animator.SetBool("IsCrouching", true);
         }
-        if (colision.CompareTag("UpperStairs"))
+        else
         {
-            puedeMoverseEnHorizontal = true;
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D colision)
-    {
-        if (colision.CompareTag("TopStairs"))
-        {
-            canDescend = false;
-            animator.SetBool("OnTopStairs", false);
-            ResetFloorCollision();
-        }
-        if (colision.CompareTag("UpperStairs"))
-        {
-            puedeMoverseEnHorizontal = false;
+            animator.SetBool("IsCrouching", false);
         }
     }
 
