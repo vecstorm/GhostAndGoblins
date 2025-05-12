@@ -17,7 +17,7 @@ public class plantaController : MonoBehaviour
     private GameObject player;
     private float time;
 
-    // Añadir script de daño
+    // Aï¿½adir script de daï¿½o
 
     void Start()
     {
@@ -39,7 +39,7 @@ public class plantaController : MonoBehaviour
                 Dispara();
 
                 animator.SetBool("dispara", true); // Le damos el ok para que entre al estado idle
-                Invoke("Idle", 0.5f); // Invocamos el metodo para que cuando acabe la animación salte otra vez a idle
+                Invoke("Idle", 0.5f); // Invocamos el metodo para que cuando acabe la animaciï¿½n salte otra vez a idle
             }
         }
 

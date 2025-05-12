@@ -9,8 +9,7 @@ public class ItemContainer : MonoBehaviour
 {
 
     [SerializeField] private Item item;
-
-
+    
     private void OnEnable()
     {
         if (item != null)
@@ -30,8 +29,9 @@ public class ItemContainer : MonoBehaviour
         }
     }
 
-    public Item GetItem()
+    public Item getItem()
     {
         return item;
     }
+
 }

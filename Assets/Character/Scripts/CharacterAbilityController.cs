@@ -20,6 +20,7 @@ public class CharacterAbilityController : MonoBehaviour
 
     public InputActionAsset inputActionMapping;
     private Animator animator;
+    HUD currentWeapon;
 
 
     void Start()
@@ -52,14 +53,17 @@ public class CharacterAbilityController : MonoBehaviour
 
     public void ChangeWeapon(ItemContainer newWeaponItemContainer)
     {
-        Weapon newWeapon = (Weapon)newWeaponItemContainer.GetItem();
+        Weapon newWeapon = (Weapon)newWeaponItemContainer.getItem();
 
         if (newWeapon != null)
         {
+ 
             weapon = newWeapon;
+            
         }
         // weapon1 = newWeapon;
     }
+
 
 
 }

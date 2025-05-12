@@ -20,8 +20,10 @@ public class pajaroControllerL : MonoBehaviour
     private int dir = 1;
     private Vector2 posicionInicial;
 
+
     void Start()
     {
+        transform.localScale = new Vector3(-1.5f, 1.5f, 1.5f);
         rb2D = GetComponent<Rigidbody2D>();
 
         posicionInicial = transform.position; // Guardamos la posición y la guardamos en posicionInicial
@@ -32,6 +34,7 @@ public class pajaroControllerL : MonoBehaviour
 
     private void Update()
     {
+
         if (speed > 0)
         {
             float x = transform.position.x + velocidad * Time.deltaTime * (-1 * dir); // Calculamos lo que tiene que hacer en el eje X y multiplicamos la dirección por -1 para que vaya al revés
