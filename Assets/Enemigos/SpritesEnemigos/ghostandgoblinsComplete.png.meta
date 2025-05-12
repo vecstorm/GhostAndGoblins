@@ -1,0 +1,1478 @@
+fileFormatVersion: 2
+guid: 146e6a6a7342fcb489fd37788da8900c
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ghostandgoblinsComplete_0
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 454
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79f1155a79a98b24ca6e2370906ada5e
+      internalID: 1915989929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostandgoblinsComplete_1
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 454
+        width: 47
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d9f5d4730d458741b21ac1bababd1aa
+      internalID: -1104044047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostandgoblinsComplete_2
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 403
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 173a0803f207e36439088076e13152fe
+      internalID: 103220155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostandgoblinsComplete_3
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 403
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 580c777fc43fd5d4aba923ff104b1d72
+      internalID: -76948746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostandgoblinsComplete_4
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 403
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78c839b5ab2de624d98824f4799b8f9d
+      internalID: -1378242265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostandgoblinsComplete_5
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 403
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24f4e5e8f64a545458180d210e2c2018
+      internalID: -1373516860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostandgoblinsComplete_6
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 352
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76804f33666533e4499da3397d97f255
+      internalID: 1435770398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostandgoblinsComplete_7
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 352
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd7aed087bdfd3841a1435a31f987964
+      internalID: -1396220864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostandgoblinsComplete_8
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 303
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d3d662411eac0544bf1579b240ea85e
+      internalID: 1012743376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostandgoblinsComplete_9
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 303
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c370e45cd30cf04dafa54c56450cdad
+      internalID: -834958681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostandgoblinsComplete_10
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 303
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb14fbc5b193d8546bd952563a914266
+      internalID: -1212229440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostandgoblinsComplete_11
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 303
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29f782b92030b684092c1a38b8284d22
+      internalID: -1714297485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostandgoblinsComplete_12
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 303
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 948d4d9975d67c84a9b0e12313251695
+      internalID: 1066338001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostandgoblinsComplete_13
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 303
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99fb8a41159b9f24393ea72db3ab82d2
+      internalID: 1365114640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostandgoblinsComplete_14
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 253
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38840446195d8994fa5873bee8774dc2
+      internalID: -1199931821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostandgoblinsComplete_15
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 253
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92a552873fa7bd0439cc12b2a8e00179
+      internalID: -94126957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostandgoblinsComplete_16
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 253
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35c40793157355e4d9224e36a481bf47
+      internalID: 1710920797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostandgoblinsComplete_17
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 253
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3548f2e6a0896674b8a329dac00527f6
+      internalID: -1167994522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostandgoblinsComplete_18
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 253
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e662cb43c9d3daa40adfaad282a55b8b
+      internalID: 2035681170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostandgoblinsComplete_19
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 253
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e92a481e96bbc814c9b651f7b66adf69
+      internalID: -80420520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostandgoblinsComplete_20
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 221
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 284fd2fc973594f42b438f1fcaaf3607
+      internalID: -2039834595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostandgoblinsComplete_21
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 221
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d94379c0c8c82f4cb34d41309b69d69
+      internalID: -891482021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostandgoblinsComplete_22
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 221
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e498cbb8f7ef7ee4c9b0372e7074b47c
+      internalID: -257036718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostandgoblinsComplete_23
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 221
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 586d2a26ffd5eec43989bb21f6da61c8
+      internalID: -627655586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostandgoblinsComplete_24
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 221
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f29391e6e62a5a64abd4a2fddb6db80b
+      internalID: 59112394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostandgoblinsComplete_25
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 221
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4985ebd7bd3af7458cb68f8e264177c
+      internalID: 1939842377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostandgoblinsComplete_26
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 221
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 458f33220ae07064bb1ba11c6604090d
+      internalID: -1362211707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostandgoblinsComplete_27
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 221
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b09e3dc1640fb9f45908c294a9ffff78
+      internalID: -1817361222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostandgoblinsComplete_28
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 221
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a174d30523a3704ba497471cd3c29a4
+      internalID: -1683962552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostandgoblinsComplete_29
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 221
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60ab0eca98067f14e8e5401cbdb5bde2
+      internalID: 1314574922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostandgoblinsComplete_30
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 221
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbfe94fddaa698a4ca8a298ee25b4ff6
+      internalID: -54831581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostandgoblinsComplete_31
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 221
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 365cc2e3c34745142867f7b5f80fba2e
+      internalID: 940441174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostandgoblinsComplete_32
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 189
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b284301fa863cee4d9205da80b0ff2a4
+      internalID: -1083920004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostandgoblinsComplete_33
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 190
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e23e7560f7d1004b8889be2701316bc
+      internalID: -1278022546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostandgoblinsComplete_34
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 189
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfab0c29492a4184fba0c100b335cb7a
+      internalID: -1952170901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostandgoblinsComplete_35
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 187
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c3b2ea97657b9347b2d29b59f3b006e
+      internalID: -1167386810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostandgoblinsComplete_36
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 187
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2895189efa302614f987681d26f5a76b
+      internalID: 671591348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostandgoblinsComplete_37
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 189
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00d2144906e100641aba89a800bcbad2
+      internalID: -1135713331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostandgoblinsComplete_38
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 190
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6b199f67d769e047996c52595d4dfbb
+      internalID: -343933695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostandgoblinsComplete_39
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 189
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efed760fc9158174d8663f37ac02432c
+      internalID: -1328600583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostandgoblinsComplete_40
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 164
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a754245d94eeb4444b732c9206943e33
+      internalID: -1294893201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostandgoblinsComplete_41
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 164
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bf7a194c6613f74fb01b7b944a078c4
+      internalID: 1285617903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostandgoblinsComplete_42
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 164
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e3f903b4a302744199c87da8b2fbdd4
+      internalID: -169892190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostandgoblinsComplete_43
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 164
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd519e960c5a2d2468922edd7307231c
+      internalID: 1951412848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostandgoblinsComplete_44
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 118
+        width: 47
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bb52de6a2265f94990e4778e542124d
+      internalID: -2041026082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostandgoblinsComplete_45
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 122
+        width: 34
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06e9e43e6dc23eb4eb7b56763ba73867
+      internalID: 334927027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostandgoblinsComplete_46
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 122
+        width: 34
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74837abae884fed4d85d5d92e2500716
+      internalID: -531456830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostandgoblinsComplete_47
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 118
+        width: 47
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 875d20fcc9a02794cb4132056396520c
+      internalID: -779608994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostandgoblinsComplete_48
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 69
+        width: 48
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92a631b289db14c418f7d9d425081335
+      internalID: -685901862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostandgoblinsComplete_49
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 68
+        width: 45
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 320db21ed4b99544ab41457e3c8940a4
+      internalID: 1718589979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostandgoblinsComplete_50
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 68
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 773a2c20de73dd6449d33bbfd523a678
+      internalID: -1478038225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostandgoblinsComplete_51
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 68
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6917de2fa0d4a394bb4d2d308a5a20a3
+      internalID: -18668773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostandgoblinsComplete_52
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 68
+        width: 45
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bfd33e262992c44bbf387d779d06a38
+      internalID: 1475240903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostandgoblinsComplete_53
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 69
+        width: 48
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8247916501c77594bab43ff0b7878157
+      internalID: -1360692340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostandgoblinsComplete_54
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2
+        width: 63
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cddd719c24c56414898bd19c2efd538f
+      internalID: 1662340692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostandgoblinsComplete_55
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 2
+        width: 63
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd795ee01c7632441adfae5e2d255234
+      internalID: 2102172777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostandgoblinsComplete_56
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 2
+        width: 63
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54c53f7a3b7897d488fe70cc5b56e412
+      internalID: -1586348753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostandgoblinsComplete_57
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 2
+        width: 63
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b99568869d2c9ce4dbe2596f2fc32a9f
+      internalID: 1327327909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostandgoblinsComplete_58
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 2
+        width: 63
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f324ed06ccc81a44a04ecda34eaf961
+      internalID: 2057938757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostandgoblinsComplete_59
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 2
+        width: 63
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 608d3193d1a77424cbefc37413233e44
+      internalID: -608670658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostandgoblinsComplete_60
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 2
+        width: 63
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d802f1cdc2602c846add27cea161bd74
+      internalID: -636020959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghostandgoblinsComplete_61
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 2
+        width: 63
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 151421637c273a14cbdc626167170bef
+      internalID: -1412469728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      ghostandgoblinsComplete_0: 1915989929
+      ghostandgoblinsComplete_1: -1104044047
+      ghostandgoblinsComplete_10: -1212229440
+      ghostandgoblinsComplete_11: -1714297485
+      ghostandgoblinsComplete_12: 1066338001
+      ghostandgoblinsComplete_13: 1365114640
+      ghostandgoblinsComplete_14: -1199931821
+      ghostandgoblinsComplete_15: -94126957
+      ghostandgoblinsComplete_16: 1710920797
+      ghostandgoblinsComplete_17: -1167994522
+      ghostandgoblinsComplete_18: 2035681170
+      ghostandgoblinsComplete_19: -80420520
+      ghostandgoblinsComplete_2: 103220155
+      ghostandgoblinsComplete_20: -2039834595
+      ghostandgoblinsComplete_21: -891482021
+      ghostandgoblinsComplete_22: -257036718
+      ghostandgoblinsComplete_23: -627655586
+      ghostandgoblinsComplete_24: 59112394
+      ghostandgoblinsComplete_25: 1939842377
+      ghostandgoblinsComplete_26: -1362211707
+      ghostandgoblinsComplete_27: -1817361222
+      ghostandgoblinsComplete_28: -1683962552
+      ghostandgoblinsComplete_29: 1314574922
+      ghostandgoblinsComplete_3: -76948746
+      ghostandgoblinsComplete_30: -54831581
+      ghostandgoblinsComplete_31: 940441174
+      ghostandgoblinsComplete_32: -1083920004
+      ghostandgoblinsComplete_33: -1278022546
+      ghostandgoblinsComplete_34: -1952170901
+      ghostandgoblinsComplete_35: -1167386810
+      ghostandgoblinsComplete_36: 671591348
+      ghostandgoblinsComplete_37: -1135713331
+      ghostandgoblinsComplete_38: -343933695
+      ghostandgoblinsComplete_39: -1328600583
+      ghostandgoblinsComplete_4: -1378242265
+      ghostandgoblinsComplete_40: -1294893201
+      ghostandgoblinsComplete_41: 1285617903
+      ghostandgoblinsComplete_42: -169892190
+      ghostandgoblinsComplete_43: 1951412848
+      ghostandgoblinsComplete_44: -2041026082
+      ghostandgoblinsComplete_45: 334927027
+      ghostandgoblinsComplete_46: -531456830
+      ghostandgoblinsComplete_47: -779608994
+      ghostandgoblinsComplete_48: -685901862
+      ghostandgoblinsComplete_49: 1718589979
+      ghostandgoblinsComplete_5: -1373516860
+      ghostandgoblinsComplete_50: -1478038225
+      ghostandgoblinsComplete_51: -18668773
+      ghostandgoblinsComplete_52: 1475240903
+      ghostandgoblinsComplete_53: -1360692340
+      ghostandgoblinsComplete_54: 1662340692
+      ghostandgoblinsComplete_55: 2102172777
+      ghostandgoblinsComplete_56: -1586348753
+      ghostandgoblinsComplete_57: 1327327909
+      ghostandgoblinsComplete_58: 2057938757
+      ghostandgoblinsComplete_59: -608670658
+      ghostandgoblinsComplete_6: 1435770398
+      ghostandgoblinsComplete_60: -636020959
+      ghostandgoblinsComplete_61: -1412469728
+      ghostandgoblinsComplete_7: -1396220864
+      ghostandgoblinsComplete_8: 1012743376
+      ghostandgoblinsComplete_9: -834958681
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
