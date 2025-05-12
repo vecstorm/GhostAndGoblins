@@ -189,10 +189,10 @@ MonoBehaviour:
   velocidadDeMovimiento: 200
   suavizadoDeMovimiento: 0.021
   inputActionsMapping: {fileID: -944628639613478452, guid: 04c00d290f307ab4bbe8c0ee31694af0, type: 3}
-  fuerzaDeSalto: 400
+  fuerzaDeSalto: 500
   queEsSuelo:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 320
   rayCastOrigin: {fileID: 7714865204345658796}
   dimensionesCaja: {x: 1, y: 1, z: 0}
   enSuelo: 0
@@ -212,9 +212,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9334d8b0976bf941bbc2f9db52bb24d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weapon: {fileID: 0}
+  weapon: {fileID: 11400000, guid: 65ede58e153b6324dacfb5ce1729da45, type: 2}
   shootSpawnPoint: {fileID: 6220991120358418221}
-  coolDownShoot: 0
+  coolDownShoot: 3
   inputActionMapping: {fileID: 0}
 --- !u!1 &3016807039860168887
 GameObject:

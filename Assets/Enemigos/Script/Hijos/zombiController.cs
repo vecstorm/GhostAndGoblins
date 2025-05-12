@@ -11,14 +11,14 @@ public class ZombiController : MonoBehaviour
     float timeAnim1 = 7;
     [SerializeField]
     float timeAnim2 = 7.1f;
-    
+    private GameObject player;
     public Animator animator;
     
     private Rigidbody2D rb2D;
-    private int dir = 1;
 
     void Start()
     {
+        player = GameObject.FindGameObjectWithTag("Player");
         rb2D = GetComponent<Rigidbody2D>();
 
         Caminar(); // Hacemos que empieze caminando
@@ -27,8 +27,18 @@ public class ZombiController : MonoBehaviour
     }
 
     void Update()
-    {
-        rb2D.velocity = new Vector2((speed * 2) * dir, 0f); // Le damos una velocidad constante
+    {   
+        Vector2 direccion = (player.transform.position - transform.position).normalized;
+        rb2D.velocity = new Vector2((speed * 2) * direccion.x, 0f); // Le damos una velocidad constante
+        if (direccion.x > 0)
+        {
+            transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
+        }
+        else
+        {
+            transform.localScale = new Vector3(-1.5f, 1.5f, 1.5f);
+        }
+
     }
 
     void Desaparecer() // Hace que el zombi se quede quieto y haga la animación de meterse bajo tierra

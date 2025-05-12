@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 6224950334966635652}
   m_Layer: 9
   m_Name: zombiR
-  m_TagString: Zombi
+  m_TagString: Enemigos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 3298875960034906453}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.83, y: -0.9, z: 0.043098487}
+  m_LocalPosition: {x: -24.11, y: -3.7156734, z: 0.043098487}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -203,3 +203,9 @@ MonoBehaviour:
   life: 2
   enemyDied: {fileID: 6163902674521809381, guid: 94b873cf032a19c459c870aa9a84092e, type: 3}
   DiedPoints: 150
+  collectableItems:
+  - {fileID: 7125086259467764097, guid: c9c8399f3648ac9409cad30151b00b48, type: 3}
+  collectableWapon:
+  - {fileID: 3573922450461951979, guid: 736495bf10491b14cb69add2f4ed00a5, type: 3}
+  dropChanceItem: 0.5
+  dropChanceWeapon: 0.2

@@ -1,26 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Video;
 
 public class HUD : MonoBehaviour
 {
-
-    public GameObject[] vidas;
-
     
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public GameObject[] vidas;
+    /*    public GameObject[] weapons;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
+
+        public void changeWeapon()
+        {
+            if (wepon)
+
+        }*/
+
 
     public void DesactivarVida(int indice)
     {

@@ -11,6 +11,7 @@ public class LiveManager : MonoBehaviour
     public static LiveManager Instance;
 
     public HUD hud;
+    public GameObject gameOver;
 
     private int vida = 3;
 
@@ -28,14 +29,18 @@ public class LiveManager : MonoBehaviour
     }
 
     public void PerderVida()
-    {
-        vida -= 1;
-        if (vida < 0)
-        {
-            SceneManager.LoadScene(1);
-            vida = 3;
-        }
+    {       
+        vida -= 1;       
         hud.DesactivarVida(vida);
+        /*if(vida < 0)
+        {
+           
+
+            SceneManager.LoadScene(1);
+            
+            gameOver.SetActive(true);
+
+        }*/
     }
 
     public void RecuperarVida()
@@ -43,6 +48,5 @@ public class LiveManager : MonoBehaviour
         hud.ActivarVida(vida);
         vida += 1;
 
-        
     }
 }
