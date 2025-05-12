@@ -12,7 +12,10 @@ public class GameManager : MonoBehaviour
     InputActionAsset IA;
 
 
-private void Awake()
+
+
+
+    private void Awake()
     {
         if (Instance == null)
         {
@@ -28,6 +31,13 @@ private void Awake()
         inputActionsMapping.Enable();
     }
     
+
+
+   
+
+
+
+
     void Start()
     {
         

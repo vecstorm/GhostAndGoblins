@@ -52,7 +52,7 @@ public class CharacterAbilityController : MonoBehaviour
 
     public void ChangeWeapon(ItemContainer newWeaponItemContainer)
     {
-        Weapon newWeapon = (Weapon)newWeaponItemContainer.GetItem();
+        Weapon newWeapon = (Weapon)newWeaponItemContainer.getItem();
 
         if (newWeapon != null)
         {
@@ -61,9 +61,6 @@ public class CharacterAbilityController : MonoBehaviour
         // weapon1 = newWeapon;
     }
 
-    public Weapon getWeapon()
-    {
-        return weapon;
-    }
+
 
 }
