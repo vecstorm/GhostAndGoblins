@@ -23,7 +23,6 @@ public class GamePoints : MonoBehaviour
         totalPoints = PointColtroller.instance.getPoints();
         textMeshPoints.text = totalPoints.ToString("0");
 
-
     }
 
 

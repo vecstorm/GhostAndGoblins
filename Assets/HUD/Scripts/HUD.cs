@@ -6,18 +6,23 @@ using UnityEngine.Video;
 
 public class HUD : MonoBehaviour
 {
-    
 
     public GameObject[] vidas;
-    /*    public GameObject[] weapons;
 
+    public static HUD instance;
 
-
-        public void changeWeapon()
+    private void Awake()
+    {
+        if (instance == null)
         {
-            if (wepon)
-
-        }*/
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject); // Previene duplicaciones
+        }
+    }
 
 
     public void DesactivarVida(int indice)
@@ -30,8 +35,4 @@ public class HUD : MonoBehaviour
         vidas[indice].SetActive(true);
     }
 
-    //public void ActualizarPuntos(int puntosTotales)
-    //{
-    //    puntosTotales.text = puntosTotales.ToString;
-    //}
 }

@@ -2,8 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class bossController : MonoBehaviour
+public class bossController : Enemy
+
 {
+    public GameObject puerta1;
+    public GameObject puerta2;
     private Rigidbody2D rb2D;
     private GameObject player;
     private bool suelo = false;
@@ -86,4 +89,17 @@ public class bossController : MonoBehaviour
             Gizmos.DrawWireSphere(sueloCheck.position, radioSuelo);
         }
     }
+
+    public void Morir()
+    {
+
+        if (puerta1 != null && puerta2 != null)
+        {
+            puerta1.GetComponent<AbrirPuertas>().enabled = true; // Activa el movimiento de la puerta
+            puerta2.GetComponent<AbrirPuertas>().enabled = true; // Activa el movimiento de la puerta
+        }
+
+    }
+    
+
 }

@@ -27,6 +27,11 @@ public class Enemy : MonoBehaviour
     }
 
     void Muerte(){
+
+        if (GetComponent<bossController>() != null)
+        {
+            GetComponent<bossController>().Morir();
+        }
         PointColtroller.instance.sumarPuntos(DiedPoints);
         DropItem(); // Intentamos soltar un objeto
         DropWeapon();
