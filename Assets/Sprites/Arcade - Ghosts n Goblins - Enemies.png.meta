@@ -963,9 +963,9 @@ TextureImporter:
       name: Arcade - Ghosts n Goblins - Enemies_38
       rect:
         serializedVersion: 2
-        x: 119
+        x: 116
         y: 467
-        width: 13
+        width: 16
         height: 15
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1069,9 +1069,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 206
-        y: 470
+        y: 467
         width: 16
-        height: 10
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1090,9 +1090,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 224
-        y: 471
+        y: 467
         width: 16
-        height: 9
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1113,7 +1113,7 @@ TextureImporter:
         x: 242
         y: 467
         width: 16
-        height: 15
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1134,7 +1134,7 @@ TextureImporter:
         x: 260
         y: 467
         width: 16
-        height: 15
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1153,9 +1153,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 278
-        y: 471
+        y: 467
         width: 16
-        height: 9
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1174,9 +1174,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 296
-        y: 470
+        y: 467
         width: 16
-        height: 10
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1280,7 +1280,7 @@ TextureImporter:
         serializedVersion: 2
         x: 386
         y: 467
-        width: 13
+        width: 16
         height: 15
       alignment: 0
       pivot: {x: 0.5, y: 0.5}

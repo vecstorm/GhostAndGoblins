@@ -9,14 +9,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8518219049376457166}
-  - component: {fileID: 4485980767683975556}
+  - component: {fileID: 7824647065603215466}
   - component: {fileID: 2954165686351274767}
   - component: {fileID: 5513689937659742349}
   - component: {fileID: 9189532372475888858}
   - component: {fileID: 4716109901895424763}
   - component: {fileID: 2840464084308379725}
   m_Layer: 9
-  m_Name: pajaro
+  m_Name: pajaroRojo
   m_TagString: Enemigos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37,7 +37,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4485980767683975556
+--- !u!114 &7824647065603215466
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -46,13 +46,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 240045781654496398}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 705d10f13babc0b46850b0d124e8df48, type: 3}
+  m_Script: {fileID: 11500000, guid: c45410de86091c242a9e8b34a2bfb7db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   tiempoPrimeraAnimacion: 0
-  amplitud: 0.5
-  frecuencia: 2
-  velocidad: 2
+  distanciaPersonaje: 10
   animator: {fileID: 2954165686351274767}
 --- !u!95 &2954165686351274767
 Animator:
@@ -64,7 +62,7 @@ Animator:
   m_GameObject: {fileID: 240045781654496398}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f7a821d02e9fd664c85784cf9be590f5, type: 2}
+  m_Controller: {fileID: 9100000, guid: 1898d935b64ee2b4892a5fb8566435d4, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -178,7 +176,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1804601143, guid: cf6387a51523a054e999c8a46e9e0023, type: 3}
+  m_Sprite: {fileID: -2077534732, guid: cf6387a51523a054e999c8a46e9e0023, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

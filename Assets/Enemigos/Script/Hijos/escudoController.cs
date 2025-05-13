@@ -16,7 +16,6 @@ public class escudoController : MonoBehaviour
     public Animator animator;
 
     private Rigidbody2D rb2D;
-    private float speed = 0;
     private int dir = 1;
     private Vector2 posicionInicial;
     private GameObject player;
