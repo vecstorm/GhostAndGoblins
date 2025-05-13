@@ -12,7 +12,7 @@ public class MovePlatformStage1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        MovePlatform();
+         MovePlatform();
     }
 
     void MovePlatform()
