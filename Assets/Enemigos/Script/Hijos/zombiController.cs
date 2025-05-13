@@ -27,18 +27,21 @@ public class ZombiController : MonoBehaviour
     }
 
     void Update()
-    {   
-        Vector2 direccion = (player.transform.position - transform.position).normalized;
-        rb2D.velocity = new Vector2((speed * 2) * direccion.x, 0f); // Le damos una velocidad constante
-        if (direccion.x > 0)
+    {
+        if (player != null)
         {
-            transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
+                Vector2 direccion = (player.transform.position - transform.position).normalized;
+        
+            rb2D.velocity = new Vector2((speed * 2) * direccion.x, 0f); // Le damos una velocidad constante
+            if (direccion.x > 0)
+            {
+                transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
+            }
+            else
+            {
+                transform.localScale = new Vector3(-1.5f, 1.5f, 1.5f);
+            }
         }
-        else
-        {
-            transform.localScale = new Vector3(-1.5f, 1.5f, 1.5f);
-        }
-
     }
 
     void Desaparecer() // Hace que el zombi se quede quieto y haga la animación de meterse bajo tierra

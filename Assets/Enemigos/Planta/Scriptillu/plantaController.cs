@@ -26,24 +26,24 @@ public class plantaController : MonoBehaviour
 
     void Update()
     {
+        if(player != null) { 
+            float distance = Vector2.Distance(transform.position, player.transform.position); // Calcula la distancia a la que se encuentra el jugador en referencia a la planta
 
-        float distance = Vector2.Distance(transform.position, player.transform.position); // Calcula la distancia a la que se encuentra el jugador en referencia a la planta
-
-        if (distance < distanciaBolas)
-        {
-            time += Time.deltaTime; // creamos un temporizador
-
-            if (time > 2)
+            if (distance < distanciaBolas)
             {
-                time = 0; // Seteamos el contador a 0
-                Dispara();
+                time += Time.deltaTime; // creamos un temporizador
 
-                animator.SetBool("dispara", true); // Le damos el ok para que entre al estado idle
-                Invoke("Idle", 0.5f); // Invocamos el metodo para que cuando acabe la animaci�n salte otra vez a idle
+                if (time > 2)
+                {
+                    time = 0; // Seteamos el contador a 0
+                    Dispara();
+
+                    animator.SetBool("dispara", true); // Le damos el ok para que entre al estado idle
+                    Invoke("Idle", 0.5f); // Invocamos el metodo para que cuando acabe la animaci�n salte otra vez a idle
+                }
             }
-        }
 
-        // Debug.Log(distance); // Para comprobar la distancia a la que se encuentra el jugador en referencia a la planta
+        }// Debug.Log(distance); // Para comprobar la distancia a la que se encuentra el jugador en referencia a la planta
     }
 
     void Dispara() // Instancia una bola de las que dispara

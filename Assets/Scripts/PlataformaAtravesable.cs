@@ -28,17 +28,22 @@ public class PlataformaAtravesable : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        piePlayer = player.transform.position.y - csPlayer.size.y / 2;
-        if(piePlayer > topPlata){
-            csPlata.isTrigger = false;
-            gameObject.tag = "TerrenoAtravesable";
-            gameObject.layer = LayerMask.NameToLayer("Floor");
-        }
+        if (player != null)
+        {
+            piePlayer = player.transform.position.y - csPlayer.size.y / 2;
+            if (piePlayer > topPlata)
+            {
+                csPlata.isTrigger = false;
+                gameObject.tag = "TerrenoAtravesable";
+                gameObject.layer = LayerMask.NameToLayer("Floor");
+            }
 
-        if(!csPlata.isTrigger && (piePlayer < topPlata - 0.1f)){
-            csPlata.isTrigger = true;
-            gameObject.tag = "Untagged";
-            gameObject.layer = LayerMask.NameToLayer("Default");
+            if (!csPlata.isTrigger && (piePlayer < topPlata - 0.1f))
+            {
+                csPlata.isTrigger = true;
+                gameObject.tag = "Untagged";
+                gameObject.layer = LayerMask.NameToLayer("Default");
+            }
         }
     }
 }

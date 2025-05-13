@@ -10,6 +10,7 @@ public class HUD : MonoBehaviour
     public GameObject[] vidas;
 
     public static HUD instance;
+    
 
     private void Awake()
     {

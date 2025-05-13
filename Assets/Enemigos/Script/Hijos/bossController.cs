@@ -34,29 +34,32 @@ public class bossController : Enemy
 
     private void Update()
     {
-        suelo = Physics2D.OverlapCircle(sueloCheck.position, radioSuelo, queEsSuelo); // Comprueba si está tocando el suelo
-
-        float distancia = Vector2.Distance(transform.position, player.transform.position);  // Calcula la distancia entre el enemigo y el jugador
-
-        if (distancia < rangoVision && suelo && Time.time > tiempoUltimoSalto + cooldownSalto) // Miramos si todo esta correcto
+        if (player != null)
         {
-            SaltarHaciaJugador(); // Ejecutamos el salto hacia eel jugador
-        }
+            suelo = Physics2D.OverlapCircle(sueloCheck.position, radioSuelo, queEsSuelo); // Comprueba si está tocando el suelo
 
-        // Si ha saltado y ya NO está en el suelo, marcamos que estuvo en el aire
-        if (haSaltado && !suelo)
-        {
-            estuvoEnElAire = true;
-        }
+            float distancia = Vector2.Distance(transform.position, player.transform.position);  // Calcula la distancia entre el enemigo y el jugador
 
-        // Si ha saltado, estuvo en el aire, y ahora volvió al suelo -> reset animaciones
-        if (haSaltado && estuvoEnElAire && suelo)
-        {
-            animator.SetBool("jumpL", false);
-            animator.SetBool("jumpR", false);
+            if (distancia < rangoVision && suelo && Time.time > tiempoUltimoSalto + cooldownSalto) // Miramos si todo esta correcto
+            {
+                SaltarHaciaJugador(); // Ejecutamos el salto hacia eel jugador
+            }
 
-            haSaltado = false;        // Reseteamos todo para el siguiente salto
-            estuvoEnElAire = false;
+            // Si ha saltado y ya NO está en el suelo, marcamos que estuvo en el aire
+            if (haSaltado && !suelo)
+            {
+                estuvoEnElAire = true;
+            }
+
+            // Si ha saltado, estuvo en el aire, y ahora volvió al suelo -> reset animaciones
+            if (haSaltado && estuvoEnElAire && suelo)
+            {
+                animator.SetBool("jumpL", false);
+                animator.SetBool("jumpR", false);
+
+                haSaltado = false;        // Reseteamos todo para el siguiente salto
+                estuvoEnElAire = false;
+            }
         }
     }
 

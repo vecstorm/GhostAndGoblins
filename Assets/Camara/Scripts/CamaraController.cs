@@ -5,13 +5,16 @@ using UnityEngine;
 public class CamaraController : MonoBehaviour
 {
 
-    public Transform character;
+    public GameObject character;
 
 
-    // Update is called once per frame
+    private void Start()
+    {
+        character = GameObject.FindGameObjectWithTag("Player");
+    }
     void Update()
     {
-        transform.position = new Vector3(character.position.x, transform.position.y, transform.position.z);
+        transform.position = new Vector3(character.transform.position.x, transform.position.y, transform.position.z);
     }
 
     

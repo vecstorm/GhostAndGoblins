@@ -29,26 +29,29 @@ public class pajaroRojoController : MonoBehaviour
 
     private void Update()
     {
-        float distance = Vector2.Distance(transform.position, player.transform.position); // Calcula la distancia a la que se encuentra el jugador en referencia a la planta
-
-        Vector2 direccion = (player.transform.position - transform.position).normalized; // Calculamos la direccion donde esta el jugador
-        
-        if (distance < distanciaPersonaje)
+        if (player != null)
         {
-            DejarCaminar(); // Para que empieze sin caminar
-            Invoke("Transicion", tiempoPrimeraAnimacion); // Invocamos el metodo para que cuando acabe la animación haga lo que le pidamos
+            float distance = Vector2.Distance(transform.position, player.transform.position); // Calcula la distancia a la que se encuentra el jugador en referencia a la planta
 
-            float x = transform.position.x + velocidad * Time.deltaTime * direccion.x; // Calculamos el movimiento de seguimiento en el eje X
-            float y = transform.position.y + velocidad * Time.deltaTime * direccion.y; // Calculamos el movimiento de seguimiento en el eje Y
-            transform.position = new Vector2(x, y); // Se lo pasamos para que haga lo que le hemos pedido
+            Vector2 direccion = (player.transform.position - transform.position).normalized; // Calculamos la direccion donde esta el jugador
 
-            if (direccion.x > 0) // para que te siga incluso girando
+            if (distance < distanciaPersonaje)
             {
-                transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
-            }
-            else
-            {
-                transform.localScale = new Vector3(-1.5f, 1.5f, 1.5f);
+                DejarCaminar(); // Para que empieze sin caminar
+                Invoke("Transicion", tiempoPrimeraAnimacion); // Invocamos el metodo para que cuando acabe la animación haga lo que le pidamos
+
+                float x = transform.position.x + velocidad * Time.deltaTime * direccion.x; // Calculamos el movimiento de seguimiento en el eje X
+                float y = transform.position.y + velocidad * Time.deltaTime * direccion.y; // Calculamos el movimiento de seguimiento en el eje Y
+                transform.position = new Vector2(x, y); // Se lo pasamos para que haga lo que le hemos pedido
+
+                if (direccion.x > 0) // para que te siga incluso girando
+                {
+                    transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
+                }
+                else
+                {
+                    transform.localScale = new Vector3(-1.5f, 1.5f, 1.5f);
+                }
             }
         }
     }

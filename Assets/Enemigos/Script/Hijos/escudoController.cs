@@ -30,13 +30,15 @@ public class escudoController : MonoBehaviour
 
     private void Update()
     {
-        float distance = Vector2.Distance(transform.position, player.transform.position); // Calcula la distancia a la que se encuentra el jugador en referencia a la planta
+        if (player != null) { 
+            float distance = Vector2.Distance(transform.position, player.transform.position); // Calcula la distancia a la que se encuentra el jugador en referencia a la planta
 
-        if (distance < distanciaEscudo)
-        {
-            float x = transform.position.x + velocidad * Time.deltaTime * (-1 * dir); // Calculamos lo que tiene que hacer en el eje X
-            float y = posicionInicial.y + Mathf.Sin(Time.time * frecuencia) * amplitud; // Calculamos el movimiento de oscilación en el eje Y
-            transform.position = new Vector2(x, y); // Se lo pasamos para que haga lo que le hemos pedido
+            if (distance < distanciaEscudo)
+            {
+                float x = transform.position.x + velocidad * Time.deltaTime * (-1 * dir); // Calculamos lo que tiene que hacer en el eje X
+                float y = posicionInicial.y + Mathf.Sin(Time.time * frecuencia) * amplitud; // Calculamos el movimiento de oscilación en el eje Y
+                transform.position = new Vector2(x, y); // Se lo pasamos para que haga lo que le hemos pedido
+            }
         }
     }
 
