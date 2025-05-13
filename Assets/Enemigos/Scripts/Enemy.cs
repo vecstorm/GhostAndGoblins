@@ -17,6 +17,9 @@ public class Enemy : MonoBehaviour
     float dropChanceItem = 0.5f; // Probabilidad de soltar un objeto (50%)
     [SerializeField]
     float dropChanceWeapon = 0.2f;
+    public VidasJugador000000000000 vidaJugador;
+    //private bool PuedeDanar = true;
+    //private float Cooldown = 3f;
 
     public void Damage(float damage){
 
@@ -58,8 +61,18 @@ public class Enemy : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Player")){
-            LiveManager.Instance.PerderVida();
+        if (collision.gameObject.CompareTag("Player") /*&& PuedeDanar*/)
+        {
+            vidaJugador.RecibirDano(1);
+            //PuedeDanar = false;
+           // StartCoroutine(CooldownDano());
         }
     }
+
+/*    IEnumerator CooldownDano()
+    {
+        yield return new WaitForSeconds(Cooldown);
+        PuedeDanar = true;
+    }*/
+
 }

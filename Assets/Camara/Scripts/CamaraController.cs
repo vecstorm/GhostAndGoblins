@@ -8,14 +8,23 @@ public class CamaraController : MonoBehaviour
     public GameObject character;
 
 
-    private void Start()
+    void Start()
     {
         character = GameObject.FindGameObjectWithTag("Player");
-    }
-    void Update()
-    {
-        transform.position = new Vector3(character.transform.position.x, transform.position.y, transform.position.z);
+
+        if (character == null)
+        {
+            Debug.LogError("CamaraController: No se encontró un objeto con la etiqueta 'Player'.");
+        }
     }
 
-    
+    void Update()
+    {
+        if (character != null)
+        {
+            transform.position = new Vector3(character.transform.position.x, transform.position.y, transform.position.z);
+        }
+    }
+
+
 }

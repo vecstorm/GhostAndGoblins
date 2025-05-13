@@ -39,7 +39,7 @@ public class bulletScript : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {   
-            LiveManager.Instance.PerderVida();
+            //LiveManager.Instance.PerderVida();
             Destroy(gameObject);
         }
     }

@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 4678440048172519912}
   - component: {fileID: 7897901932074689408}
   - component: {fileID: 4603049322730788455}
+  - component: {fileID: 4585821181646316331}
   m_Layer: 0
   m_Name: Character
   m_TagString: Player
@@ -216,6 +217,23 @@ MonoBehaviour:
   shootSpawnPoint: {fileID: 6220991120358418221}
   coolDownShoot: 3
   inputActionMapping: {fileID: 0}
+--- !u!114 &4585821181646316331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2501169785147188056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaae2101566ec954088cfd05098f14c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vidas:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  VidaMaxima: 3
 --- !u!1 &3016807039860168887
 GameObject:
   m_ObjectHideFlags: 0

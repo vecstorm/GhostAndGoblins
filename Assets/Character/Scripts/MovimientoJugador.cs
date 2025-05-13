@@ -51,16 +51,7 @@ public class MovimientoJugador : MonoBehaviour
 
     void Awake()
     {
-        GameObject jugadorExistente = GameObject.FindGameObjectWithTag("Player");
 
-        if (jugadorExistente != null && jugadorExistente != gameObject)
-        {
-            Destroy(gameObject); // Previene duplicaciones del jugador
-        }
-        else
-        {
-            DontDestroyOnLoad(gameObject); // Mantiene el jugador entre escenas
-        }
         inputActionsMapping.Enable();
         horizontal_ia = inputActionsMapping.FindActionMap("Movement").FindAction("Horizontal");
         jump_ia = inputActionsMapping.FindActionMap("Movement").FindAction("Jump");

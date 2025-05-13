@@ -17,12 +17,26 @@ public class PlataformaAtravesable : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-    player = GameObject.FindGameObjectWithTag("Player");
-    csPlayer = player.GetComponent<CapsuleCollider2D>();
-    csPlata = GetComponent<BoxCollider2D>();
-    csPlataBounds = csPlata.bounds;
-    csPlayerSize = csPlayer.size;
-    topPlata = csPlataBounds.center.y + csPlataBounds.extents.y;
+        player = GameObject.FindGameObjectWithTag("Player");
+
+        if (player == null)
+        {
+            Debug.LogError("PlataformaAtravesable: No se encontró un objeto con la etiqueta 'Player'.");
+            return;
+        }
+
+        csPlayer = player.GetComponent<CapsuleCollider2D>();
+        csPlata = GetComponent<BoxCollider2D>();
+
+        if (csPlayer == null || csPlata == null)
+        {
+            Debug.LogError("PlataformaAtravesable: No se pudo obtener los colliders.");
+            return;
+        }
+
+        csPlataBounds = csPlata.bounds;
+        csPlayerSize = csPlayer.size;
+        topPlata = csPlataBounds.center.y + csPlataBounds.extents.y;
     }
 
     // Update is called once per frame

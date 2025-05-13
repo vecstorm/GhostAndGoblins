@@ -1,17 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-using UnityEngine.Video;
+using UnityEngine.SceneManagement;
 
-public class HUD : MonoBehaviour
+public class VidasJugador000000000000 : MonoBehaviour
 {
+    public Image[] vidas;
 
-    /*public Image[] vidas;
-
-    public static HUD instance;
     public int VidaMaxima = 3;
     private int VidaActual;
 
@@ -27,7 +23,7 @@ public class HUD : MonoBehaviour
         {
             vidas[i].enabled = i < VidaActual;
         }
-        if(VidaActual <= 0)
+        if (VidaActual <= 0)
         {
             ReiniciarEscena();
         }
@@ -52,7 +48,4 @@ public class HUD : MonoBehaviour
         VidaActual = Mathf.Clamp(VidaActual, 0, VidaMaxima);
         actualizarInterfaz();
     }
-
-    */
 }
-

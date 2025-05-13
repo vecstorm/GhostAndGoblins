@@ -206,7 +206,8 @@ MonoBehaviour:
   DiedPoints: 200
   collectableItems:
   - {fileID: 7125086259467764097, guid: c9c8399f3648ac9409cad30151b00b48, type: 3}
+  collectableWapon:
   - {fileID: 3573922450461951979, guid: 736495bf10491b14cb69add2f4ed00a5, type: 3}
-  collectableWapon: []
   dropChanceItem: 0.5
   dropChanceWeapon: 0.2
+  vidaJugador: {fileID: 0}
