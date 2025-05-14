@@ -12,6 +12,8 @@ public class VidasJugador000000000000 : MonoBehaviour
     public int vidaMaxima = 3;
     private int vidaActual;
 
+
+
     private void Start()
     {
         // Buscar todas las imágenes con el tag "Vida" en la escena
@@ -44,14 +46,18 @@ public class VidasJugador000000000000 : MonoBehaviour
 
     void EscenaGameOver()
     {
+        
         SceneManager.LoadScene(3);
-
+        
     }
+
 
     public void RecibirDano(int cantidadDano)
     {
         vidaActual -= cantidadDano;
         vidaActual = Mathf.Clamp(vidaActual, 0, vidaMaxima);
+        Debug.Log("quitamos vidas");
+        Debug.Log(vidaActual);
         ActualizarInterfaz();
     }
 

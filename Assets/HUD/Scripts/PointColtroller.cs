@@ -7,6 +7,7 @@ public class PointColtroller : MonoBehaviour
 public static PointColtroller instance;
     [SerializeField] private int cantidadPuntos;
     private int highScore;
+    private int highScorePartida;
 
     private void Awake()
     {
@@ -38,6 +39,7 @@ public static PointColtroller instance;
 
     }
 
+
     public int getPoints()
     {
         return cantidadPuntos;
@@ -45,5 +47,11 @@ public static PointColtroller instance;
     public int getHighScore()
     {
         return highScore;
+    }
+
+
+    public void reiniciarPuntos()
+    {
+        cantidadPuntos = 0;
     }
 }
