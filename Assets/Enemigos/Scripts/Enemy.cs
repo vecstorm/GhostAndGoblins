@@ -18,6 +18,13 @@ public class Enemy : MonoBehaviour
     [SerializeField]
     float dropChanceWeapon = 0.2f;
 
+    AudioManagerScript audioManager;
+
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManagerScript>();
+    }
+
     public void Damage(float damage){
 
         life -= damage;
@@ -31,6 +38,7 @@ public class Enemy : MonoBehaviour
         DropItem(); // Intentamos soltar un objeto
         DropWeapon();
         Destroy(gameObject);
+        audioManager.PlaySFX(audioManager.muerteEnemigos);
     }
     private void DropItem()
     {

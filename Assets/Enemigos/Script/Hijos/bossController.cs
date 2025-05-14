@@ -10,14 +10,14 @@ public class bossController : Enemy
     private bool haSaltado = false;      // Para saber si ha saltado
     private bool estuvoEnElAire = false; // Para saber si ha estado en el aire
 
-    [Header("Configuración de salto")] // Para que se muestre un título encima de las variables
+    [Header("Configuraciï¿½n de salto")] // Para que se muestre un tï¿½tulo encima de las variables
     public float rangoVision = 10f;
     public float fuerzaSaltoX = 2f;
     public float fuerzaSaltoY = 8f;
     public float cooldownSalto = 4f; // Tiempo entre saltos en segundos
     private float tiempoUltimoSalto = -Mathf.Infinity;
 
-    [Header("Detección de suelo")] // Para que se muestre un título encima de las variables
+    [Header("Detecciï¿½n de suelo")] // Para que se muestre un tï¿½tulo encima de las variables
     public Transform sueloCheck;
     public float radioSuelo = 0.2f;
     public LayerMask queEsSuelo;
@@ -31,7 +31,7 @@ public class bossController : Enemy
 
     private void Update()
     {
-        suelo = Physics2D.OverlapCircle(sueloCheck.position, radioSuelo, queEsSuelo); // Comprueba si está tocando el suelo
+        suelo = Physics2D.OverlapCircle(sueloCheck.position, radioSuelo, queEsSuelo); // Comprueba si estï¿½ tocando el suelo
 
         float distancia = Vector2.Distance(transform.position, player.transform.position);  // Calcula la distancia entre el enemigo y el jugador
 
@@ -40,13 +40,13 @@ public class bossController : Enemy
             SaltarHaciaJugador(); // Ejecutamos el salto hacia eel jugador
         }
 
-        // Si ha saltado y ya NO está en el suelo, marcamos que estuvo en el aire
+        // Si ha saltado y ya NO estï¿½ en el suelo, marcamos que estuvo en el aire
         if (haSaltado && !suelo)
         {
             estuvoEnElAire = true;
         }
 
-        // Si ha saltado, estuvo en el aire, y ahora volvió al suelo -> reset animaciones
+        // Si ha saltado, estuvo en el aire, y ahora volviï¿½ al suelo -> reset animaciones
         if (haSaltado && estuvoEnElAire && suelo)
         {
             animator.SetBool("jumpL", false);
@@ -59,7 +59,7 @@ public class bossController : Enemy
 
     private void SaltarHaciaJugador()
     {
-        Vector2 direccion = (player.transform.position - transform.position).normalized; // Calculamos la dirección en la que esta el jugador
+        Vector2 direccion = (player.transform.position - transform.position).normalized; // Calculamos la direcciï¿½n en la que esta el jugador
         Vector2 fuerza = new Vector2(direccion.x * fuerzaSaltoX, fuerzaSaltoY); // Calculamos la fuerza deseada
 
         if (direccion.x < 0)

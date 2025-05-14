@@ -21,7 +21,12 @@ public class CharacterAbilityController : MonoBehaviour
     public InputActionAsset inputActionMapping;
     private Animator animator;
     HUD currentWeapon;
+    AudioManagerScript audioManager;
 
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManagerScript>();
+    }
 
     void Start()
     {
@@ -46,9 +51,9 @@ public class CharacterAbilityController : MonoBehaviour
 
     void Disparar()
     {
+        audioManager.PlaySFX(audioManager.disparoPlayer);
 
         Instantiate(weapon.GetProjectilePrefab(), shootSpawnPoint.position, shootSpawnPoint.rotation);
-
     }
 
     public void ChangeWeapon(ItemContainer newWeaponItemContainer)
