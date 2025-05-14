@@ -37,14 +37,14 @@ public class VidasJugador000000000000 : MonoBehaviour
         }
         if (vidaActual <= 0)
         {
-            ReiniciarEscena();
+            EscenaGameOver();
         }
     }
 
-    void ReiniciarEscena()
+    void EscenaGameOver()
     {
-        int currectSceneIncex = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.LoadScene(currectSceneIncex);
+        
+        SceneManager.LoadScene(3);
     }
 
     public void RecibirDano(int cantidadDano)
