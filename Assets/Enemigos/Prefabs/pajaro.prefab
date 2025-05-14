@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5513689937659742349}
   - component: {fileID: 9189532372475888858}
   - component: {fileID: 4716109901895424763}
+  - component: {fileID: 2840464084308379725}
   m_Layer: 9
   m_Name: pajaro
   m_TagString: Enemigos
@@ -48,15 +49,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 705d10f13babc0b46850b0d124e8df48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 2
-  enemyDied: {fileID: 6163902674521809381, guid: 94b873cf032a19c459c870aa9a84092e, type: 3}
-  DiedPoints: 200
-  collectableItems:
-  - {fileID: 7125086259467764097, guid: c9c8399f3648ac9409cad30151b00b48, type: 3}
-  collectableWapon:
-  - {fileID: 3573922450461951979, guid: 736495bf10491b14cb69add2f4ed00a5, type: 3}
-  dropChanceItem: 0.5
-  dropChanceWeapon: 0.2
   tiempoPrimeraAnimacion: 0
   amplitud: 0.5
   frecuencia: 2
@@ -197,3 +189,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2840464084308379725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 240045781654496398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9eefa39540041b945a44c072423521d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  life: 2
+  enemyDied: {fileID: 6163902674521809381, guid: 94b873cf032a19c459c870aa9a84092e, type: 3}
+  DiedPoints: 200
+  collectableItems:
+  - {fileID: 7125086259467764097, guid: c9c8399f3648ac9409cad30151b00b48, type: 3}
+  - {fileID: 3573922450461951979, guid: 736495bf10491b14cb69add2f4ed00a5, type: 3}
+  collectableWapon: []
+  dropChanceItem: 0.5
+  dropChanceWeapon: 0.2

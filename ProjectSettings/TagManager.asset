@@ -13,9 +13,7 @@ TagManager:
   - Enemigos
   - Bullet
   - Weapon
-  - SpawnPointCharacter
-  - CanGoDownFloor
-  - Audio
+  - Escudo
   layers:
   - Default
   - TransparentFX

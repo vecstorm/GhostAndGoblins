@@ -42,7 +42,6 @@ public class MovimientoJugador : MonoBehaviour
     private bool ignoringFloor = false;
 
     private bool puedeMoverseEnHorizontal;
-    AudioManagerScript audioManager;
 
     enum STATES {ONSTAIRS, ONFLOOR, ONAIR, ONTOPSTAIRS, ONUPPERSTAIRS, CROUCHING, SHOOT }
 
@@ -63,7 +62,7 @@ public class MovimientoJugador : MonoBehaviour
         capsuleCollider2D = GetComponent<CapsuleCollider2D>();
         gravedadInicial = rb2D.gravityScale;
 
-        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManagerScript>();
+
     }
 
 
@@ -193,7 +192,12 @@ public class MovimientoJugador : MonoBehaviour
                 rb2D.gravityScale = 0;
                 escalando = false;
                 animator.SetBool("OnStairs", false);
-            }  
+            }
+
+            
+
+            
+            
 
         }
         else
@@ -231,7 +235,6 @@ public class MovimientoJugador : MonoBehaviour
             enSuelo = false;
             animator.SetBool("IsJumping", true);
             rb2D.AddForce(new Vector2(0f, fuerzaDeSalto));
-            audioManager.PlaySFX(audioManager.salto);
         }
     }
 

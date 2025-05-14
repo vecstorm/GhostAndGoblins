@@ -16,7 +16,7 @@ public class pajaroRojoController : Enemy
 
     private Rigidbody2D rb2D;
     private GameObject player;
-    private float speed = 0;
+    private float speed = 0; // Esta variable da un warning, pero la estoy usando
     private Vector2 posicionInicial;
 
     void Start()

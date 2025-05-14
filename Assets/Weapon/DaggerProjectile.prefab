@@ -149,4 +149,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 8
   damage: 1
-  tiempoBala: 3
+  tiempoBala: 6
