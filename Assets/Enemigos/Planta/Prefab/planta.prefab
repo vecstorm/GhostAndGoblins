@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 6938266064903327963}
   - component: {fileID: 4026186239630583106}
   - component: {fileID: 701010717706049388}
-  - component: {fileID: 5246875494128839243}
   m_Layer: 9
   m_Name: planta
   m_TagString: Enemigos
@@ -50,6 +49,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a9532bc0e2c0d54bb371081dac68869, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  life: 1
+  enemyDied: {fileID: 6163902674521809381, guid: 94b873cf032a19c459c870aa9a84092e, type: 3}
+  DiedPoints: 100
+  collectableItems:
+  - {fileID: 7125086259467764097, guid: c9c8399f3648ac9409cad30151b00b48, type: 3}
+  collectableWapon: []
+  dropChanceItem: 0.5
+  dropChanceWeapon: 0.2
   bolaPos: {fileID: 6041517338968113699}
   timeIdle: 2
   distanciaBolas: 10
@@ -190,25 +197,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.8, y: 1}
   m_Direction: 0
---- !u!114 &5246875494128839243
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1909378651286133252}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9eefa39540041b945a44c072423521d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  life: 1
-  enemyDied: {fileID: 6163902674521809381, guid: 94b873cf032a19c459c870aa9a84092e, type: 3}
-  DiedPoints: 100
-  collectableItems: []
-  collectableWapon: []
-  dropChanceItem: 0.5
-  dropChanceWeapon: 0.2
 --- !u!1 &6058195241840390796
 GameObject:
   m_ObjectHideFlags: 0

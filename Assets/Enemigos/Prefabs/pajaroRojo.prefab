@@ -49,6 +49,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c45410de86091c242a9e8b34a2bfb7db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  life: 1
+  enemyDied: {fileID: 6163902674521809381, guid: 94b873cf032a19c459c870aa9a84092e, type: 3}
+  DiedPoints: 200
+  collectableItems:
+  - {fileID: 7125086259467764097, guid: c9c8399f3648ac9409cad30151b00b48, type: 3}
+  collectableWapon:
+  - {fileID: 3573922450461951979, guid: 736495bf10491b14cb69add2f4ed00a5, type: 3}
+  dropChanceItem: 0.5
+  dropChanceWeapon: 0.2
   tiempoPrimeraAnimacion: 0
   distanciaPersonaje: 10
   velocidad: 2
@@ -209,4 +218,3 @@ MonoBehaviour:
   collectableWapon: []
   dropChanceItem: 0.5
   dropChanceWeapon: 0.2
-  Player: {fileID: 2501169785147188056, guid: 2f3c28e827b136248b2ea0acd56f82c7, type: 3}

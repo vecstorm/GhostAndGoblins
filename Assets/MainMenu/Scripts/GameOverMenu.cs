@@ -1,13 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GameOverMenu : MonoBehaviour
 {
 
+
     public void Menu()
     {
+
         SceneManager.LoadScene(0);
     }
 
@@ -15,5 +18,10 @@ public class GameOverMenu : MonoBehaviour
     public void TryAgain()
     {
         SceneManager.LoadScene(1);
+    }
+
+    public void activarScene()
+    {
+        
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using Unity.VisualScripting;
 
 public class VidasJugador000000000000 : MonoBehaviour
 {
@@ -43,8 +44,8 @@ public class VidasJugador000000000000 : MonoBehaviour
 
     void EscenaGameOver()
     {
-        
         SceneManager.LoadScene(3);
+
     }
 
     public void RecibirDano(int cantidadDano)
