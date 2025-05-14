@@ -47,7 +47,7 @@ public class MovimientoJugador : MonoBehaviour
 
     STATES actual_state;
 
-
+    audioManagerScript audioManager;
 
     void Awake()
     {
@@ -63,7 +63,7 @@ public class MovimientoJugador : MonoBehaviour
         capsuleCollider2D = GetComponent<CapsuleCollider2D>();
         gravedadInicial = rb2D.gravityScale;
 
-
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<audioManagerScript>();
     }
 
 
@@ -233,6 +233,8 @@ public class MovimientoJugador : MonoBehaviour
 
         if (saltar && enSuelo)
         {
+            audioManager.PlaySFX(audioManager.saltoPlayer);
+
             enSuelo = false;
             animator.SetBool("IsJumping", true);
             rb2D.AddForce(new Vector2(0f, fuerzaDeSalto));

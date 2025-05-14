@@ -21,6 +21,13 @@ public class Enemy : MonoBehaviour
     //private bool PuedeDanar = true;
     //private float Cooldown = 3f;
 
+    audioManagerScript audioManager;
+
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<audioManagerScript>();
+    }
+
     public void Damage(float damage){
 
         life -= damage;
@@ -43,6 +50,8 @@ public class Enemy : MonoBehaviour
         DropItem(); // Intentamos soltar un objeto
         DropWeapon();
         Destroy(gameObject);
+
+        audioManager.PlaySFX(audioManager.muerteEnemigo);
     }
     private void DropItem()
     {

@@ -16,6 +16,7 @@ TagManager:
   - SpawnPointCharacter
   - Vida
   - Escudo
+  - Audio
   layers:
   - Default
   - TransparentFX
