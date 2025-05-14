@@ -15,6 +15,7 @@ TagManager:
   - Weapon
   - SpawnPointCharacter
   - Vida
+  - Escudo
   layers:
   - Default
   - TransparentFX

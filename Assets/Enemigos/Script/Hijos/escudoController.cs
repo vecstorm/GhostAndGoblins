@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class escudoController : MonoBehaviour
+public class escudoController : Enemy
 {
     [SerializeField]
     float amplitud = 0.5f; // Lo alto que baja/sube

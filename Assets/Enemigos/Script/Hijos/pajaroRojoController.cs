@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class pajaroRojoController : MonoBehaviour
+public class pajaroRojoController : Enemy
 {
     [SerializeField]
     float tiempoPrimeraAnimacion = 0f;
@@ -23,7 +23,7 @@ public class pajaroRojoController : MonoBehaviour
         rb2D = GetComponent<Rigidbody2D>();
         player = GameObject.FindGameObjectWithTag("Player"); // Guardamos al Player en la variable "player"
 
-        posicionInicial = transform.position; // Guardamos la posición y la guardamos en posicionInicial
+        posicionInicial = transform.position; // Guardamos la posiciï¿½n y la guardamos en posicionInicial
     }
 
     private void Update()
@@ -37,7 +37,7 @@ public class pajaroRojoController : MonoBehaviour
             if (distance < distanciaPersonaje)
             {
                 //DejarCaminar(); // Para que empieze sin caminar
-                Invoke("Transicion", tiempoPrimeraAnimacion); // Invocamos el metodo para que cuando acabe la animación haga lo que le pidamos
+                Invoke("Transicion", tiempoPrimeraAnimacion); // Invocamos el metodo para que cuando acabe la animaciï¿½n haga lo que le pidamos
 
                 float x = transform.position.x + velocidad * Time.deltaTime * direccion.x; // Calculamos el movimiento de seguimiento en el eje X
                 float y = transform.position.y + velocidad * Time.deltaTime * direccion.y; // Calculamos el movimiento de seguimiento en el eje Y
@@ -55,7 +55,7 @@ public class pajaroRojoController : MonoBehaviour
         }
     }
 
-    void Transicion() // Lo que hacemos en este metodo és activar la animación y llamar al método para que se empiece a mover
+    void Transicion() // Lo que hacemos en este metodo ï¿½s activar la animaciï¿½n y llamar al mï¿½todo para que se empiece a mover
     {
         animator.SetBool("volar", true);
 
