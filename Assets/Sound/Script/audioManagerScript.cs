@@ -10,7 +10,6 @@ public class audioManagerScript : MonoBehaviour
 
     [Header("- Audio Clip -")]
     public AudioClip musica;
-    public AudioClip gameOver;
     public AudioClip saltoPlayer;
     public AudioClip disparoPlayer;
     public AudioClip muerteEnemigo;

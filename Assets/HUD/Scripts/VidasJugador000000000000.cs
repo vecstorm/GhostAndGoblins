@@ -12,6 +12,14 @@ public class VidasJugador000000000000 : MonoBehaviour
     public int vidaMaxima = 3;
     private int vidaActual;
 
+    audioManagerScript audioManager;
+
+
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<audioManagerScript>();
+    }
+
     private void Start()
     {
         // Buscar todas las imágenes con el tag "Vida" en la escena
@@ -45,7 +53,6 @@ public class VidasJugador000000000000 : MonoBehaviour
     void EscenaGameOver()
     {
         SceneManager.LoadScene(3);
-
     }
 
     public void RecibirDano(int cantidadDano)
