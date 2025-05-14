@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class bossController : MonoBehaviour
+public class bossController : Enemy
 {
     private Rigidbody2D rb2D;
     private GameObject player;

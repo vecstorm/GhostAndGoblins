@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class plantaController : MonoBehaviour
+public class plantaController : Enemy
 {
     [SerializeField]
     Transform bolaPos;

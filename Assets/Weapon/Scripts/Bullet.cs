@@ -34,8 +34,9 @@ public class Bullet : MonoBehaviour
 
         }
 
+        if (collision.CompareTag("Escudo"))
+        {
+            Destroy(gameObject);
+        }
     }
-
-
-
 }

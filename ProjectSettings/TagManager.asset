@@ -13,6 +13,7 @@ TagManager:
   - Enemigos
   - Bullet
   - Weapon
+  - Escudo
   layers:
   - Default
   - TransparentFX
