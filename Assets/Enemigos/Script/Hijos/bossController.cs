@@ -2,8 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class bossController : Enemy
-
+public class bossController : MonoBehaviour
 {
     public GameObject puerta1;
     public GameObject puerta2;

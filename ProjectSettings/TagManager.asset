@@ -13,7 +13,11 @@ TagManager:
   - Enemigos
   - Bullet
   - Weapon
+<<<<<<< HEAD
   - SpawnPointCharacter
+=======
+  - Escudo
+>>>>>>> New-Config.-Scripts
   layers:
   - Default
   - TransparentFX

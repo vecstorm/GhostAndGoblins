@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class pajaroControllerL : MonoBehaviour
+public class pajaroControllerL : Enemy
 {
     [SerializeField]
     float tiempoPrimeraAnimacion = 0f;

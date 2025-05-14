@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ZombiController : MonoBehaviour
+public class ZombiController : Enemy
 {
 
     [SerializeField]

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class pajaroRojoController : MonoBehaviour
+public class pajaroRojoController : Enemy
 {
     [SerializeField]
     float tiempoPrimeraAnimacion = 0f;
@@ -16,7 +16,7 @@ public class pajaroRojoController : MonoBehaviour
 
     private Rigidbody2D rb2D;
     private GameObject player;
-    private float speed = 0;
+    private float speed = 0; // Esta variable da un warning, pero la estoy usando
     private Vector2 posicionInicial;
 
     void Start()
