@@ -24,6 +24,12 @@ public class HUD : MonoBehaviour
             Destroy(gameObject);  // Si ya existe una instancia, destruimos esta
         }
     }
+    public void ReiniciarHUD()
+    {
+        Destroy(gameObject);  // Destruye la instancia actual del HUD
+        PointColtroller puntos = FindObjectOfType<PointColtroller>();
+        puntos.reiniciarPuntos();
+    }
 
 
 }

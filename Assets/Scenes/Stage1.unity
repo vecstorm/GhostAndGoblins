@@ -1965,7 +1965,6 @@ MonoBehaviour:
   musicSource: {fileID: 1722810339}
   SFXSource: {fileID: 1260493604}
   musica: {fileID: 8300000, guid: d85e58b716aca5a4d9ea1e8ddae19ebc, type: 3}
-  gameOver: {fileID: 8300000, guid: bbab36491036259409692033e2a59827, type: 3}
   saltoPlayer: {fileID: 8300000, guid: 1324703b5185bc840b5eb22599af3101, type: 3}
   disparoPlayer: {fileID: 8300000, guid: 7d159e2fec162f4489b8cda9142c9f92, type: 3}
   muerteEnemigo: {fileID: 8300000, guid: 831a9f3945caebe409bbbb3daf2d7a21, type: 3}
@@ -5976,11 +5975,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2837774742158673958, guid: 2f3c28e827b136248b2ea0acd56f82c7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -31.96
+      value: 158.3
       objectReference: {fileID: 0}
     - target: {fileID: 2837774742158673958, guid: 2f3c28e827b136248b2ea0acd56f82c7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.66
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 2837774742158673958, guid: 2f3c28e827b136248b2ea0acd56f82c7, type: 3}
       propertyPath: m_LocalPosition.z

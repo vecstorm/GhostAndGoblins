@@ -22,18 +22,18 @@ public class VidasJugador000000000000 : MonoBehaviour
 
     private void Start()
     {
-        // Buscar todas las imágenes con el tag "Vida" en la escena
+        // Buscar todas las imï¿½genes con el tag "Vida" en la escena
         GameObject[] imagenesDeVidaObj = GameObject.FindGameObjectsWithTag("Vida");
 
-        // Asignar las imágenes encontradas al array 'vidas'
+        // Asignar las imï¿½genes encontradas al array 'vidas'
         vidas = new Image[imagenesDeVidaObj.Length];
         for (int i = 0; i < imagenesDeVidaObj.Length; i++)
         {
-            // Asegúrate de que cada GameObject tenga un componente Image
+            // Asegï¿½rate de que cada GameObject tenga un componente Image
             vidas[i] = imagenesDeVidaObj[i].GetComponent<Image>();
         }
 
-        // Asignar la vida máxima
+        // Asignar la vida mï¿½xima
         vidaActual = vidaMaxima;
         ActualizarInterfaz();
     }
@@ -52,13 +52,17 @@ public class VidasJugador000000000000 : MonoBehaviour
 
     void EscenaGameOver()
     {
+        
         SceneManager.LoadScene(3);
     }
+
 
     public void RecibirDano(int cantidadDano)
     {
         vidaActual -= cantidadDano;
         vidaActual = Mathf.Clamp(vidaActual, 0, vidaMaxima);
+        Debug.Log("quitamos vidas");
+        Debug.Log(vidaActual);
         ActualizarInterfaz();
     }
 
