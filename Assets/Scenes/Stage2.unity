@@ -1069,11 +1069,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2837774742158673958, guid: 2f3c28e827b136248b2ea0acd56f82c7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -116.4
+      value: 77.8
       objectReference: {fileID: 0}
     - target: {fileID: 2837774742158673958, guid: 2f3c28e827b136248b2ea0acd56f82c7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -8.5
+      value: -10.5
       objectReference: {fileID: 0}
     - target: {fileID: 2837774742158673958, guid: 2f3c28e827b136248b2ea0acd56f82c7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1173,10 +1173,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8233170955138093067, guid: 9ea845ae6e02d5a41aecd9bbb578d9fd, type: 3}
+    - {fileID: 3167567154550040950, guid: 9ea845ae6e02d5a41aecd9bbb578d9fd, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1286175799415532519, guid: 9ea845ae6e02d5a41aecd9bbb578d9fd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 707239214}
   m_SourcePrefab: {fileID: 100100000, guid: 9ea845ae6e02d5a41aecd9bbb578d9fd, type: 3}
 --- !u!1 &707239208 stripped
 GameObject:
@@ -1188,6 +1193,21 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1286175799415532519, guid: 9ea845ae6e02d5a41aecd9bbb578d9fd, type: 3}
   m_PrefabInstance: {fileID: 707239207}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &707239214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 707239209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2965177c63f86e84c8330c4436b097d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoint: {fileID: 1557720751}
+  NextScene: 3
+  platformSpeed: 2
 --- !u!4 &787545154 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3957376847072240921, guid: 629f64c5d88cd274487101d30272e2dc, type: 3}
@@ -14357,6 +14377,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: bossUnicorn (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6404480736104310034, guid: 1461e939a243ca741b0cf6dd60789f43, type: 3}
+      propertyPath: puerta1
+      value: 
+      objectReference: {fileID: 707239209}
+    - target: {fileID: 6404480736104310034, guid: 1461e939a243ca741b0cf6dd60789f43, type: 3}
+      propertyPath: puerta2
+      value: 
+      objectReference: {fileID: 707239208}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14446,6 +14474,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1557720751 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1842899763399580871, guid: 9ea845ae6e02d5a41aecd9bbb578d9fd, type: 3}
+  m_PrefabInstance: {fileID: 707239207}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1584093769
 PrefabInstance:
   m_ObjectHideFlags: 0

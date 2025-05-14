@@ -9,50 +9,22 @@ using UnityEngine.Video;
 public class HUD : MonoBehaviour
 {
 
-    /*public Image[] vidas;
+    private static HUD instance;  // Instancia estática para evitar duplicados
 
-    public static HUD instance;
-    public int VidaMaxima = 3;
-    private int VidaActual;
-
-    private void Start()
+    void Awake()
     {
-        VidaActual = VidaMaxima;
-        actualizarInterfaz();
-    }
-
-    void actualizarInterfaz()
-    {
-        for (int i = 0; i < vidas.Length; i++)
+        // Si no existe una instancia, la creamos
+        if (instance == null)
         {
-            vidas[i].enabled = i < VidaActual;
+            instance = this;
+            DontDestroyOnLoad(gameObject);  // Evita que el objeto sea destruido al cambiar de escena
         }
-        if(VidaActual <= 0)
+        else
         {
-            ReiniciarEscena();
+            Destroy(gameObject);  // Si ya existe una instancia, destruimos esta
         }
     }
 
-    void ReiniciarEscena()
-    {
-        int currectSceneIncex = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.LoadScene(currectSceneIncex);
-    }
 
-    public void RecibirDano(int cantidadDano)
-    {
-        VidaActual -= cantidadDano;
-        VidaActual = Mathf.Clamp(VidaActual, 0, VidaMaxima);
-        actualizarInterfaz();
-    }
-
-    public void ObtenerVida(int CuraTotal)
-    {
-        VidaActual += CuraTotal;
-        VidaActual = Mathf.Clamp(VidaActual, 0, VidaMaxima);
-        actualizarInterfaz();
-    }
-
-    */
 }
 

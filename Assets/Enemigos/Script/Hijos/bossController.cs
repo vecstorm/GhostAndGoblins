@@ -98,7 +98,7 @@ public class bossController : Enemy
 
         if (puerta1 != null && puerta2 != null)
         {
-            puerta1.GetComponent<AbrirPuertas>().enabled = true; // Activa el movimiento de la puerta
+            puerta1.GetComponent<AbrirPuertaDerecha>().enabled = true; // Activa el movimiento de la puerta
             puerta2.GetComponent<AbrirPuertas>().enabled = true; // Activa el movimiento de la puerta
         }
 

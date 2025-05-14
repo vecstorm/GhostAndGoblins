@@ -51,6 +51,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tiempoPrimeraAnimacion: 0
   distanciaPersonaje: 10
+  velocidad: 2
   animator: {fileID: 2954165686351274767}
 --- !u!95 &2954165686351274767
 Animator:
@@ -208,3 +209,4 @@ MonoBehaviour:
   collectableWapon: []
   dropChanceItem: 0.5
   dropChanceWeapon: 0.2
+  Player: {fileID: 2501169785147188056, guid: 2f3c28e827b136248b2ea0acd56f82c7, type: 3}

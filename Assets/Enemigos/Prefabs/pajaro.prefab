@@ -210,4 +210,4 @@ MonoBehaviour:
   - {fileID: 3573922450461951979, guid: 736495bf10491b14cb69add2f4ed00a5, type: 3}
   dropChanceItem: 0.5
   dropChanceWeapon: 0.2
-  vidaJugador: {fileID: 0}
+  Player: {fileID: 2501169785147188056, guid: 2f3c28e827b136248b2ea0acd56f82c7, type: 3}

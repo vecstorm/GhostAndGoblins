@@ -176,6 +176,7 @@ MonoBehaviour:
   collectableWapon: []
   dropChanceItem: 0.5
   dropChanceWeapon: 0.2
+  Player: {fileID: 2501169785147188056, guid: 2f3c28e827b136248b2ea0acd56f82c7, type: 3}
 --- !u!70 &8163557814932566262
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
