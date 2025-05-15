@@ -7,7 +7,7 @@ public class DataController : MonoBehaviour
 {
 
     public string archivoInfoPartida;
-    public GuardadoDatos datosJuego = new GuardadoDatos();
+    public GuardadoDatos datosJuego;
     SaveNamePoints nombre;
 
     private void Awake()
@@ -15,11 +15,6 @@ public class DataController : MonoBehaviour
         archivoInfoPartida = Application.dataPath + "/GuardadoDatos.json";
     }
 
-    public void Update()
-    {
-       
-
-    }
 
     private void CargarDatos()
     {
@@ -34,13 +29,13 @@ public class DataController : MonoBehaviour
         }
     }
 
-    private void GuardarDatos()
+    public void GuardarDatos()
     {
-        GuardadoDatos nuevosDatos = new GuardadoDatos()
-        {
-            nombreJugador = nombre.getNamePlayer(),
-            puntos = PointColtroller.instance.getPoints()
-        };
+        GuardadoDatos nuevosDatos = new();
+
+        nuevosDatos.nombreJugador = nombre.getNamePlayer();
+        nuevosDatos.puntos = PointColtroller.instance.getPoints();
+        
 
         string cadenaJson = JsonUtility.ToJson(nuevosDatos);
 

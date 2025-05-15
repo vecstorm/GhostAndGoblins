@@ -734,7 +734,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1643653213}
         m_TargetAssemblyTypeName: DataController, Assembly-CSharp
-        m_MethodName: Guardar
+        m_MethodName: GuardarDatos
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2297,7 +2297,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbbcde3336c6ff94db3a235b411f1497, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  archivoInfoPartida: Assets/Json
+  archivoInfoPartida: 
   datosJuego:
     nombreJugador: 
     puntos: 0
