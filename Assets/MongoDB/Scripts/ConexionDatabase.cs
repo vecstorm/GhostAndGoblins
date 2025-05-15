@@ -7,16 +7,30 @@ using UnityEngine;
 
 public class ConexionDatabase : MonoBehaviour
 {
-    private static ConexionDatabase instance;
+    public static ConexionDatabase instance;
     private MongoClient client;
     private IMongoDatabase database;
     private IMongoCollection<BsonDocument> userCollection;
     //public SaveGameData gameData = new SaveGameData();
     public PlayerInfoSerialized gameData = new PlayerInfoSerialized();
 
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            ConexionDatabase.instance = this;
+            DontDestroyOnLoad(this.gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
     async void Start()
     {
-        string connectionString = "mongodb+srv://ghost:GhostAndGoblins1@gandg.rncopjg.mongodb.net/";
+ 
+        string connectionString = "mongodb+srv://ghost:GhostAndGoblins1@gandg.rncopjg.mongodb.net/?retryWrites=true&w=majority&appName=GandG";
         
         try
         {
@@ -34,17 +48,17 @@ public class ConexionDatabase : MonoBehaviour
     }
     public void InsertTestData()
     {
-        var collection = database.GetCollection<BsonDocument>("game");
+        //var collection = database.GetCollection<BsonDocument>("game");
 
         PlayerInfoController.Instance.saveData();
         var document = new BsonDocument
-    {
-        { "name", gameData.name },
-        { "highScore", gameData.highScore },
-        { "livesRemaining", gameData.livesRemaining }
-    };
+        {
+            { "name", gameData.name },
+            { "highScore", gameData.highScore },
+            { "livesRemaining", gameData.livesRemaining }
+        };
 
-        collection.InsertOne(document);
+        userCollection.InsertOne(document);
         Debug.Log("Documento insertado.");
     }
 
