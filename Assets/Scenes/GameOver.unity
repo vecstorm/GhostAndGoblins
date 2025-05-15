@@ -2396,9 +2396,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
---- !u!1 &1812419931
-=======
 --- !u!1 &1643653212
 GameObject:
   m_ObjectHideFlags: 0
@@ -2448,7 +2445,6 @@ Transform:
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1967101400
->>>>>>> mongodb
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2503,9 +2499,5 @@ SceneRoots:
   - {fileID: 1182413504}
   - {fileID: 1498589320}
   - {fileID: 1478865159}
-<<<<<<< HEAD
-  - {fileID: 1812419933}
-=======
   - {fileID: 1967101402}
   - {fileID: 1643653214}
->>>>>>> mongodb
