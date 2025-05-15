@@ -24,6 +24,7 @@ public class SaveNamePoints : MonoBehaviour
 
         Debug.Log("Guardado: " + nombreJugador + " - " + puntuacionFinal);
         namePanel.SetActive(false);
+        PlayerInfoController.Instance.saveData();
     }
     void MostrarDatos()
     {
