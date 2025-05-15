@@ -1,0 +1,40 @@
+using System.Collections;
+using System.Collections.Generic;
+using System.IO;
+using Unity.VisualScripting;
+using UnityEngine;
+
+public class LeerDatosBinarios : MonoBehaviour
+{
+
+    void Start()
+    {
+        Debug.Log("Ruta de datos persistentes: " + Application.persistentDataPath);
+        string path = Application.persistentDataPath + "/GhostNGoblinsGameData.dat";
+
+        if (File.Exists(path))
+        {
+            using (BinaryReader reader = new BinaryReader(File.Open(path, FileMode.Open)))
+            {
+                string nombre = reader.ReadString();
+                int highScore = reader.ReadInt32();
+                int vidasRestantes = reader.ReadInt32();
+
+
+                int hword = (highScore & 0x00FF) << 8;
+                int lword = (highScore & 0xFF00) >> 8;
+
+                Debug.Log("Nombre: " + nombre);
+                Debug.Log("highScore" + highScore);
+                Debug.Log("Vidas Restantes: " + vidasRestantes);
+
+                Debug.Log("Ruta de datos persistentes: " + Application.persistentDataPath);
+                Debug.Log("Archivo buscado: " + path);
+            }
+        }
+        else
+        {
+            Debug.LogWarning("Archivo .dat no encontrado: " + path);
+        }
+    }
+}

@@ -49,7 +49,7 @@ public class Enemy : MonoBehaviour
         PointColtroller.instance.sumarPuntos(DiedPoints);
         DropItem(); // Intentamos soltar un objeto
         DropWeapon();
-        PlayerInfoController.Instance.saveData();
+        PlayerInfoController.Instance.saveData();//Codigo base de datos con java
         Destroy(gameObject);
 
         audioManager.PlaySFX(audioManager.muerteEnemigo);
