@@ -13,6 +13,7 @@ public class audioManagerScript : MonoBehaviour
     public AudioClip saltoPlayer;
     public AudioClip disparoPlayer;
     public AudioClip muerteEnemigo;
+    public AudioClip puertaStage;
 
     private void Start()
     {

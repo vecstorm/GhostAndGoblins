@@ -6,21 +6,25 @@ using UnityEngine.SceneManagement;
 public class AbrirPuertas : MonoBehaviour
 {
     public GameObject waypoint;
-
-
     public float platformSpeed = 2;
 
+    audioManagerScript audioManager;
+
     // Update is called once per frame
+
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<audioManagerScript>();
+    }
 
     private void Start()
     {
         this.enabled = false; 
-
-
     }
 
     void Update()
     {
+        audioManager.PlaySFX(audioManager.puertaStage);
         MovePlatform();
     }
 

@@ -1968,6 +1968,7 @@ MonoBehaviour:
   saltoPlayer: {fileID: 8300000, guid: 1324703b5185bc840b5eb22599af3101, type: 3}
   disparoPlayer: {fileID: 8300000, guid: 7d159e2fec162f4489b8cda9142c9f92, type: 3}
   muerteEnemigo: {fileID: 8300000, guid: 831a9f3945caebe409bbbb3daf2d7a21, type: 3}
+  puertaStage: {fileID: 8300000, guid: 12bb40c46e2d9c945af0e8832e8c512a, type: 3}
 --- !u!4 &804974769
 Transform:
   m_ObjectHideFlags: 0
