@@ -17,6 +17,7 @@ public class Enemy : MonoBehaviour
     float dropChanceItem = 0.5f; // Probabilidad de soltar un objeto (50%)
     [SerializeField]
     float dropChanceWeapon = 0.2f;
+    int enemigosDerrotados;
     //[SerializeField] GameObject Player;
     //private bool PuedeDanar = true;
     //private float Cooldown = 3f;
@@ -26,6 +27,7 @@ public class Enemy : MonoBehaviour
     private void Awake()
     {
         audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<audioManagerScript>();
+        enemigosDerrotados = 0;
     }
 
     public void Damage(float damage){
@@ -49,10 +51,15 @@ public class Enemy : MonoBehaviour
         PointColtroller.instance.sumarPuntos(DiedPoints);
         DropItem(); // Intentamos soltar un objeto
         DropWeapon();
-
+        PointColtroller.instance.sumarEnemigosMuertos();
         Destroy(gameObject);
 
         audioManager.PlaySFX(audioManager.muerteEnemigo);
+    }
+
+    public int GetEnemigosDerrotados()
+    {
+        return enemigosDerrotados;
     }
     private void DropItem()
     {

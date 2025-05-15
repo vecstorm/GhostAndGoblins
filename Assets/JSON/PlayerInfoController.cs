@@ -27,7 +27,7 @@ public class PlayerInfoController : MonoBehaviour
     public void saveData()
     {
         gameData.name = "pedro";
-        gameData.highScore = 3000;
+        gameData.highScore = PointColtroller.instance.getPoints(); ;
         gameData.livesRemaining = 2;
         SaveGameData.SaveDataInfo(gameData);
     }

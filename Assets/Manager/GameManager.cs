@@ -11,10 +11,6 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     InputActionAsset IA;
 
-
-
-
-
     private void Awake()
     {
         if (Instance == null)
@@ -32,20 +28,4 @@ public class GameManager : MonoBehaviour
     }
     
 
-
-   
-
-
-
-
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

@@ -27,6 +27,7 @@ public class MovimientoJugador : MonoBehaviour
     [SerializeField] private bool enSuelo;
     private bool salto = false;
 
+
     [Header("Animacion")]
     private Animator animator;
 
@@ -109,6 +110,7 @@ public class MovimientoJugador : MonoBehaviour
         }
 
     }
+
 
 
     void FixedUpdate()

@@ -46,17 +46,19 @@ public class ConexionDatabase : MonoBehaviour
         }
         
     }
-    public void InsertTestData()
+    public void InsertTestData(string name,int score, int enemigos)
     {
-        //var collection = database.GetCollection<BsonDocument>("game");
 
         PlayerInfoController.Instance.saveData();
         var document = new BsonDocument
         {
-            { "name", gameData.name },
-            { "highScore", gameData.highScore },
-            { "livesRemaining", gameData.livesRemaining }
+            { "name", name },
+            { "highScore", score },
+            { "enemigos derrotados", enemigos }
+            //{ "cantidad disparos", shoots },
+            //{ "saltos", saltos }
         };
+
 
         userCollection.InsertOne(document);
         Debug.Log("Documento insertado.");
