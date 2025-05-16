@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 
@@ -41,6 +42,9 @@ namespace DialogueSystem
             zombis.SetActive(true); // activa els spawners dels zombies
             musica.SetActive(true); // activa la musica*/
             cmm.SetActive(false); // desactiva la musica del diàlegs
+            int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+
+            SceneManager.LoadScene(currentSceneIndex + 1);
 
         }
 
@@ -50,6 +54,7 @@ namespace DialogueSystem
             {
                 transform.GetChild(i).gameObject.SetActive(false);
             }
+
         }
     }
 }

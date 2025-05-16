@@ -7,7 +7,6 @@ public class AbrirPuertaDerecha : MonoBehaviour
 {
     public GameObject waypoint;
     private Collider2D col;
-    [SerializeField] private int NextScene;
     public float platformSpeed = 2;
 
     // Update is called once per frame
@@ -48,8 +47,9 @@ public class AbrirPuertaDerecha : MonoBehaviour
         {
             Debug.Log("El jugador ha tocado la plataforma, cambiando de escena...");
 
-            // Cambiar de escena
-            SceneManager.LoadScene(NextScene);  // Cambia "NombreDeTuEscena" por el nombre de la escena que deseas cargar
+            int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+
+            SceneManager.LoadScene(currentSceneIndex + 1);
         }
     }
 }

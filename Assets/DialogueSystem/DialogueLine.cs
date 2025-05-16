@@ -32,6 +32,7 @@ namespace DialogueSystem
         private void Start()
         {
             StartCoroutine(WriteText(input, textHolder, textColor, textFont, delayBetweenLines)); // Comença la corrutina
+
         }
     }
 }
