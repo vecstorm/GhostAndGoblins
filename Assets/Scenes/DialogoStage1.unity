@@ -400,7 +400,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   input: "Per fi un moment de pau... \xC9s tan tranquil aqu\xED. Lluny del castell,
     de les responsabilitats."
-  textColor: {r: 1, g: 1, b: 1, a: 1}
+  textColor: {r: 0.8352941, g: 0.14509805, b: 1, a: 1}
   textFont: {fileID: 12800000, guid: 377d3c0c732c5df4080e7ff03c3fa84a, type: 3}
   delayBetweenLines: 2
   characterSprite: {fileID: 940441174, guid: 146e6a6a7342fcb489fd37788da8900c, type: 3}
@@ -499,7 +499,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   input: Arthur!!
-  textColor: {r: 1, g: 1, b: 1, a: 1}
+  textColor: {r: 0.8352941, g: 0.14509805, b: 1, a: 1}
   textFont: {fileID: 12800000, guid: 377d3c0c732c5df4080e7ff03c3fa84a, type: 3}
   delayBetweenLines: 2
   characterSprite: {fileID: 1314574922, guid: 146e6a6a7342fcb489fd37788da8900c, type: 3}
@@ -803,7 +803,7 @@ MonoBehaviour:
   input: "En un regne oblidat pel temps, la foscor ha comen\xE7at a despertar...
     Els morts surten de les seves tombes, i les criatures infernals caminen entre
     nosaltres."
-  textColor: {r: 0, g: 0.7264151, b: 0.07116759, a: 1}
+  textColor: {r: 0, g: 0.7254902, b: 0.07058824, a: 1}
   textFont: {fileID: 12800000, guid: 377d3c0c732c5df4080e7ff03c3fa84a, type: 3}
   delayBetweenLines: 2
   characterSprite: {fileID: 21300000, guid: dbf8c5fbb0e48ea449d9fb3245bc2841, type: 3}
@@ -1247,7 +1247,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   input: Nooo!!
-  textColor: {r: 1, g: 1, b: 1, a: 1}
+  textColor: {r: 0.33333334, g: 0.7607843, b: 1, a: 1}
   textFont: {fileID: 12800000, guid: 377d3c0c732c5df4080e7ff03c3fa84a, type: 3}
   delayBetweenLines: 2
   characterSprite: {fileID: -1855428516, guid: 62e90d0773b339d49afb3c64db093c99, type: 3}
@@ -1347,7 +1347,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   input: "No acabar\xE0 aix\xED. Et recuperar\xE9. Encara que hagi de travessar l\u2019infern
     sencer."
-  textColor: {r: 1, g: 1, b: 1, a: 1}
+  textColor: {r: 0.33333334, g: 0.7607843, b: 1, a: 1}
   textFont: {fileID: 12800000, guid: 377d3c0c732c5df4080e7ff03c3fa84a, type: 3}
   delayBetweenLines: 2
   characterSprite: {fileID: -929238091, guid: 62e90d0773b339d49afb3c64db093c99, type: 3}
@@ -1446,7 +1446,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   input: "Et protegir\xE9... sempre."
-  textColor: {r: 1, g: 1, b: 1, a: 1}
+  textColor: {r: 0.33333334, g: 0.7607843, b: 1, a: 1}
   textFont: {fileID: 12800000, guid: 377d3c0c732c5df4080e7ff03c3fa84a, type: 3}
   delayBetweenLines: 2
   characterSprite: {fileID: 21300000, guid: fc3d815b7ae98104dad8348eef0fdd51, type: 2}
@@ -1796,7 +1796,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   input: "I lluny dels monstres, les guerres i les criatures que intenten menjar-nos...
     fins dem\xE0, com a m\xEDnim."
-  textColor: {r: 1, g: 1, b: 1, a: 1}
+  textColor: {r: 0.33333334, g: 0.7607843, b: 1, a: 1}
   textFont: {fileID: 12800000, guid: 377d3c0c732c5df4080e7ff03c3fa84a, type: 3}
   delayBetweenLines: 2
   characterSprite: {fileID: 2061755693, guid: a2e6e903b4893fa46802860b67ffd10d, type: 3}
@@ -2160,7 +2160,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   input: "Amb tu al meu costat... em sento segura. Com si res no pogu\xE9s fer-nos
     mal."
-  textColor: {r: 1, g: 1, b: 1, a: 1}
+  textColor: {r: 0.8352941, g: 0.14509805, b: 1, a: 1}
   textFont: {fileID: 12800000, guid: 377d3c0c732c5df4080e7ff03c3fa84a, type: 3}
   delayBetweenLines: 2
   characterSprite: {fileID: -1683962552, guid: 146e6a6a7342fcb489fd37788da8900c, type: 3}

@@ -764,10 +764,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba5cdead2fbbe00419e8bb06cb6127bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hud: {fileID: 714280625}
-  enemigos: {fileID: 601431827}
-  zombis: {fileID: 355931760}
-  musica: {fileID: 804974767}
   cmm: {fileID: 87752517}
 --- !u!1 &136148428 stripped
 GameObject:
@@ -9188,7 +9184,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1988454482
 MonoBehaviour:
   m_ObjectHideFlags: 0
