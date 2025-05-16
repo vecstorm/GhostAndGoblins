@@ -16,7 +16,7 @@ public class SaveNamePoints : MonoBehaviour
 
 
 
-    public void GuardarDatos()
+    public async void GuardarDatos()
     {
         nombreJugador = inputNombre.text;  // Obtener el nombre ingresado
         puntuacionFinal = PointColtroller.instance.getPoints();
@@ -33,6 +33,7 @@ public class SaveNamePoints : MonoBehaviour
         PlayerInfoController.Instance.saveData();
         
         ConexionDatabase.instance.InsertTestData(nombreJugador, puntuacionFinal, enemigos);
+        await ConexionDatabase.instance.ReadDataAsync();
     }
     void MostrarDatos()
     {

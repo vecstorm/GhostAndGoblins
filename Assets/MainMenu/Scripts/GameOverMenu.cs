@@ -32,7 +32,9 @@ public class GameOverMenu : MonoBehaviour
         }
 
         SceneManager.LoadScene(0);
+
     }
+
 
     // Update is called once per frame
     public void TryAgain()
