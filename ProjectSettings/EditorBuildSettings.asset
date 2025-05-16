@@ -15,8 +15,14 @@ EditorBuildSettings:
     path: Assets/Scenes/Stage1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
+    path: Assets/Scenes/DialogoS/DialogoStage2.unity
+    guid: b8c3e9be384b81642be4a52aa3303cd4
+  - enabled: 1
     path: Assets/Scenes/Stage2.unity
     guid: 8227fcf9801a8c0438ced0518f053046
+  - enabled: 1
+    path: Assets/Scenes/DialogoS/DialogoFinal.unity
+    guid: 1802c1aac35e20e45896d7e8c50e2862
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: d16948ab7c86fff4b938dda902c7d2f1
