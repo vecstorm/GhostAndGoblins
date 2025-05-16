@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using MongoDB.Bson;
 using MongoDB.Driver;
 using TMPro;
@@ -58,8 +59,12 @@ using UnityEngine;
                 var filter = Builders<BsonDocument>.Filter.Empty;
                 var result = await userCollection.Find(filter).ToListAsync();
 
-                string displayText = "HighScore Table:\n";
-                foreach (var document in result)
+            var top10 = result.OrderByDescending(doc => doc["highScore"].ToInt32())
+                         .Take(10)
+                         .ToList();
+
+            string displayText = "HighScore Table:\n";
+                foreach (var document in top10)
                 {
                     string name = document["name"].ToString();
                     int highScore = document["highScore"].ToInt32();
