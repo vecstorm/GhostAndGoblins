@@ -10,7 +10,7 @@ public class StartMenu : MonoBehaviour
     {
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(currentSceneIndex + 1);
     }
     public void Quit()
     {

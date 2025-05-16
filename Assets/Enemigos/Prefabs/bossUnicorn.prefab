@@ -215,7 +215,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82c04b9a591f7134da5645918dcbd3ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 1
+  life: 10
   enemyDied: {fileID: 6163902674521809381, guid: 94b873cf032a19c459c870aa9a84092e, type: 3}
   DiedPoints: 2000
   collectableItems:
