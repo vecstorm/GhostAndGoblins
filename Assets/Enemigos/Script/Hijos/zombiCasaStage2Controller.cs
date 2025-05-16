@@ -12,8 +12,6 @@ public class ZombiCasaStage2Controller : Enemy
 
     [Header("- Configs de zombi -")]
     [SerializeField] float speed = 0;
-    [SerializeField] float timeAnim1 = 7;
-    [SerializeField] float timeAnim2 = 7.1f;
     public Animator animator;
 
     private GameObject player;
