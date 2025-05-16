@@ -783,7 +783,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waypoint: {fileID: 1078611308}
-  NextScene: 2
   platformSpeed: 2
 --- !u!1 &137305440
 GameObject:
@@ -9081,7 +9080,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1921638939
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9098,6 +9097,7 @@ MonoBehaviour:
     name: 
     highScore: 0
     livesRemaining: 0
+  outputText: {fileID: 0}
 --- !u!1 &1928482953
 GameObject:
   m_ObjectHideFlags: 0

@@ -681,18 +681,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ConexionDatabase, Assembly-CSharp
-        m_MethodName: InsertTestData
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &437187158
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2354,7 +2342,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1603330050}
-  - component: {fileID: 1603330049}
   m_Layer: 0
   m_Name: DBConection
   m_TagString: Untagged
@@ -2362,22 +2349,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1603330049
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1603330048}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6031e9ad16ed8eb4f9bcc647123ed50f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameData:
-    name: 
-    highScore: 0
-    livesRemaining: 0
 --- !u!4 &1603330050
 Transform:
   m_ObjectHideFlags: 0
