@@ -53,8 +53,6 @@ public class ZombiCasaStage2Controller : Enemy
             rb2D.velocity = new Vector2(speed * 2f, 0f);
 
         }
-
-        Debug.Log(pared);
     }
 
     private void OnDrawGizmosSelected() // Para que se muestre el guizmo inferior que detecta el suelo

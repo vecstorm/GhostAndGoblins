@@ -1,6 +1,7 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.U2D;
 using UnityEngine.UI;
 
 namespace DialogueSystem
@@ -15,14 +16,38 @@ namespace DialogueSystem
             textHolder.font = textFont; // Set del color
             textHolder.text = ""; // Per esborra el text previ en cas que hi hagi
 
-            for (int i = 0; i < input.Length; i++) // Fem un bucle b�sic
+            finished = false;
+            bool skipLine = false;
+
+
+            int i = 0;
+
+            while (i < input.Length)
             {
-                textHolder.text += input[i]; // Posa el text que posis al text holder
-                yield return new WaitForSeconds(0.1f); // Temps d'espera entre lletres
+                if (Input.GetKeyDown(KeyCode.Space))
+                {
+                    skipLine = true;
+                    break; // Sortim del bucle per mostrar tot el text
+                }
+
+                textHolder.text += input[i];
+                i++;
+                yield return new WaitForSeconds(0.05f);
             }
 
-            // yield return new WaitForSeconds(delayBetweenLines); // Per si ho vols fer amb temps en comptes d'haber d'apretar click esquerre
-            yield return new WaitUntil(() => Input.GetButtonDown("Fire1")); // skip cuan click esquerre
+            // Si es va prémer espai durant l'escriptura, mostrar el text complet
+            if (skipLine)
+            {
+                textHolder.text = input;
+            }
+
+            //ESPERA a que deixin anar el botó, i un petit delay perquè no es salti de cop
+            yield return new WaitUntil(() => !Input.GetKey(KeyCode.Space));
+            yield return new WaitForSeconds(0.1f);
+
+
+            // Ara esperem una nova pulsació d'espai per passar al següent diàleg
+            yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Space));
 
             finished = true;
 
