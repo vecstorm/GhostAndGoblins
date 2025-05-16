@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class SaveNamePoints : MonoBehaviour
 {
     public TMP_InputField inputNombre;  // Referencia al InputField
-    private int puntuacionFinal, shoots, saltos, enemigos;  // Puntuación final del jugador
+    private int puntuacionFinal, shoots, saltos, enemigos;  // Puntuaciï¿½n final del jugador
     public GameObject namePanel;
     string nombreJugador;
     CharacterAbilityController stats;
@@ -23,7 +23,7 @@ public class SaveNamePoints : MonoBehaviour
         enemigos = PointColtroller.instance.GetEnemigosMuertos();
         //shoots = stats.GetCantidadDisparos();
         //saltos = estadisticas.TotalSaltos();
-        // Guardar nombre y puntuación en PlayerPrefs
+        // Guardar nombre y puntuaciï¿½n en PlayerPrefs
         PlayerPrefs.SetString("NombreJugador", nombreJugador);
         PlayerPrefs.SetInt("PuntuacionJugador", puntuacionFinal);
         PlayerPrefs.Save();
@@ -40,7 +40,7 @@ public class SaveNamePoints : MonoBehaviour
         string nombre = PlayerPrefs.GetString("NombreJugador", "Desconocido");
         int puntuacion = PlayerPrefs.GetInt("PuntuacionJugador", 0);
 
-        Debug.Log("Jugador: " + nombre + " - Puntuación: " + puntuacion);
+        Debug.Log("Jugador: " + nombre + " - Puntuaciï¿½n: " + puntuacion);
     }
     public string getNamePlayer()
     {

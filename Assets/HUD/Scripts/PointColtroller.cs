@@ -7,10 +7,9 @@ public class PointColtroller : MonoBehaviour
 public static PointColtroller instance;
     [SerializeField] private int cantidadPuntos;
     private int highScore;
-    private int highScorePartida;
-    private int enemigosMuertos;
-    Enemy enemy;
+    int enemigosMuertos;
     
+    private int highScorePartida;
 
     private void Awake()
     {
@@ -24,6 +23,18 @@ public static PointColtroller instance;
             Destroy(gameObject);
         }
     }
+    private void Start()
+{
+    if (PlayerInfoController.Instance?.gameData != null)
+    {
+        highScore = PlayerInfoController.Instance.gameData.highScore;
+    }
+    else
+    {
+        Debug.LogWarning("PlayerInfoController o gameData es null");
+    }
+}
+
 
 
     public void sumarPuntos(int puntos)
@@ -35,12 +46,14 @@ public static PointColtroller instance;
 
     public void actualizarHighScore()
     {
+        
         if (highScore < cantidadPuntos) 
         {
             highScore = cantidadPuntos;
         }
 
     }
+
     public void sumarEnemigosMuertos()
     {
         enemigosMuertos++;
@@ -50,6 +63,8 @@ public static PointColtroller instance;
     {
         return enemigosMuertos;
     }
+
+
     public int getPoints()
     {
         return cantidadPuntos;
