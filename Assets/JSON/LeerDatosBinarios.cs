@@ -16,17 +16,15 @@ public class LeerDatosBinarios : MonoBehaviour
         {
             using (BinaryReader reader = new BinaryReader(File.Open(path, FileMode.Open)))
             {
-                string nombre = reader.ReadString();
                 int highScore = reader.ReadInt32();
-                int vidasRestantes = reader.ReadInt32();
+                highScore >>= 16;
 
-
-                int hword = (highScore & 0x00FF) << 8;
-                int lword = (highScore & 0xFF00) >> 8;
-
-                Debug.Log("Nombre: " + nombre);
-                Debug.Log("highScore" + highScore);
-                Debug.Log("Vidas Restantes: " + vidasRestantes);
+                int word = (highScore & 0xFFFF);
+                int hword = (word & 0x00FF) << 8;
+                int lword = (word & 0xFF00) >> 8;
+                int res = hword | lword;
+                
+                Debug.Log("highScore: " + res);
 
                 Debug.Log("Ruta de datos persistentes: " + Application.persistentDataPath);
                 Debug.Log("Archivo buscado: " + path);

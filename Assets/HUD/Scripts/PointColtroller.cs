@@ -6,7 +6,7 @@ public class PointColtroller : MonoBehaviour
 {
 public static PointColtroller instance;
     [SerializeField] private int cantidadPuntos;
-    private int highScore;
+    private int highScore = PlayerInfoController.Instance.gameData.highScore;
     private int highScorePartida;
 
     private void Awake()
@@ -32,6 +32,7 @@ public static PointColtroller instance;
 
     public void actualizarHighScore()
     {
+        
         if (highScore < cantidadPuntos) 
         {
             highScore = cantidadPuntos;

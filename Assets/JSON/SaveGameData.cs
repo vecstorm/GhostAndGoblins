@@ -25,9 +25,7 @@ public class SaveGameData : MonoBehaviour
 
         using (BinaryWriter writer = new BinaryWriter(File.Open(path, FileMode.Create)))
         {
-            writer.Write(game.name);
             writer.Write(game.highScore);
-            writer.Write(game.livesRemaining);
         }
 
         Debug.Log("Guardado en binario en: " + path);

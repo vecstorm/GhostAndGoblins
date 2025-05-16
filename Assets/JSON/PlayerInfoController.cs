@@ -5,11 +5,11 @@
 
     public class PlayerInfoController : MonoBehaviour
     {
-        [SerializeField] PlayerInfoSerialized playerInfoSerialized;
-
         [SerializeField]public PlayerInfoSerialized gameData = new PlayerInfoSerialized();
 
         public static PlayerInfoController Instance { get; private set; }
+
+
 
         private void Awake()
         {
@@ -21,14 +21,13 @@
             {
                 Instance = this;
                 DontDestroyOnLoad(this.gameObject);
+                gameData = new PlayerInfoSerialized();
             }
         }
 
         public void saveData()
         {
-            gameData.name = "pedro";
-            gameData.highScore = 3000;
-            gameData.livesRemaining = 5;
-            SaveGameData.SaveDataInfo(gameData);
+        gameData.highScore = HighScore.Instance.TopScore;  // <- ahora accede al valor actual
+        SaveGameData.SaveDataInfo(gameData);
         }
     }
