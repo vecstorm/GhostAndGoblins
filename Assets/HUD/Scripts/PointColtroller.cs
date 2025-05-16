@@ -8,6 +8,9 @@ public static PointColtroller instance;
     [SerializeField] private int cantidadPuntos;
     private int highScore;
     private int highScorePartida;
+    private int enemigosMuertos;
+    Enemy enemy;
+    
 
     private void Awake()
     {
@@ -38,8 +41,15 @@ public static PointColtroller instance;
         }
 
     }
+    public void sumarEnemigosMuertos()
+    {
+        enemigosMuertos++;
+    }
 
-
+    public int GetEnemigosMuertos()
+    {
+        return enemigosMuertos;
+    }
     public int getPoints()
     {
         return cantidadPuntos;

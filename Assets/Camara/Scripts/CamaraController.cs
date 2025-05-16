@@ -5,25 +5,39 @@ using UnityEngine;
 public class CamaraController : MonoBehaviour
 {
 
-    public GameObject character;
+    public Transform character;
+    public BoxCollider2D mapBounds; // El collider que define el mapa
 
+    private float minX, maxX, minY, maxY;
+    private float halfHeight, halfWidth;
+
+    private Camera cam;
 
     void Start()
     {
-        character = GameObject.FindGameObjectWithTag("Player");
+        cam = Camera.main;
 
-        if (character == null)
-        {
-            Debug.LogError("CamaraController: No se encontró un objeto con la etiqueta 'Player'.");
-        }
+        // Calcular la mitad del alto y ancho de la cámara
+        halfHeight = cam.orthographicSize;
+        halfWidth = halfHeight * cam.aspect;
+
+        // Obtener límites del mapa desde el BoxCollider2D
+        Bounds bounds = mapBounds.bounds;
+
+        minX = bounds.min.x + halfWidth;
+        maxX = bounds.max.x - halfWidth;
+
     }
 
-    void Update()
+    void LateUpdate()
     {
-        if (character != null)
-        {
-            transform.position = new Vector3(character.transform.position.x, transform.position.y, transform.position.z);
-        }
+        if (character == null) return;
+
+        // Seguir al jugador
+        float clampedX = Mathf.Clamp(character.position.x, minX, maxX);
+
+
+        transform.position = new Vector3(clampedX, transform.position.y, transform.position.z);
     }
 
 

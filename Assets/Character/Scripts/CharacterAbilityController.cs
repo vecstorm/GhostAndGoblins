@@ -17,6 +17,7 @@ public class CharacterAbilityController : MonoBehaviour
     InputAction shoot;
     [SerializeField]
     float coolDownShoot;
+    int cantidadDisparos=0;
 
     public InputActionAsset inputActionMapping;
     private Animator animator;
@@ -54,6 +55,11 @@ public class CharacterAbilityController : MonoBehaviour
         audioManager.PlaySFX(audioManager.disparoPlayer);
 
         Instantiate(weapon.GetProjectilePrefab(), shootSpawnPoint.position, shootSpawnPoint.rotation);
+        cantidadDisparos++;
+    }
+    public int GetCantidadDisparos()
+    {
+        return cantidadDisparos;
     }
 
     public void ChangeWeapon(ItemContainer newWeaponItemContainer)

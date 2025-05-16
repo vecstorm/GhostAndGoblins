@@ -13,5 +13,6 @@ public class SaveGameData : MonoBehaviour
         File.WriteAllText(Application.persistentDataPath + "GameData.txt", json);
         Debug.Log(Application.persistentDataPath);
         Debug.Log("Partida guardada en la BBDD");
+        
     }
 }
