@@ -7,7 +7,9 @@ public class StartMenu : MonoBehaviour
 {
     public void Play()
     {
-        SceneManager.LoadScene(1);
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        
+        SceneManager.LoadScene(currentSceneIndex + 1);
     }
     public void Quit()
     {
