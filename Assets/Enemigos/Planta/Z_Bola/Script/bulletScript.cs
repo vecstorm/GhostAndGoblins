@@ -38,8 +38,8 @@ public class bulletScript : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision) // Que se destruya la bala al entrar en el collider del jugador
     {
         if (collision.gameObject.CompareTag("Player"))
-        {   
-            //LiveManager.Instance.PerderVida();
+        {
+            collision.gameObject.GetComponent<VidasJugador000000000000>().RecibirDano(1);
             Destroy(gameObject);
         }
     }

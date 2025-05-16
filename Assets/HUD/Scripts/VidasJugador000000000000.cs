@@ -53,7 +53,7 @@ public class VidasJugador000000000000 : MonoBehaviour
     void EscenaGameOver()
     {
         
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene("GameOver");
     }
 
 
