@@ -53,3 +53,6 @@ namespace DialogueSystem
         }
     }
 }
+
+// int currentSceneIndex = sceneManager.GetActiveScene().BuildIndex;
+// sceneManager.LoadScene(currentSceneIndex + 1);
