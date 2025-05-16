@@ -6,7 +6,8 @@ public class PointColtroller : MonoBehaviour
 {
 public static PointColtroller instance;
     [SerializeField] private int cantidadPuntos;
-    private int highScore = PlayerInfoController.Instance.gameData.highScore;
+    private int highScore;
+    
     private int highScorePartida;
 
     private void Awake()
@@ -21,6 +22,18 @@ public static PointColtroller instance;
             Destroy(gameObject);
         }
     }
+    private void Start()
+{
+    if (PlayerInfoController.Instance?.gameData != null)
+    {
+        highScore = PlayerInfoController.Instance.gameData.highScore;
+    }
+    else
+    {
+        Debug.LogWarning("PlayerInfoController o gameData es null");
+    }
+}
+
 
 
     public void sumarPuntos(int puntos)
