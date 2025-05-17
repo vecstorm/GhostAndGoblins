@@ -5,9 +5,12 @@ using UnityEngine.UI;
 
 public class PlayerWeaponController : MonoBehaviour
 {
+    //Instancia estatica que permet l'acces global al controlador d'arma
     public static PlayerWeaponController Instance;
 
-    public Image heldItemImage;  // Imagen en el Canvas
+    public Image heldItemImage;  // Imatge en el canva
+
+    //Sprites de les armes
     public Sprite defaultSprite;
     public Sprite lanzaSprite;
     public Sprite dagaSprite;
@@ -27,6 +30,7 @@ public class PlayerWeaponController : MonoBehaviour
             Destroy(gameObject);
     }
 
+    //Quan el jugador entra en colisio amb una arma
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Weapon"))
@@ -37,12 +41,14 @@ public class PlayerWeaponController : MonoBehaviour
         }
     }
 
+    //equipa l'arma 
     public void EquipWeapon(string weaponName)
     {
         currentWeapon = weaponName;
         UpdateWeaponUI();
     }
 
+    //Actualitza la imatge de l'arma per el nom
     void UpdateWeaponUI()
     {
         switch (currentWeapon)

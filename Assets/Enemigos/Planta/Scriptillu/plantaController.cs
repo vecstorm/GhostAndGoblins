@@ -17,33 +17,32 @@ public class plantaController : Enemy
     private GameObject player;
     private float time;
 
-    // A�adir script de da�o
 
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player"); // Guardamos al Player en la variable "player"
+        player = GameObject.FindGameObjectWithTag("Player"); // Guardem el Player a la variable "player"
     }
 
     void Update()
     {
         if(player != null) { 
-            float distance = Vector2.Distance(transform.position, player.transform.position); // Calcula la distancia a la que se encuentra el jugador en referencia a la planta
+            float distance = Vector2.Distance(transform.position, player.transform.position); // Calcula la distància a què es troba el jugador en referència a la planta
 
             if (distance < distanciaBolas)
             {
-                time += Time.deltaTime; // creamos un temporizador
+                time += Time.deltaTime; // creem un temporitzador
 
                 if (time > 2)
                 {
-                    time = 0; // Seteamos el contador a 0
+                    time = 0; // Posem el comptador a 0
                     Dispara();
 
-                    animator.SetBool("dispara", true); // Le damos el ok para que entre al estado idle
-                    Invoke("Idle", 0.5f); // Invocamos el metodo para que cuando acabe la animaci�n salte otra vez a idle
+                    animator.SetBool("dispara", true); // Li donem l'ok perquè entri a l'estat idle
+                    Invoke("Idle", 0.5f); // Invoquem el mètode perquè quan acabi l'animació salti una altra vegada a idle
                 }
             }
 
-        }// Debug.Log(distance); // Para comprobar la distancia a la que se encuentra el jugador en referencia a la planta
+        }// Debug.Log(distance); // Per comprovar la distància a què es troba el jugador en referència a la planta
     }
 
     void Dispara() // Instancia una bola de las que dispara
@@ -51,12 +50,12 @@ public class plantaController : Enemy
         Instantiate(bola, bolaPos.position, Quaternion.identity);
     }
 
-    void Idle() // Se usa para que el personaje entre en el estado idle
+    void Idle() //S'utilitza per a que el personatge entri en estat idle
     {
         animator.SetBool("dispara", false);
     }
 
-    public void Eliminar() // Destruye el objeto
+    public void Eliminar() // Destrueix l'objecte
     {
         Destroy(gameObject);
     }

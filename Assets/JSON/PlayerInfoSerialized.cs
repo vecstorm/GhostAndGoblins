@@ -3,5 +3,5 @@
 
 public class PlayerInfoSerialized
 {
-    public int highScore;
+    public int highScore; //la variable de highScore
 }

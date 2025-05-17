@@ -6,7 +6,7 @@ public class CamaraController : MonoBehaviour
 {
 
     public Transform character;
-    public BoxCollider2D mapBounds; // El collider que define el mapa
+    public BoxCollider2D mapBounds; // El collider que defineix el mapa
 
     private float minX, maxX, minY, maxY;
     private float halfHeight, halfWidth;
@@ -17,11 +17,12 @@ public class CamaraController : MonoBehaviour
     {
         cam = Camera.main;
 
-        // Calcular la mitad del alto y ancho de la cámara
-        halfHeight = cam.orthographicSize;
+        // Calcular la meitat de la altura i la amplada de la camara
+        halfHeight = cam.orthographicSize; 
         halfWidth = halfHeight * cam.aspect;
 
-        // Obtener límites del mapa desde el BoxCollider2D
+        //Obtenir limits del mapa des del BoxCollider2D
+
         Bounds bounds = mapBounds.bounds;
 
         minX = bounds.min.x + halfWidth;

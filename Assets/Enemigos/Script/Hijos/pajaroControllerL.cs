@@ -7,11 +7,11 @@ public class pajaroControllerL : Enemy
     [SerializeField]
     float tiempoPrimeraAnimacion = 0f;
     [SerializeField]
-    float amplitud = 0.5f; // quÈ tan alto baja/sube
+    float amplitud = 0.5f; // que tan alt baixa/puja
     [SerializeField]
-    float frecuencia = 2f; // quÈ tan r·pido oscila
+    float frecuencia = 2f; // que tan r√†pid oscil¬∑la
     [SerializeField]
-    float velocidad = 2f;  // velocidad de avance
+    float velocidad = 2f;  // velocitat d'aven√ß
     
     public Animator animator;
 
@@ -26,10 +26,10 @@ public class pajaroControllerL : Enemy
         transform.localScale = new Vector3(-1.5f, 1.5f, 1.5f);
         rb2D = GetComponent<Rigidbody2D>();
 
-        posicionInicial = transform.position; // Guardamos la posiciÛn y la guardamos en posicionInicial
+        posicionInicial = transform.position; // Desem la posici√≥ i la guardem en posici√≥ Inicial
 
-        DejarCaminar(); // Para que empieze sin caminar
-        Invoke("Transicion", tiempoPrimeraAnimacion); // Invocamos el metodo para que cuando acabe la animaciÛn haga lo que le pidamos
+        DejarCaminar(); // Perqu√® comenci sense caminar
+        Invoke("Transicion", tiempoPrimeraAnimacion); // Invoquem el m√®tode perqu√® quan acabi l'animaci√≥ faci el que us demanem
     }
 
     private void Update()
@@ -37,29 +37,29 @@ public class pajaroControllerL : Enemy
 
         if (speed > 0)
         {
-            float x = transform.position.x + velocidad * Time.deltaTime * (-1 * dir); // Calculamos lo que tiene que hacer en el eje X y multiplicamos la direcciÛn por -1 para que vaya al revÈs
-            float y = posicionInicial.y + Mathf.Sin(Time.time * frecuencia) * amplitud; // Calculamos el movimiento de oscilaciÛn en el eje Y
-            transform.position = new Vector2(x, y); // Se lo pasamos para que haga lo que le hemos pedido
+            float x = transform.position.x + velocidad * Time.deltaTime * (-1 * dir); // Calculem el que ha de fer a l'eix X i multipliquem l'adre√ßa per -1 perqu√® vagi al rev√©s
+            float y = posicionInicial.y + Mathf.Sin(Time.time * frecuencia) * amplitud; // Calculem el moviment d'oscilacio a l'eix Y
+            transform.position = new Vector2(x, y); // ho passem perqu√® fegi el que hem demanat
         }
     }
 
-    public void Transicion() // Lo que hacemos en este metodo Ès activar la animaciÛn y llamar al mÈtodo para que se empiece a mover
+    public void Transicion() // El que fem en aquest metode es activar l'animacio i trucar al metode perqu es comenci a moure
     {
         animator.SetBool("volar", true);
         Caminar();
     }
 
-    public void Caminar() // Seteamos la variable speed a 1 para que se mueva
+    public void Caminar() // Setegem la variable speed a 1 perqu√® es mogui
     {
         speed = 1f;
     }
 
-    public void DejarCaminar() // Seteamos la variable speed a 0 para que no se mueva
+    public void DejarCaminar() // Setegem la variable speed a 0 perqu√® no es mogui
     {
         speed = 0f;
     }
 
-    public void Eliminar() // Lo creamos para que elimine el objeto
+    public void Eliminar() // Ho creguem perqu√® elimini l'objecte
     {
         Destroy(gameObject);
     }

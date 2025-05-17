@@ -17,7 +17,7 @@ public class AbrirPuertaDerecha : MonoBehaviour
         col = GetComponent<Collider2D>();
         if (col != null)
         {
-            col.enabled = false; // Desactivar collider al inicio
+            col.enabled = false; // Desactiva el collider al principi
         }
     }
 
@@ -35,14 +35,14 @@ public class AbrirPuertaDerecha : MonoBehaviour
             if (col.enabled == false)
             {
                 Debug.Log("La puerta se ha abierto, activando el collider...");
-                col.enabled = true; // Activa el collider cuando la puerta se haya movido
+                col.enabled = true; // Activa el collider quan la porta s'hagi mogut
             }
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        // Aquí puedes hacer una comprobación si el objeto que colisionó es el que deseas
+        //Aqui pots fer una comprovacio si l'objecte que colisiona es el que vols
         if (collision.gameObject.CompareTag("Player")) // Si el jugador colisiona
         {
             Debug.Log("El jugador ha tocado la plataforma, cambiando de escena...");

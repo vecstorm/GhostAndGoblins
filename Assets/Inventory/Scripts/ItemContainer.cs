@@ -1,6 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.VersionControl;
+
 using UnityEngine;
 
 [ExecuteInEditMode]
@@ -22,13 +20,14 @@ public class ItemContainer : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-
+            // Crida el mètode "ChangeWeapon" del jugador i li passa aquest contenidor (amb l'item a dins)
             collision.GetComponent<CharacterAbilityController>().ChangeWeapon(this);
             Destroy(gameObject);
 
         }
     }
 
+    //Mètode que retorna l’item que conté aquest contenidor
     public Item getItem()
     {
         return item;

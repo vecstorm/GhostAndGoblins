@@ -11,18 +11,18 @@ using UnityEngine;
     public class ConexionDatabase : MonoBehaviour
     {
         public static ConexionDatabase instance;
-        private MongoClient client;
-        private IMongoDatabase database;
-        private IMongoCollection<BsonDocument> userCollection;
+        private MongoClient client;// Client MongoDB
+        private IMongoDatabase database; // ReferÃ¨ncia a la base de dades
+        private IMongoCollection<BsonDocument> userCollection;// ColÂ·lecciÃ³ de documents (jugadors)
 
-        public TextMeshProUGUI outputText;
+        public TextMeshProUGUI outputText;// ReferÃ¨ncia al text UI on es mostra la taula de puntuacions
 
         private void Awake()
         {
             if (instance == null)
             {
                 ConexionDatabase.instance = this;
-                // No usaremos DontDestroyOnLoad
+                // No utilitzem DontDestroyOnLoad
             }
             else
             {
@@ -30,28 +30,30 @@ using UnityEngine;
             }
         }
 
-        // Método para conectar a la base de datos
+        // MÃ¨tode que s'executa a l'inici: connecta amb la base de dades i llegeix dades
         async void Start()
         {
             string connectionString = "mongodb+srv://ghost:GhostAndGoblins1@gandg.rncopjg.mongodb.net/?retryWrites=true&w=majority&appName=GandG";
 
             try
             {
+                // Inicialitza el client, base de dades i colÂ·lecciÃ³
                 client = new MongoClient(connectionString);
                 database = client.GetDatabase("GhostAndGoblins");
                 userCollection = database.GetCollection<BsonDocument>("game");
 
                 Debug.Log("MongoDB conectado.");
 
+                // Llegeix les dades i mostra-les a la UI
                 await ReadDataAsync();
         }
             catch (System.Exception e)
             {
-                Debug.LogError("Error de conexión MongoDB: " + e.Message);
+                Debug.LogError("Error de conexiï¿½n MongoDB: " + e.Message);
             }
         }
 
-        // Método para leer los datos de la base de datos
+        // MÃ¨tode per llegir dades de puntuaciÃ³ de la base de dades
         public async System.Threading.Tasks.Task ReadDataAsync()
         {
             try
@@ -59,11 +61,14 @@ using UnityEngine;
                 var filter = Builders<BsonDocument>.Filter.Empty;
                 var result = await userCollection.Find(filter).ToListAsync();
 
+             // Ordena els resultats per puntuaciÃ³ (descendent) i agafa els 10 primers
             var top10 = result.OrderByDescending(doc => doc["highScore"].ToInt32())
                          .Take(10)
                          .ToList();
 
             string displayText = "HighScore Table:\n";
+            
+                // Recorre cada document i afegeix la informaciÃ³ al text
                 foreach (var document in top10)
                 {
                     string name = document["name"].ToString();
@@ -71,14 +76,14 @@ using UnityEngine;
                     displayText += $"Name: {name}, High Score: {highScore}, \n";
                 }
 
-                // Actualiza el texto en la UI
+                // Actualiza el text en la UI
                 if (outputText != null)
                 {
                     outputText.text = displayText;
                 }
                 else
                 {
-                    Debug.LogWarning("outputText no está asignado.");
+                    Debug.LogWarning("outputText no estï¿½ asignado.");
                 }
             }
             catch (System.Exception e)
@@ -90,7 +95,7 @@ using UnityEngine;
             }
         }
 
-        // Método público para forzar la recarga de la UI (usado cuando se vuelve al menú)
+        // Metode public per forÃ§ar la recarrega de la UI (utilitzat cuan es torna al menu)
         public async void ReloadScoreUI()
         {
             if (outputText == null)
@@ -98,7 +103,7 @@ using UnityEngine;
                 outputText = GameObject.Find("OutputText")?.GetComponent<TextMeshProUGUI>();
                 if (outputText == null)
                 {
-                    Debug.LogWarning("No se encontró el TextMeshProUGUI llamado 'OutputText'.");
+                    Debug.LogWarning("No se encontrï¿½ el TextMeshProUGUI llamado 'OutputText'.");
                     return;
                 }
             }
@@ -106,10 +111,10 @@ using UnityEngine;
             await ReadDataAsync();
         }
 
-        // Método para insertar datos de prueba en la base de datos
+        // Metode para inserir dades de prova en la base de dades
         public void InsertTestData(string name, int score, int enemigos)
         {
-            // Crea el documento con los datos
+            // Crea el document amb les dades
             var document = new BsonDocument
         {
             { "name", name },
@@ -117,11 +122,11 @@ using UnityEngine;
             { "enemigos derrotados", enemigos }
         };
 
-            // Inserta el documento en la colección
+            // Inserta el document a la coleccio
             try
             {
                 userCollection.InsertOne(document);
-                Debug.Log("Documento insertado con éxito.");
+                Debug.Log("Documento insertado con ï¿½xito.");
             }
             catch (System.Exception e)
             {

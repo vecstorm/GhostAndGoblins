@@ -21,8 +21,8 @@ public class ZombiController : Enemy
         player = GameObject.FindGameObjectWithTag("Player");
         rb2D = GetComponent<Rigidbody2D>();
 
-        Caminar(); // Hacemos que empieze caminando
-        Invoke("Desaparecer", timeAnim1); // Hacemos 2 Invoke para programar los tiempos de animaciones
+        Caminar(); // Fem que comenci caminant
+        Invoke("Desaparecer", timeAnim1); // Fem 2 Invoke per programar els temps d'animacions
         Invoke("Eliminar", timeAnim2);
     }
 
@@ -32,7 +32,7 @@ public class ZombiController : Enemy
         {
                 Vector2 direccion = (player.transform.position - transform.position).normalized;
         
-            rb2D.velocity = new Vector2((speed * 2) * direccion.x, 0f); // Le damos una velocidad constante
+            rb2D.velocity = new Vector2((speed * 2) * direccion.x, 0f); // Li donem una velocitat constant
             if (direccion.x > 0)
             {
                 transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
@@ -44,23 +44,23 @@ public class ZombiController : Enemy
         }
     }
 
-    void Desaparecer() // Hace que el zombi se quede quieto y haga la animaci�n de meterse bajo tierra
+    void Desaparecer() // Fa que el zombi es quedi quiet i faci l'animació de ficar-se sota terra
     {
         DejarCaminar();
         animator.SetBool("desaparece", true);
     }
 
-    void Caminar() // Para que empieze a moverse
+    void Caminar() // Perquè comenci a moure's
     {
         speed = 1f;
     }
 
-    void DejarCaminar() // Para que pare de moverse
+    void DejarCaminar() // Perquè pari de moure's
     {
         speed = 0f;
     }
 
-    void Eliminar() // Para eliminar el Objeto
+    void Eliminar() // Per eliminar l'Objecte
     {
         Destroy(gameObject);
     }

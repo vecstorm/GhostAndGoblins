@@ -12,21 +12,24 @@ public class MovePlatformStage1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-         MovePlatform();
+         MovePlatform();// Crida la funció que gestiona el moviment
     }
 
     void MovePlatform()
     {
+        // Si la plataforma està molt a prop del waypoint actual...
         if (Vector2.Distance(transform.position, waypoints[waypointsIndex].transform.position) < 0.1f)
         {
-            waypointsIndex++;
+            waypointsIndex++;// Passa al següent waypoint
 
+             // Si ha arribat al final de la llista de waypoints, torna a començar
             if (waypointsIndex >= waypoints.Length)
             {
                 waypointsIndex = 0;
             }
         }
 
+        // Mou la plataforma cap al waypoint actual a una velocitat constant
         transform.position = Vector2.MoveTowards(transform.position, waypoints[waypointsIndex].transform.position, platformSpeed * Time.deltaTime);
 
     }

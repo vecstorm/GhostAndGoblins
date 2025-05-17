@@ -12,6 +12,4 @@ public abstract class Item : ScriptableObject
     protected int Points;
 
 
-
-
 }

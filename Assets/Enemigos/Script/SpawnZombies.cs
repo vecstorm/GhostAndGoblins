@@ -5,12 +5,12 @@ using UnityEngine;
 public class SpawnZombies : MonoBehaviour
 {
     [SerializeField] private GameObject zombiPrefab; // Prefab del zombi
-    [SerializeField] private Transform[] spawnPoints; // Puntos donde pueden aparecer los zombis
-    [SerializeField] private float spawnRate = 1f; // Tiempo entre cada apariciÛn
+    [SerializeField] private Transform[] spawnPoints; // Punts on poden apar√®ixer els zombis
+    [SerializeField] private float spawnRate = 1f; // Temps entre cada aparici√≥
 
     private void Start()
     {
-        InvokeRepeating("SpawnZombi", 2f, spawnRate); // Genera zombis cada cierto tiempo
+        InvokeRepeating("SpawnZombi", 2f, spawnRate); // Genera zombis cada cert temps
     }
 
     private void SpawnZombi()
@@ -20,7 +20,7 @@ public class SpawnZombies : MonoBehaviour
         int randomIndex = Random.Range(0, spawnPoints.Length);
         Transform spawnPoint = spawnPoints[randomIndex];
 
-        // Verificar si el punto de spawn est· dentro de la c·mara antes de generar el zombi
+        // Verificar si el punt de spawn esta dins de la c√†mera abans de generar el zombi
         if (IsVisibleFromCamera(spawnPoint.position))
         {
             Instantiate(zombiPrefab, spawnPoint.position, Quaternion.identity);

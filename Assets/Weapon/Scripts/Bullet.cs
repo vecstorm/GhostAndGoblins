@@ -16,12 +16,12 @@ public class Bullet : MonoBehaviour
     void Update()
     {
         transform.Translate(Vector2.right * speed * Time.deltaTime);
-        timer += Time.deltaTime; // Creamos el temporizador
+        timer += Time.deltaTime; // Creem el temporitzador
 
         if (timer > tiempoBala)
         {
-            Destroy(gameObject); // Temporizador para que cuando pase el tiempo deseado se destruya el Objeto
-            timer = 0; // Seteamos el contador a 0
+            Destroy(gameObject); // Temporitzador perquè quan passi el temps desitjat es destrueixi l'Objecte
+            timer = 0; // Setegem el contador a 0
         }
     }
 

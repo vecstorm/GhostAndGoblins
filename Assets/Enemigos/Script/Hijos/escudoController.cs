@@ -5,13 +5,13 @@ using UnityEngine;
 public class escudoController : Enemy
 {
     [SerializeField]
-    float amplitud = 0.5f; // Lo alto que baja/sube
+    float amplitud = 0.5f; // La part alta que baixa/puja
     [SerializeField]
-    float frecuencia = 2f; // Lo r�pido que oscila
+    float frecuencia = 2f; // Lo rapid que oscila
     [SerializeField]
-    float velocidad = 2f;  // velocidad de avance
+    float velocidad = 2f;  // velocitat d'avenç
     [SerializeField]
-    int distanciaEscudo; // El alcance para que empiezen a moverse
+    int distanciaEscudo; // L'abast perquè comencin a moure's
 
     public Animator animator;
 
@@ -23,9 +23,9 @@ public class escudoController : Enemy
     void Start()
     {
         rb2D = GetComponent<Rigidbody2D>();
-        player = GameObject.FindGameObjectWithTag("Player"); // Guardamos al Player en la variable "player"
+        player = GameObject.FindGameObjectWithTag("Player"); // Guardem al Player en la variable "player"
 
-        posicionInicial = transform.position; // Guardamos la posici�n y la guardamos en posicionInicial
+        posicionInicial = transform.position; // Desem la posició i la guardem en "posicionInicial"
     }
 
     private void Update()
@@ -35,14 +35,14 @@ public class escudoController : Enemy
 
             if (distance < distanciaEscudo)
             {
-                float x = transform.position.x + velocidad * Time.deltaTime * (-1 * dir); // Calculamos lo que tiene que hacer en el eje X
-                float y = posicionInicial.y + Mathf.Sin(Time.time * frecuencia) * amplitud; // Calculamos el movimiento de oscilaci�n en el eje Y
-                transform.position = new Vector2(x, y); // Se lo pasamos para que haga lo que le hemos pedido
+                float x = transform.position.x + velocidad * Time.deltaTime * (-1 * dir); // Calculem el que ha de fer a l'eix X
+                float y = posicionInicial.y + Mathf.Sin(Time.time * frecuencia) * amplitud; // Calculem el moviment d'oscil·lació a l'eix Y
+                transform.position = new Vector2(x, y); // Us ho passem perquè feu el que us hem demanat
             }
         }
     }
 
-    public void Eliminar() // Lo creamos para que elimine el objeto
+    public void Eliminar() // Ho creguem perquè elimini l'objecte
     {
         Destroy(gameObject);
     }

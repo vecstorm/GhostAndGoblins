@@ -10,17 +10,15 @@ public class Enemy : MonoBehaviour
     GameObject enemyDied;
     [SerializeField] int DiedPoints;
     [SerializeField] 
-    GameObject[] collectableItems; // Array de posibles objetos a soltar
+    GameObject[] collectableItems; // Array de possibles objectes a deixar anar
     [SerializeField]
-    GameObject[] collectableWapon; // Array de posibles armas a soltar
+    GameObject[] collectableWapon; // Array de posibles armas a deixar anar
     [SerializeField] 
-    float dropChanceItem = 0.5f; // Probabilidad de soltar un objeto (50%)
+    float dropChanceItem = 0.5f; // Probabilitat de deixar anar objecte
     [SerializeField]
     float dropChanceWeapon = 0.2f;
     int enemigosDerrotados;
-    //[SerializeField] GameObject Player;
-    //private bool PuedeDanar = true;
-    //private float Cooldown = 3f;
+
 
     audioManagerScript audioManager;
 
@@ -49,7 +47,7 @@ public class Enemy : MonoBehaviour
             
         }
         PointColtroller.instance.sumarPuntos(DiedPoints);
-        DropItem(); // Intentamos soltar un objeto
+        DropItem(); // Intentem deixar anar objecte
         DropWeapon();
         PointColtroller.instance.sumarEnemigosMuertos();
         Destroy(gameObject);
@@ -63,7 +61,7 @@ public class Enemy : MonoBehaviour
     }
     private void DropItem()
     {
-        if (collectableItems.Length > 0 && Random.value < dropChanceItem) // Probabilidad de soltar objeto
+        if (collectableItems.Length > 0 && Random.value < dropChanceItem) // Probabilitat de deixar anar objecte
         {
             int randomIndex = Random.Range(0, collectableItems.Length);
             Instantiate(collectableItems[randomIndex], transform.position, Quaternion.identity);
@@ -71,7 +69,7 @@ public class Enemy : MonoBehaviour
     }
     private void DropWeapon()
     {
-        if (collectableWapon.Length > 0 && Random.value < dropChanceWeapon) // Probabilidad de soltar objeto
+        if (collectableWapon.Length > 0 && Random.value < dropChanceWeapon) // Probabilitat de deixar anar objecte
         {
             int randomIndex = Random.Range(0, collectableWapon.Length);
             Instantiate(collectableWapon[randomIndex], transform.position, Quaternion.identity);

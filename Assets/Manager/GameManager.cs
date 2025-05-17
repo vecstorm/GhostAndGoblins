@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject);
+            DontDestroyOnLoad(gameObject); //que no es destrueixi en canvi d'escena
         }
         else
         {
@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour
         }
 
         inputActionsMapping = IA;
-        inputActionsMapping.Enable();
+        inputActionsMapping.Enable();//posa enable el inputAction
     }
     
 

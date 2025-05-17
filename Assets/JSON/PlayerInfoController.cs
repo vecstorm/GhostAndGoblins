@@ -1,6 +1,4 @@
-    using System.Collections;
-    using System.Collections.Generic;
-    using UnityEditor.PackageManager;
+
     using UnityEngine;
 
     public class PlayerInfoController : MonoBehaviour
@@ -20,14 +18,14 @@
             else
             {
                 Instance = this;
-                DontDestroyOnLoad(this.gameObject);
-                gameData = new PlayerInfoSerialized();
+                DontDestroyOnLoad(this.gameObject); // No destrueix l'objecte quan canviem d'escena
+                gameData = new PlayerInfoSerialized();// Crea un nou objecte de dades del jugador
             }
         }
 
         public void saveData()
         {
-        gameData.highScore = HighScore.Instance.TopScore;  // <- ahora accede al valor actual
-        SaveGameData.SaveDataInfo(gameData);
+        gameData.highScore = HighScore.Instance.TopScore;  //Assigna el valor actual del TopScore a l'objecte gameData
+        SaveGameData.SaveDataInfo(gameData);// Desa les dades al disc utilitzant la classe SaveGameData
         }
     }

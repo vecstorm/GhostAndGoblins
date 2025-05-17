@@ -4,11 +4,12 @@ using UnityEngine;
 
 public abstract class Weapon : Item
 {
-    [SerializeField] GameObject projectilePrefab;
+    [SerializeField] GameObject projectilePrefab; // Referència al prefab del projectil que dispararà l'arma.
 
-    public GameObject GetProjectilePrefab() 
-    { 
-        return projectilePrefab; 
+    //Això permet a altres scripts accedir al tipus de projectil que dispara.
+    public GameObject GetProjectilePrefab()
+    {
+        return projectilePrefab;
     }
 
 }

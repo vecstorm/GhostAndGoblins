@@ -9,17 +9,17 @@ public class bossController : Enemy
     private Rigidbody2D rb2D;
     private GameObject player;
     private bool suelo = false;
-    private bool haSaltado = false;      // Para saber si ha saltado
-    private bool estuvoEnElAire = false; // Para saber si ha estado en el aire
+    private bool haSaltado = false;      // Per saber si ha saltat
+    private bool estuvoEnElAire = false; // per saber si ha estat en el aire
 
-    [Header("Configuración de salto")] // Para que se muestre un título encima de las variables
+    [Header("Configuraciï¿½n de salto")] // PerquÃ¨ es mostri un tÃ­tol sobre les variables
     public float rangoVision = 10f;
     public float fuerzaSaltoX = 2f;
     public float fuerzaSaltoY = 8f;
-    public float cooldownSalto = 4f; // Tiempo entre saltos en segundos
+    public float cooldownSalto = 4f; // Temps entre salts en segons
     private float tiempoUltimoSalto = -Mathf.Infinity;
 
-    [Header("Detección de suelo")] // Para que se muestre un título encima de las variables
+    [Header("Detecciï¿½n de suelo")] // PerquÃ¨ es mostri un tÃ­tol sobre les variables
     public Transform sueloCheck;
     public float radioSuelo = 0.2f;
     public LayerMask queEsSuelo;
@@ -27,7 +27,7 @@ public class bossController : Enemy
 
     private void Start()
     {
-        rb2D = GetComponent<Rigidbody2D>(); // Asigna el Rigidbody2D del enemigo
+        rb2D = GetComponent<Rigidbody2D>(); // Asigna el Rigidbody2D del enemic
         player = GameObject.FindGameObjectWithTag("Player");
     }
 
@@ -35,28 +35,28 @@ public class bossController : Enemy
     {
         if (player != null)
         {
-            suelo = Physics2D.OverlapCircle(sueloCheck.position, radioSuelo, queEsSuelo); // Comprueba si está tocando el suelo
+            suelo = Physics2D.OverlapCircle(sueloCheck.position, radioSuelo, queEsSuelo); // Comprova si esta tocant el terra
 
-            float distancia = Vector2.Distance(transform.position, player.transform.position);  // Calcula la distancia entre el enemigo y el jugador
+            float distancia = Vector2.Distance(transform.position, player.transform.position);  // Calcula la distÃ ncia entre l'enemic i el jugador
 
-            if (distancia < rangoVision && suelo && Time.time > tiempoUltimoSalto + cooldownSalto) // Miramos si todo esta correcto
+            if (distancia < rangoVision && suelo && Time.time > tiempoUltimoSalto + cooldownSalto) // Mirem si tot estÃ  correcte
             {
-                SaltarHaciaJugador(); // Ejecutamos el salto hacia eel jugador
+                SaltarHaciaJugador(); // Executem el salt cap al jugador
             }
 
-            // Si ha saltado y ya NO está en el suelo, marcamos que estuvo en el aire
+            // Si ha saltat i ja NO esta a terra, marquem que va estar a l'aire
             if (haSaltado && !suelo)
             {
                 estuvoEnElAire = true;
             }
 
-            // Si ha saltado, estuvo en el aire, y ahora volvió al suelo -> reset animaciones
+            // Si ha saltat, va estar en el aire, y ara ha tornat al terra -> reset animacions
             if (haSaltado && estuvoEnElAire && suelo)
             {
                 animator.SetBool("jumpL", false);
                 animator.SetBool("jumpR", false);
 
-                haSaltado = false;        // Reseteamos todo para el siguiente salto
+                haSaltado = false;        // Resetegem tot pel segÃ¼ent salt
                 estuvoEnElAire = false;
             }
         }
@@ -64,8 +64,8 @@ public class bossController : Enemy
 
     private void SaltarHaciaJugador()
     {
-        Vector2 direccion = (player.transform.position - transform.position).normalized; // Calculamos la dirección en la que esta el jugador
-        Vector2 fuerza = new Vector2(direccion.x * fuerzaSaltoX, fuerzaSaltoY); // Calculamos la fuerza deseada
+        Vector2 direccion = (player.transform.position - transform.position).normalized; // Calculem la direccio en la que esta el jugador
+        Vector2 fuerza = new Vector2(direccion.x * fuerzaSaltoX, fuerzaSaltoY); // Calculem la forÃ§a desitjada
 
         if (direccion.x < 0)
         {
@@ -75,15 +75,15 @@ public class bossController : Enemy
             animator.SetBool("jumpR", true);
         }
 
-        haSaltado = true;        // Marcamos que ha saltado
-        estuvoEnElAire = false;  // Reiniciamos esta variable
+        haSaltado = true;        // Marquem que ha saltar
+        estuvoEnElAire = false;  // Reiniciem aquesta variable
 
-        rb2D.AddForce(fuerza, ForceMode2D.Impulse); // Le damos el impulso con los calculos anteriores
+        rb2D.AddForce(fuerza, ForceMode2D.Impulse); // Li donem un impuls amb els calculs d'abans
 
         tiempoUltimoSalto = Time.time; // Reinicia el cooldown
     }
 
-    private void OnDrawGizmosSelected() // Para que se muestre el guizmo inferior que detecta el suelo
+    private void OnDrawGizmosSelected() // PerquÃ¨ es mostri el guisme inferior que detecta el terra
     {
         if (sueloCheck != null)
         {
@@ -97,8 +97,8 @@ public class bossController : Enemy
 
         if (puerta1 != null && puerta2 != null)
         {
-            puerta1.GetComponent<AbrirPuertaDerecha>().enabled = true; // Activa el movimiento de la puerta
-            puerta2.GetComponent<AbrirPuertas>().enabled = true; // Activa el movimiento de la puerta
+            puerta1.GetComponent<AbrirPuertaDerecha>().enabled = true; // Activa el movement de la porta 1
+            puerta2.GetComponent<AbrirPuertas>().enabled = true; // Activa el moviment de la porta 2
         }
 
     }

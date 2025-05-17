@@ -28,7 +28,7 @@ public class GameOverMenu : MonoBehaviour
 
         if (hud != null)
         {
-            hud.ReiniciarHUD();  // Llama a la función dentro del HUD
+            hud.ReiniciarHUD();  // Truca a la funcio dins del HUD
         }
 
         SceneManager.LoadScene(0);
@@ -43,7 +43,7 @@ public class GameOverMenu : MonoBehaviour
 
         if (hud != null)
         {
-            hud.ReiniciarHUD();  // Llama a la función dentro del HUD
+            hud.ReiniciarHUD();  // Truca a la funci dins del HUD
         }
         SceneManager.LoadScene(1);
     }

@@ -16,26 +16,26 @@ public class bulletScript : MonoBehaviour
 
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>(); // Obtenemos el Rigidbody
-        player = GameObject.FindGameObjectWithTag("Player"); // Obtenemos al Player
+        rb = GetComponent<Rigidbody2D>(); // Obtenim el Rigidbody
+        player = GameObject.FindGameObjectWithTag("Player"); // Obtenim al Player
 
-        Vector3 direccion = player.transform.position - transform.position; // C·lculo distancia a la que se encuentra el jugador para ver la direcciÛn
-        rb.velocity = new Vector2(direccion.x, direccion.y).normalized * velocidadBala; // Le damos la potencia y la direcciÛn al Rigidbody
+        Vector3 direccion = player.transform.position - transform.position; //Calcul distancia a la que es troba el jugador per veure la direccio
+        rb.velocity = new Vector2(direccion.x, direccion.y).normalized * velocidadBala; // Li donem la pot√®ncia i la direccio al Rigidbody
     }
 
     // Update is called once per frame
     void Update()
     {
-        timer += Time.deltaTime; // Creamos el temporizador
+        timer += Time.deltaTime; // Creem el temporitzador
 
         if (timer > tiempoBala)
         {
-            Destroy(gameObject); // Temporizador para que cuando pase el tiempo deseado se destruya el Objeto
-            timer = 0; // Seteamos el contador a 0
+            Destroy(gameObject); // Temporitzador perqu√® quan passi el temps desitjat es destrueixi l'Objecte
+            timer = 0; // Posem el comptador a 0
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision) // Que se destruya la bala al entrar en el collider del jugador
+    private void OnTriggerEnter2D(Collider2D collision) // Que es destrueixi la bala en entrar al collider del jugador
     {
         if (collision.gameObject.CompareTag("Player"))
         {

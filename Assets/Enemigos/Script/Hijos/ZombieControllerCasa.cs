@@ -27,16 +27,16 @@ public class ZombieControllerCasa : Enemy
 
         Vector2 direccion = (objetivoActual.position - transform.position).normalized;
 
-        // Mover al zombie
+        // Moure al zombie
         rb2D.velocity = new Vector2(direccion.x * speed, rb2D.velocity.y);
 
-        // Cambiar escala para mirar hacia la dirección
+        // Canviar escala per mirar cap a la direccio
         if (direccion.x > 0)
             transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
         else
             transform.localScale = new Vector3(-1.5f, 1.5f, 1.5f);
 
-        // Cambiar de objetivo si llegó al actual
+        // Canviar d'objectiu si arribeu a l'actual
         if (Vector2.Distance(transform.position, waypoints[waypointsIndex].transform.position) < 0.1f)
         {
             waypointsIndex++;
@@ -49,7 +49,7 @@ public class ZombieControllerCasa : Enemy
 
         transform.position = Vector2.MoveTowards(transform.position, waypoints[waypointsIndex].transform.position, speed * Time.deltaTime);
 
-        // Controlar animaciones si tienes alguna
+        // Controlar animaciones si te alguna
         animator.SetFloat("speed", Mathf.Abs(rb2D.velocity.x));
     }
 }
